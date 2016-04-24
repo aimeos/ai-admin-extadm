@@ -25,7 +25,7 @@ interface Iface
 	 *
 	 * @param \Aimeos\MShop\Context\Item\Iface $context MShop context object
 	 * @param string|null $name Name of the controller implementation (Default if null)
-	 * @return Controller Interface
+	 * @return \Aimeos\Controller\ExtJS\Iface ExtJS controller object
 	 */
 	public static function createController( \Aimeos\MShop\Context\Item\Iface $context, $name = null );
 }
