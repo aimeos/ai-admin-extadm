@@ -16,7 +16,7 @@
 
 	<target name="check" description="Checks for code quality">
 		<phing target="check" haltonfailure="true" dir="controller/extjs" />
-		<phing target="check" haltonfailure="true" dir="admin/extjs" />
+		<phing target="check" haltonfailure="false" dir="admin/extjs" />
 	</target>
 
 	<target name="clean" description="Cleans up temporary files">
