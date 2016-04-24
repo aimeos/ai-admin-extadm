@@ -1,0 +1,21 @@
+{
+	"name": "aimeos/ai-admin-extjs",
+	"description": "Aimeos ai-admin-extjs extension",
+	"keywords": ["aimeos", "extension", "ExtJS admin interface"],
+	"type": "aimeos-extension",
+	"license": "LGPL-3.0",
+	"prefer-stable": true,
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.3.3",
+		"composer/installers": "^1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Aimeos\\Controller\\ExtJS\\": "controller/extjs/src/Controller/ExtJS/"
+		},
+		"classmap": [
+			"controller/extjs/src"
+		]
+	}
+}

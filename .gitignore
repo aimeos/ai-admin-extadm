@@ -1,0 +1,4 @@
+controller/extjs/tests/tmp/
+*.junit.xml
+*.log
+*.ser
