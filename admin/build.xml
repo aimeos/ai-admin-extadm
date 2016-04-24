@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="ai-admin-extadm extension - admin" default="all">
+<project name="ai-admin-extadm - admin" default="all">
 
 	<target name="i18n" description="Creates translation message files">
 		<phing target="i18n" haltonfailure="true" dir="./jsonadm" />
