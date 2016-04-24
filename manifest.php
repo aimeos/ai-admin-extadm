@@ -7,9 +7,11 @@ return array(
 	),
 	'include' => array(
 		'controller/extjs/src',
+		'controller/jobs/src',
 	),
 	'i18n' => array(
 		'controller/extjs' => 'controller/extjs/i18n',
+		'controller/jobs' => 'controller/jobs/i18n',
 	),
 	'custom' => array(
 		'admin/extjs' => array(
@@ -17,6 +19,9 @@ return array(
 		),
 		'controller/extjs' => array(
 			'controller/extjs/src',
+		),
+		'controller/jobs' => array(
+			'controller/jobs/src',
 		),
 	),
 );
