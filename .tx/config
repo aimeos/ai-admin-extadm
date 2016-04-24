@@ -20,3 +20,9 @@ file_filter = controller/extjs/i18n/<lang>.po
 source_file = controller/extjs/i18n/core-controller-extjs.pot
 source_lang = en
 type = PO
+
+[ai-admin-extadm.controller-jobs]
+file_filter = controller/extjs/i18n/<lang>.po
+source_file = controller/extjs/i18n/messages.pot
+source_lang = en
+type = PO
