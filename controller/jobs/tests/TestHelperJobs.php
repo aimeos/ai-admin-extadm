@@ -33,9 +33,11 @@ class TestHelperJobs
 	{
 		if( !isset( self::$aimeos ) )
 		{
-			require_once dirname( dirname( dirname( __DIR__ ) ) ) . DIRECTORY_SEPARATOR . 'Bootstrap.php';
+			require_once 'Bootstrap.php';
+			spl_autoload_register( 'Aimeos\\Bootstrap::autoload' );
 
-			self::$aimeos = new \Aimeos\Bootstrap( array(), false );
+			$extdir = dirname( dirname( dirname( dirname( __FILE__ ) ) ) );
+			self::$aimeos = new \Aimeos\Bootstrap( array( $extdir ), false );
 		}
 
 		return self::$aimeos;
