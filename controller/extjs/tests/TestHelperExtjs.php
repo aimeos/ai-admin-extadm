@@ -14,8 +14,6 @@ class TestHelperExtjs
 
 	public static function bootstrap()
 	{
-		set_error_handler( 'TestHelperExtjs::errorHandler' );
-
 		self::getAimeos();
 		\Aimeos\MShop\Factory::setCache( false );
 		\Aimeos\Controller\ExtJS\Factory::setCache( false );

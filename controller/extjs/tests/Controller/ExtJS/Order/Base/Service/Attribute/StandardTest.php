@@ -97,7 +97,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$this->assertInternalType( 'object', $saved['items'] );
 		$this->assertNotNull( $saved['items']->{'order.base.service.attribute.id'} );
 		$this->assertEquals( $saved['items']->{'order.base.service.attribute.id'}, $searched['items'][0]->{'order.base.service.attribute.id'} );
-		$this->assertEquals( $saved['items']->{'order.base.service.attribute.ordservid'}, $searched['items'][0]->{'order.base.service.attribute.ordservid'} );
+		$this->assertEquals( $saved['items']->{'order.base.service.attribute.parentid'}, $searched['items'][0]->{'order.base.service.attribute.parentid'} );
 		$this->assertEquals( $saved['items']->{'order.base.service.attribute.code'}, $searched['items'][0]->{'order.base.service.attribute.code'} );
 		$this->assertEquals( $saved['items']->{'order.base.service.attribute.name'}, $searched['items'][0]->{'order.base.service.attribute.name'} );
 		$this->assertEquals( $saved['items']->{'order.base.service.attribute.value'}, $searched['items'][0]->{'order.base.service.attribute.value'} );
