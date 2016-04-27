@@ -26,7 +26,6 @@ interface Iface
 	 *
 	 * @param \Aimeos\Controller\ExtJS\Iface $controller Controller object
 	 * @param \Aimeos\MShop\Context\Item\Iface $context Context object with required objects
-	 * @return void
 	 */
 	public function __construct( \Aimeos\Controller\ExtJS\Iface $controller, \Aimeos\MShop\Context\Item\Iface $context );
 }
