@@ -25,7 +25,6 @@
 	<target name="clean" description="Cleans up temporary files">
 		<phing target="clean" haltonfailure="true" dir="controller/extjs" />
 		<phing target="clean" haltonfailure="true" dir="controller/jobs" />
-		<phing target="clean" haltonfailure="true" dir="admin/extjs" />
 	</target>
 
 	<target name="i18n" description="Creates all translation files">
