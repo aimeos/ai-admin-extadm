@@ -166,7 +166,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$params->items = 'file.txt';
 		$params->site = $this->context->getLocale()->getSite()->getCode();
 
-		$result = $object->uploadFile( $params );
+		$object->uploadFile( $params );
 
 
 		$jobController = \Aimeos\Controller\ExtJS\Admin\Job\Factory::createController( $this->context );
@@ -285,7 +285,6 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$method = $class->getMethod( 'storeFile' );
 		$method->setAccessible( true );
 
-		$clientFileName = '';
 		$method->invokeArgs( $this->object, array( $request ) );
 	}
 }

@@ -40,7 +40,7 @@ class TestHelperExtjs
 			spl_autoload_register( 'Aimeos\\Bootstrap::autoload' );
 
 			$extdir = dirname( dirname( dirname( dirname( __FILE__ ) ) ) );
-			self::$aimeos = new \Aimeos\Bootstrap( array( $extdir ), false );
+			self::$aimeos = new \Aimeos\Bootstrap( array( $extdir ), true );
 		}
 
 		return self::$aimeos;
@@ -102,11 +102,5 @@ class TestHelperExtjs
 		$ctx->setEditor( 'core:controller/extjs' );
 
 		return $ctx;
-	}
-
-
-	public static function errorHandler( $code, $message, $file, $row )
-	{
-		return true;
 	}
 }

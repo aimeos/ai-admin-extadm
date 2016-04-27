@@ -11,7 +11,6 @@ namespace Aimeos\Controller\ExtJS;
 class JsonRpcTest extends \PHPUnit_Framework_TestCase
 {
 	private static $object;
-	private $testdir;
 
 
 	public static function setUpBeforeClass()

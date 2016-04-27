@@ -237,7 +237,7 @@ abstract class Base
 	 * Template method for returning the search key prefix of the used manager
 	 * This method has to be implemented in the derived classes
 	 *
-	 * @return \Aimeos\MShop\Common\Manager\Iface Manager object
+	 * @return string Search key prefix
 	 */
 	abstract protected function getPrefix();
 

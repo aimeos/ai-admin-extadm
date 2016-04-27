@@ -37,7 +37,7 @@ class TestHelperJobs
 			spl_autoload_register( 'Aimeos\\Bootstrap::autoload' );
 
 			$extdir = dirname( dirname( dirname( dirname( __FILE__ ) ) ) );
-			self::$aimeos = new \Aimeos\Bootstrap( array( $extdir ), false );
+			self::$aimeos = new \Aimeos\Bootstrap( array( $extdir ), true );
 		}
 
 		return self::$aimeos;
@@ -136,11 +136,4 @@ class TestHelperJobs
 
 		return $view;
 	}
-
-
-	public static function errorHandler( $code, $message, $file, $row )
-	{
-		return true;
-	}
-
 }
