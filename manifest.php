@@ -4,7 +4,6 @@ return array(
 	'name' => 'ai-admin-extadm',
 	'depends' => array(
 		'aimeos-core',
-		'ai-controller-jobs',
 	),
 	'include' => array(
 		'controller/extjs/src',
