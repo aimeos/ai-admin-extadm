@@ -59,14 +59,14 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	{
 		$saveParams = (object) array(
 			'items' => (object) array(
-				'locale.currency.code' => 'xxx',
+				'locale.currency.code' => 'XXX',
 				'locale.currency.label' => 'XXX',
 				'locale.currency.status' => 1
 			),
 		);
 
 		$searchParams = (object) array(
-			'condition' => (object) array( '&&' => array( 0 => (object) array( '==' => array( 'locale.currency.code' => 'xxx' ) ) ) )
+			'condition' => (object) array( '&&' => array( 0 => (object) array( '==' => array( 'locale.currency.code' => 'XXX' ) ) ) )
 		);
 
 		$saved = $this->object->saveItems( $saveParams );

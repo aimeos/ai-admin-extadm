@@ -41,7 +41,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	{
 		$params = (object) array(
 			'site' => 'unittest',
-			'condition' => (object) array( '&&' => array( 0 => (object) array( '==' => (object) array( 'job.method' => 'Controller.method' ) ) ) ),
+			'condition' => (object) array( '&&' => array( 0 => (object) array( '==' => (object) array( 'job.method' => 'controller.method' ) ) ) ),
 			'sort' => 'job.ctime',
 			'dir' => 'ASC',
 			'start' => 0,
