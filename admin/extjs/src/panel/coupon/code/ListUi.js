@@ -31,6 +31,14 @@ MShop.panel.coupon.code.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
         this.title = MShop.I18n.dt('admin', 'Codes');
 
         MShop.panel.coupon.code.ListUi.superclass.initComponent.call(this);
+
+        this.actionImport.menu = new Ext.menu.Menu({
+            items: [{
+                text: MShop.I18n.dt('admin', 'Codes'),
+                plugins: [new Ext.ux.file.BrowsePlugin()],
+                handler: this.onFileSelect
+            }]
+        });
     },
 
 

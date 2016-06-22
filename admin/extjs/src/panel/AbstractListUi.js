@@ -157,17 +157,34 @@ MShop.panel.AbstractListUi = Ext.extend(Ext.Panel, {
             handler : this.onDeleteSelectedItems.createDelegate(this)
         });
 
-        this.actionExport = new Ext.Action({
+        this.actionExport = new Ext.SplitButton({
             text : MShop.I18n.dt('admin', 'Export'),
             disabled : (this.exportMethod === null),
-            handler : this.onExport ? this.onExport.createDelegate(this) : Ext.emptyFn
+            handler : function(btn) {
+                btn.showMenu();
+            },
+            menu : new Ext.menu.Menu({
+                items: [{
+                    text: MShop.I18n.dt('admin', 'Text'),
+                    handler: this.onExport ? this.onExport.createDelegate(this) : Ext.emptyFn
+                }]
+            })
         });
 
         this.actionImport = new MShop.elements.ImportButton({
             text : MShop.I18n.dt('admin', 'Import'),
             disabled : (this.importMethod === null),
             importMethod : this.importMethod,
-            handler : this.onFileSelect ? this.onFileSelect.createDelegate(this) : null
+            handler : function(btn) {
+                btn.showMenu();
+            },
+            menu : new Ext.menu.Menu({
+                items: [{
+                    text: MShop.I18n.dt('admin', 'Text'),
+                    plugins: [new Ext.ux.file.BrowsePlugin()],
+                    handler: this.onFileSelect ? this.onFileSelect.createDelegate(this) : Ext.emptyFn
+                }]
+            })
         });
 
     },

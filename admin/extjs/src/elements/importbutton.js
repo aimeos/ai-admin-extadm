@@ -5,7 +5,7 @@
 
 Ext.ns('MShop.elements');
 
-MShop.elements.ImportButton = Ext.extend(Ext.Button, {
+MShop.elements.ImportButton = Ext.extend(Ext.SplitButton, {
 
         /**
          * @cfg {String} importMethod (required)
@@ -14,12 +14,6 @@ MShop.elements.ImportButton = Ext.extend(Ext.Button, {
 
         initComponent : function() {
             this.scope = this;
-            this.handler = this.handler || this.onFileSelect;
-
-            this.plugins = this.plugins || [];
-            this.browsePlugin = new Ext.ux.file.BrowsePlugin();
-            this.plugins.push(this.browsePlugin);
-
             this.loadMask = new Ext.LoadMask(Ext.getBody(), {
                 msg : MShop.I18n.dt('admin', 'Loading'),
                 msgCls : 'x-mask-loading'
