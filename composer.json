@@ -2,8 +2,15 @@
 	"name": "aimeos/ai-admin-extadm",
 	"description": "Aimeos ai-admin-extadm extension",
 	"keywords": ["aimeos", "extension", "ExtJS admin interface"],
+	"homepage": "https://aimeos.org/",
 	"type": "aimeos-extension",
 	"license": "LGPL-3.0",
+	"support": {
+		"source": "https://github.com/aimeos/ai-admin-extadm",
+		"issues": "https://github.com/aimeos/ai-admin-extadm/issues",
+		"forum": "https://aimeos.org/help",
+		"wiki": "https://aimeos.org/docs"
+	},
 	"prefer-stable": true,
 	"minimum-stability": "dev",
 	"require": {
