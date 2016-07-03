@@ -3,155 +3,156 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Tomas G <tomas.gmitro@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-03 16:55+0200\n"
-"PO-Revision-Date: 2016-06-07 09:37+0000\n"
-"Last-Translator: Aimeos <aimeos@aimeos.org>\n"
-"Language-Team: Serbian (http://www.transifex.com/aimeos/aimeos-core/language/sr/)\n"
+"PO-Revision-Date: 2016-06-10 10:45+0000\n"
+"Last-Translator: Tomas G <tomas.gmitro@gmail.com>\n"
+"Language-Team: Slovak (http://www.transifex.com/aimeos/aimeos-core/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sr\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #, php-format
 msgid "- %1$s : %2$s\n"
-msgstr ""
+msgstr "- %1$s : %2$s\n"
 
 #, php-format
 msgid "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
-msgstr ""
+msgstr "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
 
 #, php-format
 msgid "Class \"%1$s\" does not implement \"%2$s\""
-msgstr "Klasa \"%1$s\" nije implementirana \"%2$s\""
+msgstr "Trieda \"%1$s\" neimplementuje \"%2$s\""
 
 #, php-format
 msgid "Class \"%1$s\" not found"
-msgstr "Klasa \"%1$s\" nije pronadjena"
+msgstr "Trieda \"%1$s\" nenájdená"
 
 #, php-format
 msgid "Controller path is empty"
-msgstr ""
+msgstr "Cesta ovládača je prázdná"
 
 #, php-format
 msgid "Could not set permissions \"%1$s\" for file \"%2$s\""
-msgstr ""
+msgstr "Could not set permissions \"%1$s\" for file \"%2$s\""
 
 #, php-format
 msgid "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
-msgstr ""
+msgstr "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
 
 #, php-format
 msgid "Create export directory for attribute IDs: %1$s"
-msgstr ""
+msgstr "Create export directory for attribute IDs: %1$s"
 
 #, php-format
 msgid "Create export directory for catalog IDs: %1$s"
-msgstr ""
+msgstr "Create export directory for catalog IDs: %1$s"
 
 #, php-format
 msgid "Create export directory for product IDs: %1$s"
-msgstr ""
+msgstr "Create export directory for product IDs: %1$s"
 
 #, php-format
 msgid "Deleting file \"%1$s\" failed"
-msgstr ""
+msgstr "Deleting file \"%1$s\" failed"
 
 msgid "Download"
-msgstr ""
+msgstr "Stiahnúť"
 
 #, php-format
 msgid "Error in %1$s text import: %2$s"
-msgstr ""
+msgstr "Error in %1$s text import: %2$s"
 
 #, php-format
 msgid "Factory \"%1$s\" not found"
-msgstr ""
+msgstr "Factory \"%1$s\" not found"
 
 #, php-format
 msgid "File \"%1$s\" was not uploaded"
-msgstr ""
+msgstr "File \"%1$s\" was not uploaded"
 
 #, php-format
 msgid "Invalid class name \"%1$s\""
-msgstr "Pogrešno ime klase \"%1$s\""
+msgstr "Neplatný názov triedy \"%1$s\""
 
 #, php-format
 msgid "Invalid controller \"%1$s\" in \"%2$s\""
-msgstr ""
+msgstr "Invalid controller \"%1$s\" in \"%2$s\""
 
 #, php-format
 msgid "Invalid controller factory name \"%1$s\""
-msgstr ""
+msgstr "Invalid controller factory name \"%1$s\""
 
 #, php-format
 msgid "Invalid domain \"%1$s\""
-msgstr "Pogrešan domen \"%1$s\""
+msgstr "Neplatná doména  \"%1$s\""
 
 #, php-format
 msgid "Invalid factory \"%1$s\""
-msgstr ""
+msgstr "Neplatná továreň \"%1$s\""
 
 #, php-format
 msgid "Invalid list type \"%1$s\""
-msgstr ""
+msgstr "Invalid list type \"%1$s\""
 
 #, php-format
 msgid "Invalid method \"%1$s\" in request"
-msgstr ""
+msgstr "Invalid method \"%1$s\" in request"
 
 #, php-format
 msgid "Invalid row from %1$s text import: %2$s"
-msgstr ""
+msgstr "Invalid row from %1$s text import: %2$s"
 
 #, php-format
 msgid "Invalid sort direction \"%1$s\""
-msgstr ""
+msgstr "Invalid sort direction \"%1$s\""
 
 #, php-format
 msgid "Invalid text type \"%1$s\""
-msgstr ""
+msgstr "Invalid text type \"%1$s\""
 
 #, php-format
 msgid "List item doesn't implement \"%1$s\""
-msgstr ""
+msgstr "List item doesn't implement \"%1$s\""
 
 #, php-format
 msgid "Method \"%1$s\" not found"
-msgstr ""
+msgstr "Method \"%1$s\" not found"
 
 #, php-format
 msgid "Missing parameter \"%1$s\""
-msgstr ""
+msgstr "Missing parameter \"%1$s\""
 
 #, php-format
 msgid "No allowed image types configured for \"%1$s\""
-msgstr ""
+msgstr "No allowed image types configured for \"%1$s\""
 
 #, php-format
 msgid "Required attribute \"%1$s\" missing in request"
-msgstr ""
+msgstr "Required attribute \"%1$s\" missing in request"
 
 #, php-format
 msgid "Site item for code \"%1$s\" not found"
-msgstr ""
+msgstr "Site item for code \"%1$s\" not found"
 
 #, php-format
 msgid "Unable to call method \"%1$s\""
-msgstr ""
+msgstr "Nepodarilo sa zavolať metódu \"%1$s\""
 
 #, php-format
 msgid "Unable to create directory \"%1$s\""
-msgstr ""
+msgstr "Unable to create directory \"%1$s\""
 
 #, php-format
 msgid "Unable to create file in \"%1$s\""
-msgstr ""
+msgstr "Unable to create file in \"%1$s\""
 
 #, php-format
 msgid "Uploaded file could not be moved to upload directory \"%1$s\""
-msgstr ""
+msgstr "Uploaded file could not be moved to upload directory \"%1$s\""
