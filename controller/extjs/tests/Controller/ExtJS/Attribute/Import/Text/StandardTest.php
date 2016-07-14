@@ -258,9 +258,9 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 	public function testAbstractStoreFile()
 	{
-		$stream = $this->getMock( '\Psr\Http\Message\StreamInterface' );
-		$file = $this->getMock( '\Psr\Http\Message\UploadedFileInterface' );
-		$request = $this->getMock( '\Psr\Http\Message\ServerRequestInterface' );
+		$stream = $this->getMockBuilder( '\Psr\Http\Message\StreamInterface' )->getMock();
+		$file = $this->getMockBuilder( '\Psr\Http\Message\UploadedFileInterface' )->getMock();
+		$request = $this->getMockBuilder( '\Psr\Http\Message\ServerRequestInterface' )->getMock();
 
 		$fsm = $this->getMockBuilder( '\Aimeos\MW\Filesystem\Manager\Standard' )
 			->setMethods( array( 'get' ) )

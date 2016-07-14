@@ -169,7 +169,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 	public function testUploadItem()
 	{
-		$file = $this->getMock( '\Psr\Http\Message\UploadedFileInterface' );
+		$file = $this->getMockBuilder( '\Psr\Http\Message\UploadedFileInterface' )->getMock();
 
 
 		$object = $this->getMockBuilder( '\Aimeos\Controller\ExtJS\Media\Standard' )
