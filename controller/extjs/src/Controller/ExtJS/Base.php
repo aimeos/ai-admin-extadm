@@ -390,7 +390,7 @@ abstract class Base
 	 * @param \Aimeos\MW\Criteria\Iface $criteria Criteria object
 	 * @param \stdClass $params Object that may contain the properties "condition", "sort", "dir", "start" and "limit"
 	 */
-	private function initCriteriaConditions( \Aimeos\MW\Criteria\Iface $criteria, \stdClass $params )
+	protected function initCriteriaConditions( \Aimeos\MW\Criteria\Iface $criteria, \stdClass $params )
 	{
 		if( isset( $params->condition ) && is_object( $params->condition ) )
 		{
@@ -412,7 +412,7 @@ abstract class Base
 	 * @param \Aimeos\MW\Criteria\Iface $criteria Criteria object
 	 * @param \stdClass $params Object that may contain the properties "condition", "sort", "dir", "start" and "limit"
 	 */
-	private function initCriteriaSlice( \Aimeos\MW\Criteria\Iface $criteria, \stdClass $params )
+	protected function initCriteriaSlice( \Aimeos\MW\Criteria\Iface $criteria, \stdClass $params )
 	{
 		if( isset( $params->start ) && isset( $params->limit ) )
 		{
@@ -430,7 +430,7 @@ abstract class Base
 	 * @param \Aimeos\MW\Criteria\Iface $criteria Criteria object
 	 * @param \stdClass $params Object that may contain the properties "condition", "sort", "dir", "start" and "limit"
 	 */
-	private function initCriteriaSortations( \Aimeos\MW\Criteria\Iface $criteria, \stdClass $params )
+	protected function initCriteriaSortations( \Aimeos\MW\Criteria\Iface $criteria, \stdClass $params )
 	{
 		if( isset( $params->sort ) && isset( $params->dir ) )
 		{
@@ -576,7 +576,7 @@ abstract class Base
 	 * @param \Aimeos\MShop\Locale\Item\Site\Iface $item Locale item, maybe with children
 	 * @return array List of site IDs
 	 */
-	private function getSiteIdsFromTree( \Aimeos\MShop\Locale\Item\Site\Iface $item )
+	protected function getSiteIdsFromTree( \Aimeos\MShop\Locale\Item\Site\Iface $item )
 	{
 		$list = array( $item->getId() );
 
