@@ -60,4 +60,22 @@ class Standard
 	{
 		return 'product.type';
 	}
+
+
+	/**
+	 * Initializes the criteria object with the slice based on the given parameter.
+	 *
+	 * @param \Aimeos\MW\Criteria\Iface $criteria Criteria object
+	 * @param \stdClass $params Object that may contain the properties "condition", "sort", "dir", "start" and "limit"
+	 */
+	protected function initCriteriaSlice( \Aimeos\MW\Criteria\Iface $criteria, \stdClass $params )
+	{
+		if( isset( $params->start ) && isset( $params->limit ) )
+		{
+			$start = ( isset( $params->start ) ? $params->start : 0 );
+			$size = ( isset( $params->limit ) ? $params->limit : 1000 );
+
+			$criteria->setSlice( $start, $size );
+		}
+	}
 }
