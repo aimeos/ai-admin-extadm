@@ -541,6 +541,7 @@ abstract class Base
 			$total = 0;
 			$criteria = $manager->createSearch();
 			$criteria->setConditions( $criteria->compare( '==', str_replace( '/', '.', $domain ) . '.id', $ids ) );
+			$criteria->setSlice( 0, 0x7fffffff );
 
 			$items = $manager->searchItems( $criteria, array(), $total );
 

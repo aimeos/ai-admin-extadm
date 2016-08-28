@@ -131,6 +131,34 @@ class Standard
 
 
 	/**
+	 * Returns the schema of the item.
+	 *
+	 * @return array Associative list of "name" and "properties" list (including "description", "type" and "optional")
+	 */
+	public function getItemSchema()
+	{
+		$attributes = $this->getManager()->getSearchAttributes( false );
+		$properties = $this->getAttributeSchema( $attributes );
+
+		$properties['media.type'] = array(
+			'description' => 'Media type code',
+			'optional' => false,
+			'type' => 'string',
+		);
+		$properties['media.typename'] = array(
+			'description' => 'Media type name',
+			'optional' => false,
+			'type' => 'string',
+		);
+
+		return array(
+			'name' => 'Media',
+			'properties' => $properties,
+		);
+	}
+
+
+	/**
 	 * Returns the service description of the class.
 	 * It describes the class methods and its parameters including their types
 	 *

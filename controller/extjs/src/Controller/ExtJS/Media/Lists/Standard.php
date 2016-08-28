@@ -72,6 +72,34 @@ class Standard
 
 
 	/**
+	 * Returns the schema of the item.
+	 *
+	 * @return array Associative list of "name" and "properties" list (including "description", "type" and "optional")
+	 */
+	public function getItemSchema()
+	{
+		$attributes = $this->getManager()->getSearchAttributes( false );
+		$properties = $this->getAttributeSchema( $attributes );
+
+		$properties['media.lists.type'] = array(
+			'description' => 'Media list type code',
+			'optional' => false,
+			'type' => 'string',
+		);
+		$properties['media.lists.typename'] = array(
+			'description' => 'Media list type name',
+			'optional' => false,
+			'type' => 'string',
+		);
+
+		return array(
+			'name' => 'Media_Lists',
+			'properties' => $properties,
+		);
+	}
+
+
+	/**
 	 * Returns the manager the controller is using.
 	 *
 	 * @return \Aimeos\MShop\Common\Manager\Iface Manager object

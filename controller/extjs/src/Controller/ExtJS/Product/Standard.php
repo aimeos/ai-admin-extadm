@@ -122,6 +122,34 @@ class Standard
 
 
 	/**
+	 * Returns the schema of the item.
+	 *
+	 * @return array Associative list of "name" and "properties" list (including "description", "type" and "optional")
+	 */
+	public function getItemSchema()
+	{
+		$attributes = $this->getManager()->getSearchAttributes( false );
+		$properties = $this->getAttributeSchema( $attributes );
+
+		$properties['product.type'] = array(
+			'description' => 'Product type code',
+			'optional' => false,
+			'type' => 'string',
+		);
+		$properties['product.typename'] = array(
+			'description' => 'Product type name',
+			'optional' => false,
+			'type' => 'string',
+		);
+
+		return array(
+			'name' => 'Product',
+			'properties' => $properties,
+		);
+	}
+
+
+	/**
 	 * Returns the manager the controller is using.
 	 *
 	 * @return \Aimeos\MShop\Common\Manager\Iface Manager object

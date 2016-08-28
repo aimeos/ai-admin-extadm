@@ -172,6 +172,16 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 					'optional' => false,
 					'type' => 'string',
 				),
+				'attribute.type' => array(
+					'description' => 'Attribute type code',
+					'optional' => false,
+					'type' => 'string',
+				),
+				'attribute.typename' => array(
+					'description' => 'Attribute type name',
+					'optional' => false,
+					'type' => 'string',
+				),
 			)
 		);
 

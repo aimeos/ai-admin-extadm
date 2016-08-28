@@ -85,6 +85,34 @@ class Standard
 
 
 	/**
+	 * Returns the schema of the item.
+	 *
+	 * @return array Associative list of "name" and "properties" list (including "description", "type" and "optional")
+	 */
+	public function getItemSchema()
+	{
+		$attributes = $this->getManager()->getSearchAttributes( false );
+		$properties = $this->getAttributeSchema( $attributes );
+
+		$properties['price.type'] = array(
+			'description' => 'Price type code',
+			'optional' => false,
+			'type' => 'string',
+		);
+		$properties['price.typename'] = array(
+			'description' => 'Price type name',
+			'optional' => false,
+			'type' => 'string',
+		);
+
+		return array(
+			'name' => 'Price',
+			'properties' => $properties,
+		);
+	}
+
+
+	/**
 	 * Returns the service description of the class.
 	 * It describes the class methods and its parameters including their types
 	 *

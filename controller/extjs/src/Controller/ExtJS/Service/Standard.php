@@ -80,6 +80,34 @@ class Standard
 
 
 	/**
+	 * Returns the schema of the item.
+	 *
+	 * @return array Associative list of "name" and "properties" list (including "description", "type" and "optional")
+	 */
+	public function getItemSchema()
+	{
+		$attributes = $this->getManager()->getSearchAttributes( false );
+		$properties = $this->getAttributeSchema( $attributes );
+
+		$properties['service.type'] = array(
+			'description' => 'Service type code',
+			'optional' => false,
+			'type' => 'string',
+		);
+		$properties['service.typename'] = array(
+			'description' => 'Service type name',
+			'optional' => false,
+			'type' => 'string',
+		);
+
+		return array(
+			'name' => 'Service',
+			'properties' => $properties,
+		);
+	}
+
+
+	/**
 	 * Tests the configuration and throws an exception if it's invalid
 	 *
 	 * @param \Aimeos\MShop\Service\Item\Iface $item Service item object
