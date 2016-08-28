@@ -30,7 +30,6 @@ MShop.panel.price.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPickerUi
     getAdditionalColumns : function() {
 
         var conf = this.itemConfig;
-        this.typeStore = MShop.GlobalStoreMgr.get('Price_Type', conf.domain);
         this.listTypeStore = MShop.GlobalStoreMgr.get(conf.listTypeControllerName, conf.domain);
 
         /** admin/extjs/panel/price/taxrate
@@ -91,10 +90,7 @@ MShop.panel.price.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPickerUi
                 header : MShop.I18n.dt('admin', 'Type'),
                 id : 'reftype',
                 width : 70,
-                renderer : this.refTypeColumnRenderer.createDelegate(this, [
-                    this.typeStore,
-                    'price.typeid',
-                    'price.type.label'], true)
+                renderer : this.refColumnRenderer.createDelegate(this, ['price.typename'], true)
             },
             {
                 xtype : 'gridcolumn',

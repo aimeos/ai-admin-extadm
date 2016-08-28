@@ -30,7 +30,6 @@ MShop.panel.media.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPickerUi
     getAdditionalColumns : function() {
 
         var conf = this.itemConfig;
-        this.typeStore = MShop.GlobalStoreMgr.get('Media_Type', conf.domain);
         this.listTypeStore = MShop.GlobalStoreMgr.get(conf.listTypeControllerName, conf.domain);
 
         return [
@@ -58,10 +57,7 @@ MShop.panel.media.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPickerUi
                 header : MShop.I18n.dt('admin', 'Type'),
                 id : 'reftype',
                 width : 70,
-                renderer : this.refTypeColumnRenderer.createDelegate(this, [
-                    this.typeStore,
-                    'media.typeid',
-                    'media.type.label'], true)
+                renderer : this.refColumnRenderer.createDelegate(this, ['media.typename'], true)
             },
             {
                 xtype : 'gridcolumn',

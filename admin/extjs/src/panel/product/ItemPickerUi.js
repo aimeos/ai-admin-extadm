@@ -29,7 +29,6 @@ MShop.panel.product.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPicker
     getAdditionalColumns : function() {
 
         var conf = this.itemConfig;
-        this.typeStore = MShop.GlobalStoreMgr.get('Product_Type', conf.domain);
         this.listTypeStore = MShop.GlobalStoreMgr.get(conf.listTypeControllerName, conf.domain);
 
         return [
@@ -57,10 +56,7 @@ MShop.panel.product.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPicker
                 header : MShop.I18n.dt('admin', 'Type'),
                 id : 'reftype',
                 width : 70,
-                renderer : this.refTypeColumnRenderer.createDelegate(this, [
-                    this.typeStore,
-                    'product.typeid',
-                    'product.type.label'], true)
+                renderer : this.refColumnRenderer.createDelegate(this, ['product.typename'], true)
             },
             {
                 xtype : 'gridcolumn',
