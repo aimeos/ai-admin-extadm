@@ -34,9 +34,6 @@ MShop.panel.product.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-        // make sure product type store gets loaded in same batch as this grid data
-        this.typeStore = MShop.GlobalStoreMgr.get('Product_Type');
-
         return [{
             xtype : 'gridcolumn',
             dataIndex : 'product.id',
@@ -55,10 +52,9 @@ MShop.panel.product.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
             renderer : this.statusColumnRenderer.createDelegate(this)
         }, {
             xtype : 'gridcolumn',
-            dataIndex : 'product.typeid',
+            dataIndex : 'product.typename',
             header : MShop.I18n.dt('admin', 'Type'),
-            width : 100,
-            renderer : this.typeColumnRenderer.createDelegate(this, [this.typeStore, "product.type.label"], true)
+            width : 100
         }, {
             xtype : 'gridcolumn',
             dataIndex : 'product.code',

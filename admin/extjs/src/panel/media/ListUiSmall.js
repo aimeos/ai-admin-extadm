@@ -24,8 +24,6 @@ MShop.panel.media.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-        // make sure type store gets loaded in same batch as this grid data
-        this.typeStore = MShop.GlobalStoreMgr.get('Media_Type', this.domain);
 
         var storeConfig = {
             baseParams : {
@@ -58,10 +56,9 @@ MShop.panel.media.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
             renderer : this.statusColumnRenderer.createDelegate(this)
         }, {
             xtype : 'gridcolumn',
-            dataIndex : 'media.typeid',
+            dataIndex : 'media.typename',
             header : MShop.I18n.dt('admin', 'Type'),
-            width : 70,
-            renderer : this.typeColumnRenderer.createDelegate(this, [this.typeStore, "media.type.label"], true)
+            width : 70
         }, {
             xtype : 'gridcolumn',
             dataIndex : 'media.languageid',

@@ -38,9 +38,6 @@ MShop.panel.plugin.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-        // make sure plugin type store gets loaded in same batch as this grid data
-        this.typeStore = MShop.GlobalStoreMgr.get('Plugin_Type');
-
         return [{
             xtype : 'gridcolumn',
             dataIndex : 'plugin.id',
@@ -59,10 +56,9 @@ MShop.panel.plugin.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
             renderer : this.statusColumnRenderer.createDelegate(this)
         }, {
             xtype : 'gridcolumn',
-            dataIndex : 'plugin.typeid',
+            dataIndex : 'plugin.typename',
             header : MShop.I18n.dt('admin', 'Type'),
-            width : 100,
-            renderer : this.typeColumnRenderer.createDelegate(this, [this.typeStore, "plugin.type.label"], true)
+            width : 100
         }, {
             xtype : 'gridcolumn',
             dataIndex : 'plugin.provider',

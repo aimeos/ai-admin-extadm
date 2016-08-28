@@ -36,9 +36,6 @@ MShop.panel.attribute.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
 
 
     getColumns : function() {
-        // make sure type store gets loaded in same batch as this grid data
-        this.typeStore = MShop.GlobalStoreMgr.get('Attribute_Type');
-
         return [{
             xtype : 'gridcolumn',
             dataIndex : 'attribute.id',
@@ -56,10 +53,9 @@ MShop.panel.attribute.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
             renderer : this.statusColumnRenderer.createDelegate(this)
         }, {
             xtype : 'gridcolumn',
-            dataIndex : 'attribute.typeid',
+            dataIndex : 'attribute.typename',
             header : MShop.I18n.dt('admin', 'Type'),
-            width : 100,
-            renderer : this.typeColumnRenderer.createDelegate(this, [this.typeStore, "attribute.type.label"], true)
+            width : 100
         }, {
             xtype : 'gridcolumn',
             dataIndex : 'attribute.code',

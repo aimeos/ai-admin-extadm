@@ -53,9 +53,6 @@ MShop.panel.price.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
 
     getColumns : function() {
 
-        // make sure type store gets loaded in same batch as this grid data
-        this.typeStore = MShop.GlobalStoreMgr.get('Price_Type', this.domain);
-
         var storeConfig = {
             baseParams : {
                 site : MShop.config.site["locale.site.code"],
@@ -98,10 +95,9 @@ MShop.panel.price.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
             },
             {
                 xtype : 'gridcolumn',
-                dataIndex : 'price.typeid',
+                dataIndex : 'price.typename',
                 header : MShop.I18n.dt('admin', 'Type'),
-                width : 70,
-                renderer : this.typeColumnRenderer.createDelegate(this, [this.typeStore, "price.type.label"], true)
+                width : 70
             },
             {
                 xtype : 'gridcolumn',

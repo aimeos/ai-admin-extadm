@@ -32,9 +32,6 @@ MShop.panel.service.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-        // make sure service type store gets loaded in same batch as this grid data
-        this.typeStore = MShop.GlobalStoreMgr.get('Service_Type');
-
         return [{
             xtype : 'gridcolumn',
             dataIndex : 'service.id',
@@ -53,10 +50,9 @@ MShop.panel.service.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
             renderer : this.statusColumnRenderer.createDelegate(this)
         }, {
             xtype : 'gridcolumn',
-            dataIndex : 'service.typeid',
+            dataIndex : 'service.typename',
             header : MShop.I18n.dt('admin', 'Type'),
-            width : 100,
-            renderer : this.typeColumnRenderer.createDelegate(this, [this.typeStore, "service.type.label"], true)
+            width : 100
         }, {
             xtype : 'gridcolumn',
             dataIndex : 'service.code',

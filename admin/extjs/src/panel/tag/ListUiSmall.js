@@ -24,9 +24,6 @@ MShop.panel.tag.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-        // make sure type store gets loaded in same batch as this grid data
-        this.typeStore = MShop.GlobalStoreMgr.get('Tag_Type');
-
         return [{
             xtype : 'gridcolumn',
             dataIndex : 'tag.id',
@@ -36,11 +33,10 @@ MShop.panel.tag.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
             hidden : true
         }, {
             xtype : 'gridcolumn',
-            dataIndex : 'tag.typeid',
+            dataIndex : 'tag.typename',
             header : MShop.I18n.dt('admin', 'Type'),
             sortable : true,
-            width : 70,
-            renderer : this.typeColumnRenderer.createDelegate(this, [this.typeStore, "tag.type.label"], true)
+            width : 70
         }, {
             xtype : 'gridcolumn',
             dataIndex : 'tag.languageid',

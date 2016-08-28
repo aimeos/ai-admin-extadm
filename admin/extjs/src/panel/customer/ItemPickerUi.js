@@ -29,18 +29,12 @@ MShop.panel.customer.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPicke
 
 
     getAdditionalColumns : function() {
-
-        var conf = this.itemConfig;
-        this.listTypeStore = MShop.GlobalStoreMgr.get(conf.listTypeControllerName, conf.domain);
-
         return [{
             xtype : 'gridcolumn',
-            dataIndex : conf.listNamePrefix + 'typeid',
+            dataIndex : conf.listNamePrefix + 'typename',
             header : MShop.I18n.dt('admin', 'List type'),
             id : 'listtype',
-            width : 70,
-            renderer : this.typeColumnRenderer.createDelegate(this,
-                [this.listTypeStore, conf.listTypeLabelProperty], true)
+            width : 70
         }, {
             xtype : 'gridcolumn',
             dataIndex : conf.listNamePrefix + 'refid',

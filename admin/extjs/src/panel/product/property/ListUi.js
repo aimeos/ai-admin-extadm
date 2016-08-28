@@ -21,7 +21,7 @@ MShop.panel.product.property.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
             value : ''
         }]
     },
-    
+
     sortInfo : {
         field : 'product.property.type.label',
         direction : 'ASC'
@@ -64,8 +64,6 @@ MShop.panel.product.property.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-        this.typeStore = MShop.GlobalStoreMgr.get('Product_Property_Type');
-
         return [
             {
                 xtype : 'gridcolumn',
@@ -84,12 +82,9 @@ MShop.panel.product.property.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
             },
             {
                 xtype : 'gridcolumn',
-                dataIndex : 'product.property.typeid',
+                dataIndex : 'product.property.typename',
                 header : MShop.I18n.dt('admin', 'Type'),
-                align : 'center',
-                renderer : this.typeColumnRenderer.createDelegate(this, [
-                    this.typeStore, "product.property.type.label"
-                    ], true)
+                align : 'center'
             },
             {
                 xtype : 'gridcolumn',
