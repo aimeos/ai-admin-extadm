@@ -58,7 +58,7 @@ MShop.panel.tag.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
                             fieldLabel : MShop.I18n.dt('admin', 'Type'),
                             name : 'tag.typeid',
                             mode : 'local',
-                            store : this.listUI.typeStore,
+                            store : MShop.GlobalStoreMgr.get('Tag_Type'),
                             displayField : 'tag.type.label',
                             valueField : 'tag.type.id',
                             forceSelection : true,

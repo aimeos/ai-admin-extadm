@@ -23,21 +23,6 @@ MShop.panel.text.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-
-        var storeConfig = {
-            baseParams : {
-                site : MShop.config.site["locale.site.code"],
-                condition : {
-                    '&&' : [{
-                        '==' : {
-                            'text.type.domain' : this.domain
-                        }
-                    }]
-                }
-            }
-        };
-        this.ItemTypeStore = MShop.GlobalStoreMgr.get('Text_Type', this.domain + '/text/type', storeConfig);
-
         return [{
             xtype : 'gridcolumn',
             dataIndex : 'text.id',

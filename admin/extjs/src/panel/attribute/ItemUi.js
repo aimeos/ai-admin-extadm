@@ -25,7 +25,7 @@ MShop.panel.attribute.ItemUi = Ext.extend(MShop.panel.AbstractListItemUi, {
                 }
             }
         };
-        this.typeStore = MShop.GlobalStoreMgr.get('Attribute_Type', this.domain + '/attribute/type', storeConfig);
+        this.ItemTypeStore = MShop.GlobalStoreMgr.get('Attribute_Type', this.domain + '/attribute/type', storeConfig);
 
         this.items = [{
             xtype : 'tabpanel',
@@ -73,7 +73,7 @@ MShop.panel.attribute.ItemUi = Ext.extend(MShop.panel.AbstractListItemUi, {
                             fieldLabel : MShop.I18n.dt('admin', 'Type'),
                             name : 'attribute.typeid',
                             mode : 'local',
-                            store : this.typeStore,
+                            store : this.ItemTypeStore,
                             displayField : 'attribute.type.label',
                             valueField : 'attribute.type.id',
                             forceSelection : true,

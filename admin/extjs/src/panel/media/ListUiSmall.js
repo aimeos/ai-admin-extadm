@@ -24,21 +24,6 @@ MShop.panel.media.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-
-        var storeConfig = {
-            baseParams : {
-                site : MShop.config.site["locale.site.code"],
-                condition : {
-                    '&&' : [{
-                        '==' : {
-                            'media.type.domain' : this.domain
-                        }
-                    }]
-                }
-            }
-        };
-        this.itemTypeStore = MShop.GlobalStoreMgr.get('Media_Type', this.domain + '/media/type', storeConfig);
-
         return [{
             xtype : 'gridcolumn',
             dataIndex : 'media.id',

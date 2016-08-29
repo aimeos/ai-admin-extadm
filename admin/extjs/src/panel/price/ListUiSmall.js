@@ -52,21 +52,6 @@ MShop.panel.price.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-
-        var storeConfig = {
-            baseParams : {
-                site : MShop.config.site["locale.site.code"],
-                condition : {
-                    '&&' : [{
-                        '==' : {
-                            'price.type.domain' : this.domain
-                        }
-                    }]
-                }
-            }
-        };
-        this.ItemTypeStore = MShop.GlobalStoreMgr.get('Price_Type', this.domain + '/price/type', storeConfig);
-
         return [
             {
                 xtype : 'gridcolumn',

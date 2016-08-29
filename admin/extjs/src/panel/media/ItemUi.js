@@ -13,6 +13,20 @@ MShop.panel.media.ItemUi = Ext.extend(MShop.panel.AbstractListItemUi, {
 
         MShop.panel.AbstractItemUi.prototype.setSiteCheck(this);
 
+        var storeConfig = {
+            baseParams : {
+                site : MShop.config.site["locale.site.code"],
+                condition : {
+                    '&&' : [{
+                        '==' : {
+                            'media.type.domain' : this.domain
+                        }
+                    }]
+                }
+            }
+        };
+        this.itemTypeStore = MShop.GlobalStoreMgr.get('Media_Type', this.domain + '/media/type', storeConfig);
+
         this.items = [{
             xtype : 'tabpanel',
             activeTab : 0,
@@ -61,7 +75,7 @@ MShop.panel.media.ItemUi = Ext.extend(MShop.panel.AbstractListItemUi, {
                             fieldLabel : MShop.I18n.dt('admin', 'Type'),
                             name : 'media.typeid',
                             mode : 'local',
-                            store : this.listUI.itemTypeStore,
+                            store : this.itemTypeStore,
                             displayField : 'media.type.label',
                             valueField : 'media.type.id',
                             forceSelection : true,

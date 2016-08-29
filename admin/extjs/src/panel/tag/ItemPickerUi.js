@@ -33,7 +33,7 @@ MShop.panel.tag.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPickerUi, 
         return [
             {
                 xtype : 'gridcolumn',
-                dataIndex : conf.listNamePrefix + 'typeid',
+                dataIndex : conf.listNamePrefix + 'typename',
                 header : MShop.I18n.dt('admin', 'List type'),
                 id : 'listtype',
                 width : 70

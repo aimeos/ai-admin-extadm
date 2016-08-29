@@ -13,6 +13,20 @@ MShop.panel.price.ItemUi = Ext.extend(MShop.panel.AbstractListItemUi, {
 
         MShop.panel.AbstractItemUi.prototype.setSiteCheck(this);
 
+        var storeConfig = {
+            baseParams : {
+                site : MShop.config.site["locale.site.code"],
+                condition : {
+                    '&&' : [{
+                        '==' : {
+                            'price.type.domain' : this.domain
+                        }
+                    }]
+                }
+            }
+        };
+        this.ItemTypeStore = MShop.GlobalStoreMgr.get('Price_Type', this.domain + '/price/type', storeConfig);
+
         this.items = [{
             xtype : 'tabpanel',
             activeTab : 0,
@@ -59,7 +73,7 @@ MShop.panel.price.ItemUi = Ext.extend(MShop.panel.AbstractListItemUi, {
                             fieldLabel : MShop.I18n.dt('admin', 'Type'),
                             name : 'price.typeid',
                             mode : 'local',
-                            store : this.listUI.ItemTypeStore,
+                            store : this.ItemTypeStore,
                             displayField : 'price.type.label',
                             valueField : 'price.type.id',
                             forceSelection : true,
