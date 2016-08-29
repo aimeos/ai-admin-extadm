@@ -29,6 +29,7 @@ MShop.panel.tag.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPickerUi, 
 
     getAdditionalColumns : function() {
         var conf = this.itemConfig;
+        this.listTypeStore = MShop.GlobalStoreMgr.get(conf.listTypeControllerName, conf.domain);
 
         return [
             {
