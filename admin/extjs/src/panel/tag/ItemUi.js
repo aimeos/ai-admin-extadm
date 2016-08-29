@@ -13,6 +13,20 @@ MShop.panel.tag.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
 
         MShop.panel.AbstractItemUi.prototype.setSiteCheck(this);
 
+        var storeConfig = {
+            baseParams : {
+                site : MShop.config.site["locale.site.code"],
+                condition : {
+                    '&&' : [{
+                        '==' : {
+                            'tag.type.domain' : this.domain
+                        }
+                    }]
+                }
+            }
+        };
+        this.ItemTypeStore = MShop.GlobalStoreMgr.get('Tag_Type', this.domain + '/tag/type', storeConfig);
+
         this.items = [{
             xtype : 'tabpanel',
             activeTab : 0,
@@ -58,7 +72,7 @@ MShop.panel.tag.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
                             fieldLabel : MShop.I18n.dt('admin', 'Type'),
                             name : 'tag.typeid',
                             mode : 'local',
-                            store : MShop.GlobalStoreMgr.get('Tag_Type'),
+                            store : this.ItemTypeStore,
                             displayField : 'tag.type.label',
                             valueField : 'tag.type.id',
                             forceSelection : true,
