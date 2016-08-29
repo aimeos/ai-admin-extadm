@@ -61,6 +61,8 @@ MShop.panel.price.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPickerUi
          */
         showTaxrate = MShop.Config.get('admin/extjs/panel/price/itempickerui/taxrate', showTaxrate);
 
+        var conf = this.itemConfig;
+
         return [
             {
                 xtype : 'gridcolumn',

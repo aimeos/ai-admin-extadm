@@ -27,6 +27,8 @@ MShop.panel.product.ItemPickerUi = Ext.extend(MShop.panel.AbstractListItemPicker
     },
 
     getAdditionalColumns : function() {
+        var conf = this.itemConfig;
+
         return [
             {
                 xtype : 'gridcolumn',
