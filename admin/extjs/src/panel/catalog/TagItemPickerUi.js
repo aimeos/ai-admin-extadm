@@ -26,6 +26,7 @@ Ext.ux.ItemRegistry.registerItem('MShop.panel.catalog.ItemUi', 'MShop.panel.cata
         listTypeKey : 'catalog/lists/type/tag'
     },
     listConfig : {
+        domain : 'catalog',
         prefix : 'tag.'
     }
 }, 100);
