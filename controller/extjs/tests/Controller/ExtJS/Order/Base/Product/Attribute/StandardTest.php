@@ -43,7 +43,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 			'site' => 'unittest',
 			'condition' => (object) array( '&&' => array(
 				0 => (object) array( '==' => (object) array( 'order.base.product.attribute.code' => 'color' ) ),
-				1 => (object) array( '==' => (object) array( 'order.base.product.attribute.value' => 'blue' ) ),
+				1 => (object) array( '~=' => (object) array( 'order.base.product.attribute.value' => 'blue' ) ),
 				2 => (object) array( '==' => (object) array( 'order.base.product.attribute.editor' => 'core:unittest' ) ),
 			) ),
 			'sort' => 'order.base.product.attribute.mtime',
