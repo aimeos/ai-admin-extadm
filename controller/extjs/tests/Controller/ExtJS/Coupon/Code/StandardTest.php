@@ -25,7 +25,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	{
 		$this->context = \TestHelperExtjs::getContext();
 
-		$this->testdir = $this->context->getConfig()->get( 'controller/extjs/attribute/import/text/standard/uploaddir', './tmp' );
+		$this->testdir = $this->context->getConfig()->get( 'controller/extjs/coupon/code/standard/uploaddir', './tmp' );
 
 		if( !is_dir( $this->testdir ) && mkdir( $this->testdir, 0775, true ) === false ) {
 			throw new \Exception( sprintf( 'Unable to create missing upload directory "%1$s"', $this->testdir ) );

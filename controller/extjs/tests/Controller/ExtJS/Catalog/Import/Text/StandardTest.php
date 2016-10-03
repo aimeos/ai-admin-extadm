@@ -25,7 +25,8 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	protected function setUp()
 	{
 		$this->context = \TestHelperExtjs::getContext();
-		$this->testdir = $this->context->getConfig()->get( 'controller/extjs/catalog/import/text/standard/uploaddir', './tmp' );
+
+		$this->testdir = './tmp';
 		$this->testfile = $this->testdir . DIRECTORY_SEPARATOR . 'file.txt';
 
 		if( !is_dir( $this->testdir ) && mkdir( $this->testdir, 0775, true ) === false ) {
