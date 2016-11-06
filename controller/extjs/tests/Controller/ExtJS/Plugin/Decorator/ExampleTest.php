@@ -53,7 +53,7 @@ class ExampleTest extends \PHPUnit_Framework_TestCase
 		$result = $this->object->searchItems( $params );
 
 		if( ( $plugin = reset( $result ) ) === false ) {
-			throw new \Exception( 'No plugin found' );
+			throw new \RuntimeException( 'No plugin found' );
 		}
 
 		$this->assertEquals( 1, count( $plugin ) );
@@ -71,7 +71,7 @@ class ExampleTest extends \PHPUnit_Framework_TestCase
 		$result = $typeManager->searchItems( $search );
 
 		if( ( $type = reset( $result ) ) === false ) {
-			throw new \Exception( 'No plugin type found' );
+			throw new \RuntimeException( 'No plugin type found' );
 		}
 
 		$saveParams = (object) array(

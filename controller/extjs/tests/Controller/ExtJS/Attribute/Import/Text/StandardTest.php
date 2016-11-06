@@ -30,7 +30,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$this->testfile = $this->testdir . DIRECTORY_SEPARATOR . 'file.txt';
 
 		if( !is_dir( $this->testdir ) && mkdir( $this->testdir, 0775, true ) === false ) {
-			throw new \Exception( sprintf( 'Unable to create missing upload directory "%1$s"', $this->testdir ) );
+			throw new \RuntimeException( sprintf( 'Unable to create missing upload directory "%1$s"', $this->testdir ) );
 		}
 
 		$this->object = new \Aimeos\Controller\ExtJS\Attribute\Import\Text\Standard( $this->context );
@@ -79,7 +79,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$filename = PATH_TESTS . $ds . 'tmp' . $ds . 'attribute-import.zip';
 
 		if( file_put_contents( PATH_TESTS . $ds . 'tmp' . $ds . $csv, implode( '', $data ) ) === false ) {
-			throw new \Exception( sprintf( 'Unable to write test file "%1$s"', $csv ) );
+			throw new \RuntimeException( sprintf( 'Unable to write test file "%1$s"', $csv ) );
 		}
 
 		$zip = new \ZipArchive();
@@ -88,7 +88,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$zip->close();
 
 		if( unlink( PATH_TESTS . $ds . 'tmp' . $ds . $csv ) === false ) {
-			throw new \Exception( 'Unable to remove export file' );
+			throw new \RuntimeException( 'Unable to remove export file' );
 		}
 
 		$params = new \stdClass();
@@ -140,7 +140,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$this->assertEquals( 6, count( $listItems ) );
 
 		if( file_exists( $filename ) !== false ) {
-			throw new \Exception( 'Import file was not removed' );
+			throw new \RuntimeException( 'Import file was not removed' );
 		}
 	}
 

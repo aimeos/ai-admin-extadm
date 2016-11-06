@@ -51,7 +51,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$searchResult = $productManager->searchItems( $criteria );
 
 		if( ( $productItem = reset( $searchResult ) ) === false ) {
-			throw new \Exception( 'No item with product code CNE found' );
+			throw new \RuntimeException( 'No item with product code CNE found' );
 		}
 
 		$params = new \stdClass();
@@ -76,7 +76,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$zip->close();
 
 		if( unlink( $file ) === false ) {
-			throw new \Exception( 'Unable to remove export file' );
+			throw new \RuntimeException( 'Unable to remove export file' );
 		}
 
 		$deCSV = $testdir . DIRECTORY_SEPARATOR . 'de.csv';
@@ -92,11 +92,11 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		fclose( $fh );
 
 		if( unlink( $deCSV ) === false ) {
-			throw new \Exception( 'Unable to remove export file' );
+			throw new \RuntimeException( 'Unable to remove export file' );
 		}
 
 		if( rmdir( $testdir ) === false ) {
-			throw new \Exception( 'Unable to remove test export directory' );
+			throw new \RuntimeException( 'Unable to remove test export directory' );
 		}
 
 		$this->assertEquals( $lines[0][0], 'Language ID' );

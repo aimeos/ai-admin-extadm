@@ -48,7 +48,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$result = $this->object->searchItems( $params );
 
 		if( ( $type = reset( $result ) ) === false ) {
-			throw new \Exception( 'No plugin type found' );
+			throw new \RuntimeException( 'No plugin type found' );
 		}
 
 		$this->assertEquals( 1, count( $type ) );

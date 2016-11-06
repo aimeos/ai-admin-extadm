@@ -70,7 +70,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$results = $productManager->searchItems( $search );
 
 		if( ( $expected = reset( $results ) ) === false ) {
-			throw new \Exception( 'No product item found' );
+			throw new \RuntimeException( 'No product item found' );
 		}
 
 		$saveParams = (object) array(

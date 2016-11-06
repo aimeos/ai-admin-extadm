@@ -70,7 +70,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$search->setConditions( $search->compare( '==', 'order.base.price', '53.50' ) );
 		$results = $baseManager->searchItems( $search );
 		if( ( $expected = reset( $results ) ) === false ) {
-			throw new \Exception( 'No items found.' );
+			throw new \RuntimeException( 'No items found.' );
 		}
 
 		$saveParams = (object) array(

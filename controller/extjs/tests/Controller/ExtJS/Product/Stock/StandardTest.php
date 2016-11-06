@@ -69,7 +69,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$items = $warehouseManager->searchItems( $search );
 
 		if( ( $warehouseItem = reset( $items ) ) === false ) {
-			throw new \Exception( 'No item found' );
+			throw new \RuntimeException( 'No item found' );
 		}
 
 		$search = $productManager->createSearch();
@@ -77,7 +77,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$items = $productManager->searchItems( $search );
 
 		if( ( $productItem = reset( $items ) ) === false ) {
-			throw new \Exception( 'No item found' );
+			throw new \RuntimeException( 'No item found' );
 		}
 
 		$saveParams = (object) array(

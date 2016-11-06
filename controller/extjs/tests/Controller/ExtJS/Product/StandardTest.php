@@ -65,7 +65,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$result = $typeManager->searchItems( $search );
 
 		if( ( $type = reset( $result ) ) === false ) {
-			throw new \Exception( 'No product type found' );
+			throw new \RuntimeException( 'No product type found' );
 		}
 
 		$saveParams = (object) array(

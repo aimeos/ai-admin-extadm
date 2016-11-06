@@ -51,7 +51,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$result = $this->object->searchItems( $params );
 
 		if( ( $service = reset( $result ) ) === false ) {
-			throw new \Exception( 'No service found' );
+			throw new \RuntimeException( 'No service found' );
 		}
 
 		$this->assertEquals( 1, count( $service ) );
@@ -69,7 +69,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$result = $typeManager->searchItems( $search );
 
 		if( ( $type = reset( $result ) ) === false ) {
-			throw new \Exception( 'No service type found' );
+			throw new \RuntimeException( 'No service type found' );
 		}
 
 		$saveParams = (object) array(

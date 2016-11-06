@@ -64,7 +64,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$resultService = $serviceManager->searchItems( $search );
 
 		if( ( $item = reset( $resultService ) ) === false ) {
-			throw new \Exception( 'No service item found' );
+			throw new \RuntimeException( 'No service item found' );
 		}
 
 		$params = (object) array(

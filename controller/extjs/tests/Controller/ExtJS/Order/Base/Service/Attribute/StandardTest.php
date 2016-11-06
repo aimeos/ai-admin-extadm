@@ -69,7 +69,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$search->setConditions( $search->compare( '==', 'order.base.service.code', 'OGONE' ) );
 		$results = $serviceManager->searchItems( $search );
 		if( ( $expected = reset( $results ) ) === false ) {
-			throw new \Exception( 'No service item found' );
+			throw new \RuntimeException( 'No service item found' );
 		}
 
 		$saveParams = (object) array(

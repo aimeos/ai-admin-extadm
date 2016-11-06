@@ -54,7 +54,7 @@ class JsonRpc
 		}
 
 		if( ( $json = json_encode( $list ) ) === null ) {
-			throw new \Exception( 'Unable to encode schemas to JSON' );
+			throw new \RuntimeException( 'Unable to encode schemas to JSON' );
 		}
 
 		return $json;
@@ -75,7 +75,7 @@ class JsonRpc
 		}
 
 		if( ( $json = json_encode( $list ) ) === null ) {
-			throw new \Exception( 'Unable to encode schemas to JSON' );
+			throw new \RuntimeException( 'Unable to encode schemas to JSON' );
 		}
 
 		return $json;
@@ -110,7 +110,7 @@ class JsonRpc
 		);
 
 		if( ( $json = json_encode( $smd ) ) === null ) {
-			throw new \Exception( 'Unable to encode service mapping description to JSON' );
+			throw new \RuntimeException( 'Unable to encode service mapping description to JSON' );
 		}
 
 		return $json;

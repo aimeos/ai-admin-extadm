@@ -90,7 +90,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$items = $productsList->searchItems( $search );
 
 		if( ( $productItem = reset( $items ) ) === false ) {
-			throw new \Exception( 'No item found' );
+			throw new \RuntimeException( 'No item found' );
 		}
 
 		$parentid = $productItem->getParentId();
@@ -133,7 +133,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$result = $controller->searchItems( $params );
 
 		if( ( $priceItem = reset( $result['items'] ) ) === false ) {
-			throw new \Exception( 'No type item found' );
+			throw new \RuntimeException( 'No type item found' );
 		}
 
 		$saveParams = (object) array(

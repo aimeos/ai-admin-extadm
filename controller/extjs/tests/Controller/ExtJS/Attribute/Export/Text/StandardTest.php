@@ -73,7 +73,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$zip->close();
 
 		if( unlink( $file ) === false ) {
-			throw new \Exception( 'Unable to remove export file' );
+			throw new \RuntimeException( 'Unable to remove export file' );
 		}
 
 		$deCSV = $testdir . DIRECTORY_SEPARATOR . 'de.csv';
@@ -88,11 +88,11 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 		fclose( $fh );
 		if( unlink( $deCSV ) === false ) {
-			throw new \Exception( 'Unable to remove export file' );
+			throw new \RuntimeException( 'Unable to remove export file' );
 		}
 
 		if( rmdir( $testdir ) === false ) {
-			throw new \Exception( 'Unable to remove test export directory' );
+			throw new \RuntimeException( 'Unable to remove test export directory' );
 		}
 
 		$this->assertEquals( 'Language ID', $lines[0][0] );

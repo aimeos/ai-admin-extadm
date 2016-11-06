@@ -48,7 +48,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$result = $this->object->searchItems( $params );
 
 		if( ( $type = reset( $result ) ) === false ) {
-			throw new \Exception( 'No service type found' );
+			throw new \RuntimeException( 'No service type found' );
 		}
 
 		$this->assertEquals( 1, count( $type ) );
