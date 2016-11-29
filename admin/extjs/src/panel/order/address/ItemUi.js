@@ -121,6 +121,14 @@ MShop.panel.order.base.address.ItemUi = Ext.extend(Ext.Panel, {
                     name : 'order.base.address.website'
                 }, {
                     xtype : 'displayfield',
+                    fieldLabel : MShop.I18n.dt('admin', 'Latitude'),
+                    name : 'order.base.address.latitude'
+                }, {
+                    xtype : 'displayfield',
+                    fieldLabel : MShop.I18n.dt('admin', 'Longitude'),
+                    name : 'order.base.address.longitude'
+                }, {
+                    xtype : 'displayfield',
                     fieldLabel : MShop.I18n.dt('admin', 'Created'),
                     name : 'order.base.address.ctime'
                 }, {

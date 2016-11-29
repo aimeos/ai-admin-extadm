@@ -151,6 +151,16 @@ MShop.panel.supplier.address.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
                             emptyText : MShop.I18n.dt('admin', 'Web site, e.g. www.example.com'),
                             maxLength : 255
                         }, {
+                            xtype : 'ux.decimalfield',
+                            name : 'supplier.address.latitude',
+                            fieldLabel : MShop.I18n.dt('admin', 'Latitude'),
+                            emptyText : MShop.I18n.dt('admin', 'Latitude, e.g. 50.000000'),
+                        }, {
+                            xtype : 'ux.decimalfield',
+                            name : 'supplier.address.longitude',
+                            fieldLabel : MShop.I18n.dt('admin', 'Longitude'),
+                            emptyText : MShop.I18n.dt('admin', 'Longitude, e.g. 10.000000'),
+                        }, {
                             xtype : 'displayfield',
                             fieldLabel : MShop.I18n.dt('admin', 'Created'),
                             name : 'supplier.address.ctime'

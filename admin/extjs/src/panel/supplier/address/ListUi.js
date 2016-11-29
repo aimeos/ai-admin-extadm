@@ -162,6 +162,16 @@ MShop.panel.supplier.address.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
             width : 150,
             hidden : true
         }, {
+            xtype : 'gridcolumn',
+            dataIndex : 'supplier.address.latitude',
+            width : 100,
+            hidden : true
+        }, {
+            xtype : 'gridcolumn',
+            dataIndex : 'supplier.address.longitude',
+            width : 100,
+            hidden : true
+        }, {
             xtype : 'datecolumn',
             dataIndex : 'supplier.address.ctime',
             header : MShop.I18n.dt('admin', 'Created'),
