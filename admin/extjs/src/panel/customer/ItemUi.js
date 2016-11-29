@@ -239,11 +239,13 @@ MShop.panel.customer.ItemUi = Ext.extend(MShop.panel.AbstractListItemUi, {
                                         name : 'customer.latitude',
                                         fieldLabel : MShop.I18n.dt('admin', 'Latitude'),
                                         emptyText : MShop.I18n.dt('admin', 'Latitude, e.g. 50.000000'),
+                                        decimalPrecision: 6
                                     }, {
                                         xtype : 'ux.decimalfield',
                                         name : 'customer.longitude',
                                         fieldLabel : MShop.I18n.dt('admin', 'Longitude'),
                                         emptyText : MShop.I18n.dt('admin', 'Longitude, e.g. 10.000000'),
+                                        decimalPrecision: 6
                                 }]
                             }]
                         }]
