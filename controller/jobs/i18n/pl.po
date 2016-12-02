@@ -147,7 +147,7 @@ msgid "No type item for \"%1$s/%2$s\" in \"%3$s\" found"
 msgstr "Nie określono typu \"%1$s/%2$s\" w \"%3$s\""
 
 #, php-format
-msgid "No warehouse \"%1$s\" found"
+msgid "No stock type \"%1$s\" found"
 msgstr "Nie zanaleziono magazynu \"%1$s\""
 
 msgid "Optimizes the catalog index for searching products"

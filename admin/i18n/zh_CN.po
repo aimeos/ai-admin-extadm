@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Henry LIU <dadaycm@hotmail.com>, 2016
 # manuel.fries <manuel.fries@gdatasoftware.com>, 2014
@@ -1099,9 +1099,9 @@ msgstr ""
 msgid "Warehouse"
 msgstr ""
 
-#. : Product warehouse item panel title with warehouse label ({0}) and site
+#. : Product stock type item panel title with type label ({0}) and site
 #. code ({1)}
-#. : Product warehouse item panel title with warehouse label ({0}) and site
+#. : Product stock type item panel title with type label ({0}) and site
 #. code ({1)}
 #, python-brace-format
 msgid "Warehouse: {0} ({1})"

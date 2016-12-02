@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Boyd Lamers <boyd.lamers@webits.nl>, 2015
 # Bram Verhaegh <bram@beech.it>, 2015
@@ -1102,9 +1102,9 @@ msgstr "Verificatie datum"
 msgid "Warehouse"
 msgstr "Magazijn"
 
-#. : Product warehouse item panel title with warehouse label ({0}) and site
+#. : Product stock type item panel title with type label ({0}) and site
 #. code ({1)}
-#. : Product warehouse item panel title with warehouse label ({0}) and site
+#. : Product stock type item panel title with type label ({0}) and site
 #. code ({1)}
 #, python-brace-format
 msgid "Warehouse: {0} ({1})"

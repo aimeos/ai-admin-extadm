@@ -13,11 +13,11 @@ MShop.panel.product.stock.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
     siteidProperty : 'product.stock.siteid',
     itemUiXType : 'MShop.panel.product.stock.itemui',
 
-    autoExpandColumn : 'product-stock-warehouse',
+    autoExpandColumn : 'product-stock-stocktype',
 
     filterConfig : {
         filters : [{
-            dataIndex : 'product.stock.warehouse.label',
+            dataIndex : 'product.stock.type.label',
             operator : '=~',
             value : ''
         }]
@@ -59,7 +59,7 @@ MShop.panel.product.stock.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
     },
 
     getColumns : function() {
-        this.typeStore = MShop.GlobalStoreMgr.get('Product_Stock_Warehouse');
+        this.typeStore = MShop.GlobalStoreMgr.get('Product_Stock_Type');
 
         return [
             {
@@ -79,13 +79,13 @@ MShop.panel.product.stock.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
             },
             {
                 xtype : 'gridcolumn',
-                dataIndex : 'product.stock.warehouseid',
-                header : MShop.I18n.dt('admin', 'Warehouse'),
+                dataIndex : 'product.stock.typeid',
+                header : MShop.I18n.dt('admin', 'Type'),
                 align : 'center',
-                id : 'product-stock-warehouse',
+                id : 'product-stock-stocktype',
                 renderer : this.typeColumnRenderer.createDelegate(this, [
                     this.typeStore,
-                    "product.stock.warehouse.label"], true)
+                    "product.stock.type.label"], true)
             },
             {
                 xtype : 'gridcolumn',

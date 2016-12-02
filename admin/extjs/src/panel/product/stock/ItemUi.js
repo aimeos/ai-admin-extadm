@@ -7,7 +7,7 @@ Ext.ns('MShop.panel.product.stock');
 
 /**
  * Concrete ItemUi
- * 
+ *
  * @extends Mshop.panel.AbstractListItemUi
  */
 MShop.panel.product.stock.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
@@ -64,19 +64,19 @@ MShop.panel.product.stock.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
                             name : 'product.stock.id'
                         }, {
                             xtype : 'combo',
-                            fieldLabel : MShop.I18n.dt('admin', 'Warehouse'),
-                            name : 'product.stock.warehouseid',
+                            fieldLabel : MShop.I18n.dt('admin', 'Type'),
+                            name : 'product.stock.typeid',
                             mode : 'local',
-                            store : MShop.GlobalStoreMgr.get('Product_Stock_Warehouse', this.domain),
-                            displayField : 'product.stock.warehouse.label',
-                            valueField : 'product.stock.warehouse.id',
+                            store : MShop.GlobalStoreMgr.get('Product_Stock_Type', this.domain),
+                            displayField : 'product.stock.type.label',
+                            valueField : 'product.stock.type.id',
                             forceSelection : true,
                             triggerAction : 'all',
                             typeAhead : true,
                             listeners : {
                                 'render' : {
                                     fn : function() {
-                                        var record, index = this.store.find('product.stock.warehouse.code', 'default');
+                                        var record, index = this.store.find('product.stock.type.code', 'default');
                                         if((record = this.store.getAt(index))) {
                                             this.setValue(record.id);
                                         }

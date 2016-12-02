@@ -3,17 +3,17 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2011
- * @copyright Aimeos (aimeos.org), 2015
+ * @copyright Aimeos (aimeos.org), 2015-2016
  * @package Controller
  * @subpackage ExtJS
  */
 
 
-namespace Aimeos\Controller\ExtJS\Product\Stock\Warehouse;
+namespace Aimeos\Controller\ExtJS\Product\Stock\Type;
 
 
 /**
- * ExtJS product stock warehouse controller for admin interfaces.
+ * ExtJS product stock type controller for admin interfaces.
  *
  * @package Controller
  * @subpackage ExtJS
@@ -26,13 +26,13 @@ class Standard
 
 
 	/**
-	 * Initializes the product stock warehouse controller.
+	 * Initializes the product stock type controller.
 	 *
 	 * @param \Aimeos\MShop\Context\Item\Iface $context MShop context object
 	 */
 	public function __construct( \Aimeos\MShop\Context\Item\Iface $context )
 	{
-		parent::__construct( $context, 'Product_Stock_Warehouse' );
+		parent::__construct( $context, 'Product_Stock_Type' );
 	}
 
 
@@ -44,7 +44,7 @@ class Standard
 	protected function getManager()
 	{
 		if( $this->manager === null ) {
-			$this->manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'product/stock/warehouse' );
+			$this->manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'product/stock/type' );
 		}
 
 		return $this->manager;
@@ -58,6 +58,6 @@ class Standard
 	 */
 	protected function getPrefix()
 	{
-		return 'product.stock.warehouse';
+		return 'product.stock.type';
 	}
 }
