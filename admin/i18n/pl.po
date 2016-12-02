@@ -9,20 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-16 23:34+0200\n"
+"POT-Creation-Date: 2016-12-02 10:44+0100\n"
 "PO-Revision-Date: 2016-07-16 21:36+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Polish (http://www.transifex.com/aimeos/aimeos-core/language/pl/)\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-
-#. / price format with value (%1$s) and currency (%2$s)
-#, php-format
-msgid "%1$s %2$s"
-msgstr "%1$s %2$s"
 
 msgid "Actual current price"
 msgstr "Aktualna cena"
@@ -264,16 +259,14 @@ msgstr "Klient"
 
 #. : Customer address item panel title with customer name ({0}) and site code
 #. ({1)}
-#. : Customer address item panel title with customer name ({0}) and site code
-#. ({1)}
+#. : Customer address item panel title with customer name ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Customer address: {0} ({1})"
 msgstr ""
 
 #. : Customer group item panel title with customer name ({0}) and site code
 #. ({1)}
-#. : Customer group item panel title with customer name ({0}) and site code
-#. ({1)}
+#. : Customer group item panel title with customer name ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Customer group: {0} ({1})"
 msgstr ""
@@ -306,9 +299,6 @@ msgstr "Data dostawy"
 
 msgid "Delivery status"
 msgstr "Status dostawy"
-
-msgid "Delivery types"
-msgstr ""
 
 msgid "Details"
 msgstr "Szczegóły"
@@ -474,7 +464,10 @@ msgstr ""
 msgid "Lastname"
 msgstr "Nazwisko"
 
-msgid "Latest orders"
+msgid "Latitude"
+msgstr ""
+
+msgid "Latitude, e.g. 50.000000"
 msgstr ""
 
 msgid "Length"
@@ -521,8 +514,7 @@ msgstr "Lokalizacje"
 
 #. : Locale currency item panel title with currency label ({0}) and currency
 #. code ({1)}
-#. : Locale currency item panel title with currency label ({0}) and currency
-#. code ({1)}
+#. : Locale currency item panel title with currency label ({0}) and currency code ({1)}
 #, python-brace-format
 msgid "Locale currency: {0} ({1})"
 msgstr "Waluta lokalizacji: {0} ({1})"
@@ -534,8 +526,7 @@ msgstr "Szczegóły lokalizacji ({1})"
 
 #. : Locale language item panel title with language label ({0}) and language
 #. code ({1)}
-#. : Locale language item panel title with language label ({0}) and language
-#. code ({1)}
+#. : Locale language item panel title with language label ({0}) and language code ({1)}
 #, python-brace-format
 msgid "Locale language: {0} ({1})"
 msgstr "Język lokalizacji: {0} ({1})"
@@ -549,6 +540,12 @@ msgid "Logs"
 msgstr "Logi"
 
 msgid "Long description"
+msgstr ""
+
+msgid "Longitude"
+msgstr ""
+
+msgid "Longitude, e.g. 10.000000"
 msgstr ""
 
 msgid "Media"
@@ -633,15 +630,6 @@ msgstr "Szczegóły poszczególnych pozycji zamówienia"
 msgid "Order product ID"
 msgstr "ID produktu w zamówieniu"
 
-msgid "Orders by day"
-msgstr ""
-
-msgid "Orders by hour"
-msgstr ""
-
-msgid "Orders by payment status"
-msgstr ""
-
 msgid "Overview"
 msgstr "Przegląd"
 
@@ -667,9 +655,6 @@ msgstr "Data płatności"
 msgid "Payment status"
 msgstr "Status płatności"
 
-msgid "Payment types"
-msgstr ""
-
 msgid "Physical values"
 msgstr ""
 
@@ -679,9 +664,7 @@ msgstr "Proszę ponownie sprawdzić Twoje dane"
 msgid "Please save the coupon first before you can add codes"
 msgstr "Zanim będziesz mógł dodać kody, musisz najpierw zapisać kupon"
 
-msgid ""
-"Please select an item on the right side and add it via drag and drop to this"
-" list."
+msgid "Please select an item on the right side and add it via drag and drop to this list."
 msgstr "Proszę wybrać pozycję z prawej strony i dodać do listy metodą chwyć i upuść (ang.drag and drop)"
 
 msgid "Plugin"
@@ -767,10 +750,8 @@ msgstr "Cena produktu"
 msgid "Product property type"
 msgstr ""
 
-#. : Product property.type item panel title with type label ({0}) and site
-#. code ({1)}
-#. : Product property type item panel title with type label ({0}) and site
-#. code ({1)}
+#. : Product property.type item panel title with type label ({0}) and site code ({1)}
+#. : Product property type item panel title with type label ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Product property type: {0} ({1})"
 msgstr ""
@@ -783,6 +764,15 @@ msgstr "Rabat produktu"
 
 msgid "Product stock"
 msgstr "Produkt w magazynie"
+
+#, fuzzy
+msgid "Product stock type"
+msgstr "Produkt w magazynie"
+
+#. : Product stock type item panel title with type label ({0}) and site code ({1)}
+#, fuzzy, python-brace-format
+msgid "Product stock type: {0} ({1})"
+msgstr "Typ produktu: {0} ({1})"
 
 msgid "Product supplier (optional)"
 msgstr "Dostawca produktu (opcjonalnie)"
@@ -963,8 +953,7 @@ msgstr "Dostawca"
 
 #. : Supplier address item panel title with supplier name ({0}) and site code
 #. ({1)}
-#. : Supplier address item panel title with supplier name ({0}) and site code
-#. ({1)}
+#. : Supplier address item panel title with supplier name ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Supplier address: {0} ({1})"
 msgstr ""
@@ -1025,15 +1014,10 @@ msgstr "Tekst: {0} ({1})"
 msgid "Texts"
 msgstr ""
 
-msgid ""
-"The file with the exported texts will be available within a few minutes. It "
-"can then be downloaded from the \"Job\" panel of the \"Overview\" tab."
+msgid "The file with the exported texts will be available within a few minutes. It can then be downloaded from the \"Job\" panel of the \"Overview\" tab."
 msgstr "Plik z wyeksportowanymi tekstami będzie dostępny w przeciągu kilku minut. Będzie można go pobrać z panelu Zadania w zakładce Przegląd."
 
-msgid ""
-"The texts of your uploaded file will be imported within a few minutes. You "
-"can check the status of the import in the \"Job\" panel of the \"Overview\" "
-"tab"
+msgid "The texts of your uploaded file will be imported within a few minutes. You can check the status of the import in the \"Job\" panel of the \"Overview\" tab"
 msgstr "Teksty z załadowanego pliku zostaną zaimportowane w przeciągu kilku minut. Status importu można sprawdzić w panelu Zadania w zakładce Przegląd."
 
 msgid "This combination already exists"
@@ -1101,8 +1085,7 @@ msgstr "Magazyn"
 
 #. : Product stock type item panel title with type label ({0}) and site
 #. code ({1)}
-#. : Product stock type item panel title with type label ({0}) and site
-#. code ({1)}
+#. : Product stock type item panel title with type label ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Warehouse: {0} ({1})"
 msgstr "Magazyn: {0} ({1})"
@@ -1128,15 +1111,10 @@ msgstr "YYYY-MM-DD hh:mm:ss (opcjonalnie)"
 msgid "You are going to delete one or more items. Would you like to proceed?"
 msgstr "Zamierzasz usunąć jedną bądź kilka pozycji. Jesteś tego pewny?"
 
-msgid ""
-"You are going to flush the complete cache for the current site. Would you "
-"like to proceed?"
+msgid "You are going to flush the complete cache for the current site. Would you like to proceed?"
 msgstr "Zamierzasz wyczyścić całą pamięć podręczną bieżącej strony. Czy chcesz kontynuować?"
 
 msgid "Zip code"
-msgstr ""
-
-msgid "dashboard"
 msgstr ""
 
 msgid "new"
@@ -1165,9 +1143,6 @@ msgstr "odmowa"
 
 msgid "pay:unfinished"
 msgstr "niezakończona"
-
-msgid "product"
-msgstr "Produkt"
 
 msgid "stat:deleted"
 msgstr "usuniętę"
@@ -1213,3 +1188,9 @@ msgstr ""
 
 msgid "yy-mm-dd"
 msgstr ""
+
+#~ msgid "%1$s %2$s"
+#~ msgstr "%1$s %2$s"
+
+#~ msgid "product"
+#~ msgstr "Produkt"

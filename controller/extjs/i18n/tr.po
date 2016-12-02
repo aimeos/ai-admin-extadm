@@ -1,138 +1,248 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Metal <meteoramic@yahoo.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-16 23:34+0200\n"
+"POT-Creation-Date: 2016-12-02 10:44+0100\n"
 "PO-Revision-Date: 2016-07-16 21:36+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Turkish (http://www.transifex.com/aimeos/aimeos-core/language/tr/)\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid ""
-"Authorized payments of orders will be captured after dispatching or after a "
-"configurable amount of time"
-msgstr "Sevkiyattan veya yapılandırılabilir bir zaman zarfından sonra siparişlerin yetkili ödemeleri çekilecektir"
-
-msgid "Batch update of payment/delivery status"
-msgstr "Ödeme/teslimat durumunun toplu güncellemesi"
-
-msgid "Cache cleanup"
-msgstr "Önbellek temizleme"
-
-msgid "Capture authorized payments"
-msgstr "Yetkili ödemeleri çek"
-
-msgid "Catalog index optimization"
-msgstr "Katalog dizin optimizasyonu"
-
-msgid "Catalog index rebuild"
-msgstr "Katalog dizin yeniden oluşturma"
-
-msgid "Creates a product site map for search engines"
-msgstr "Arama motorları için bir ürün site haritası oluşturur"
-
-msgid "Creates bought together product suggestions"
-msgstr "Beraber satın alınan ürün önerileri oluşturur"
-
-msgid ""
-"Deletes unfinished orders an makes their products and coupon codes available"
-" again"
-msgstr "Bitmemiş siparişleri siler ve onların ürünlerini ve kupon kodlarını kullanılabilir hale getirir"
-
-msgid "Deletes unpaid orders to keep the database clean"
-msgstr "Veritabanını temiz tutmak için ödenmemiş siparişleri siler"
-
-msgid "Executes payment or delivery service providers that uses batch updates"
-msgstr "Toplu güncelleştirmeleri kullanan ödeme veya teslimat servisi sağlayıcılarını çalıştırır"
-
-msgid "Exports all available products"
-msgstr "Mevcut tüm ürünleri dışa aktarır"
-
-msgid "Imports new and updates existing products from CSV files"
-msgstr "CSV dosyasından yeni ürün içe aktarır veya mevcut ürünleri günceller"
+#, php-format
+msgid "- %1$s : %2$s\n"
+msgstr "- %1$s : %2$s\n"
 
 #, php-format
-msgid "Invalid characters in class name \"%1$s\""
+msgid "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
+msgstr "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
+
+#, php-format
+msgid "Class \"%1$s\" does not implement \"%2$s\""
+msgstr "Class \"%1$s\" does not implement \"%2$s\""
+
+#, php-format
+msgid "Class \"%1$s\" not found"
+msgstr "Class \"%1$s\" not found"
+
+#, php-format
+msgid "Controller path is empty"
+msgstr "Controller path is empty"
+
+#, php-format
+msgid "Could not set permissions \"%1$s\" for file \"%2$s\""
+msgstr "Could not set permissions \"%1$s\" for file \"%2$s\""
+
+#, php-format
+msgid "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
+msgstr "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
+
+#, php-format
+msgid "Create export directory for attribute IDs: %1$s"
+msgstr "Create export directory for attribute IDs: %1$s"
+
+#, php-format
+msgid "Create export directory for catalog IDs: %1$s"
+msgstr "Create export directory for catalog IDs: %1$s"
+
+#, php-format
+msgid "Create export directory for product IDs: %1$s"
+msgstr "Create export directory for product IDs: %1$s"
+
+#, php-format
+msgid "Deleting file \"%1$s\" failed"
+msgstr "Deleting file \"%1$s\" failed"
+
+msgid "Download"
+msgstr "Download"
+
+#, php-format
+msgid "Error in %1$s text import: %2$s"
+msgstr "Error in %1$s text import: %2$s"
+
+#, php-format
+msgid "Factory \"%1$s\" not found"
+msgstr "Factory \"%1$s\" not found"
+
+#, php-format
+msgid "File \"%1$s\" was not uploaded"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Invalid class name \"%1$s\""
 msgstr "\"%1$s\" class adında geçersiz karakterler"
 
 #, php-format
-msgid "Invalid product lines in \"%1$s\": %2$d/%3$d"
+msgid "Invalid controller \"%1$s\" in \"%2$s\""
+msgstr "Invalid controller \"%1$s\" in \"%2$s\""
+
+#, fuzzy, php-format
+msgid "Invalid controller factory name \"%1$s\""
+msgstr "\"%1$s\" class adında geçersiz karakterler"
+
+#, fuzzy, php-format
+msgid "Invalid domain \"%1$s\""
+msgstr "\"%1$s\" class adında geçersiz karakterler"
+
+#, fuzzy, php-format
+msgid "Invalid factory \"%1$s\""
+msgstr "\"%1$s\" class adında geçersiz karakterler"
+
+#, fuzzy, php-format
+msgid "Invalid list type \"%1$s\""
+msgstr "\"%1$s\" class adında geçersiz karakterler"
+
+#, php-format
+msgid "Invalid method \"%1$s\" in request"
+msgstr "Invalid method \"%1$s\" in request"
+
+#, php-format
+msgid "Invalid row from %1$s text import: %2$s"
+msgstr "Invalid row from %1$s text import: %2$s"
+
+#, fuzzy, php-format
+msgid "Invalid sort direction \"%1$s\""
 msgstr "\"%1$s\" içinde geçersiz ürün hatları: %2$d/%3$d"
 
-msgid "Log cleanup"
-msgstr "Günlük temizleme"
+#, fuzzy, php-format
+msgid "Invalid text type \"%1$s\""
+msgstr "\"%1$s\" class adında geçersiz karakterler"
 
 #, php-format
-msgid "No \"product.code\" column in CSV mapping found"
-msgstr "CSV mapping'de \"product.code\" sütunu bulunamadı"
-
-msgid "Optimizes the catalog index for searching products"
-msgstr "Arama ürünleri için katalog dizinini optimize eder"
-
-msgid "Process order delivery services"
-msgstr "Sipariş dağıtım hizmetlerini işleme tabi tut"
-
-msgid "Product export"
-msgstr "Ürün dışa aktarma"
-
-msgid "Product import CSV"
-msgstr "Ürün içe aktarma CSV"
-
-msgid "Product site map"
-msgstr "Ürün site haritası"
-
-msgid "Products bought together"
-msgstr "Beraber satın alınan ürünler"
-
-msgid "Rebuilds the catalog index for searching products"
-msgstr "Arama ürünleri için katalog dizinini yeniden oluşturur"
-
-msgid "Removes the expired entries from the cache"
-msgstr "Süresi dolan girişleri önbellekten kaldırır"
-
-msgid ""
-"Removes the old log entries from the database and archives them (optional)"
-msgstr "Eski günlük girişlerini veri tabanından kaldırır ve arşivler (isteğe bağlı)"
-
-msgid "Removes unfinished orders"
-msgstr "bitmemiş siparişleri kaldırır"
-
-msgid "Removes unpaid orders"
-msgstr "Ödenmemiş siparişleri kaldırır"
+msgid "List item doesn't implement \"%1$s\""
+msgstr "List item doesn't implement \"%1$s\""
 
 #, php-format
-msgid "Required mapping key \"%1$s\" is missing or contains no array"
+msgid "Method \"%1$s\" not found"
+msgstr "Method \"%1$s\" not found"
+
+#, php-format
+msgid "Missing parameter \"%1$s\""
+msgstr "Missing parameter \"%1$s\""
+
+#, php-format
+msgid "No allowed image types configured for \"%1$s\""
+msgstr "No allowed image types configured for \"%1$s\""
+
+#, fuzzy, php-format
+msgid "Required attribute \"%1$s\" missing in request"
 msgstr "Gerekli haritalama anahtarı \"%1$s\" eksik veya hiçbir dizi içermiyor"
 
-msgid "Sends paid orders to the ERP system or logistic partner"
-msgstr "ERP sistemine veya lojistik ortağa ödenen siparişleri gönderir"
-
 #, php-format
-msgid "Started product import from \"%1$s\" (%2$s)"
-msgstr "\"%1$s\" (%2$s)'dan ürün içe aktarma başladı"
+msgid "Site item for code \"%1$s\" not found"
+msgstr "Site item for code \"%1$s\" not found"
 
-#, php-format
-msgid "Unable to import product with code \"%1$s\": %2$s"
+#, fuzzy, php-format
+msgid "Unable to call method \"%1$s\""
 msgstr "\"%1$s\" kodlu ürün içe aktarılamıyor: %2$s"
 
-#, php-format
-msgid "Unable to move imported file"
+#, fuzzy, php-format
+msgid "Unable to create directory \"%1$s\""
+msgstr "\"%1$s\" kodlu ürün içe aktarılamıyor: %2$s"
+
+#, fuzzy, php-format
+msgid "Unable to create file in \"%1$s\""
 msgstr "İçe aktarılan dosya taşınamıyor"
 
 #, php-format
-msgid "aimeos-products-%d.xml"
-msgstr "aimeos-products-%d.xml"
+msgid "Uploaded file could not be moved to upload directory \"%1$s\""
+msgstr "Uploaded file could not be moved to upload directory \"%1$s\""
 
-#, php-format
-msgid "aimeos-sitemap-%d.xml"
-msgstr "aimeos-sitemap-%d.xml"
+#~ msgid "Authorized payments of orders will be captured after dispatching or after a configurable amount of time"
+#~ msgstr "Sevkiyattan veya yapılandırılabilir bir zaman zarfından sonra siparişlerin yetkili ödemeleri çekilecektir"
+
+#~ msgid "Batch update of payment/delivery status"
+#~ msgstr "Ödeme/teslimat durumunun toplu güncellemesi"
+
+#~ msgid "Cache cleanup"
+#~ msgstr "Önbellek temizleme"
+
+#~ msgid "Capture authorized payments"
+#~ msgstr "Yetkili ödemeleri çek"
+
+#~ msgid "Catalog index optimization"
+#~ msgstr "Katalog dizin optimizasyonu"
+
+#~ msgid "Catalog index rebuild"
+#~ msgstr "Katalog dizin yeniden oluşturma"
+
+#~ msgid "Creates a product site map for search engines"
+#~ msgstr "Arama motorları için bir ürün site haritası oluşturur"
+
+#~ msgid "Creates bought together product suggestions"
+#~ msgstr "Beraber satın alınan ürün önerileri oluşturur"
+
+#~ msgid "Deletes unfinished orders an makes their products and coupon codes available again"
+#~ msgstr "Bitmemiş siparişleri siler ve onların ürünlerini ve kupon kodlarını kullanılabilir hale getirir"
+
+#~ msgid "Deletes unpaid orders to keep the database clean"
+#~ msgstr "Veritabanını temiz tutmak için ödenmemiş siparişleri siler"
+
+#~ msgid "Executes payment or delivery service providers that uses batch updates"
+#~ msgstr "Toplu güncelleştirmeleri kullanan ödeme veya teslimat servisi sağlayıcılarını çalıştırır"
+
+#~ msgid "Exports all available products"
+#~ msgstr "Mevcut tüm ürünleri dışa aktarır"
+
+#~ msgid "Imports new and updates existing products from CSV files"
+#~ msgstr "CSV dosyasından yeni ürün içe aktarır veya mevcut ürünleri günceller"
+
+#~ msgid "Log cleanup"
+#~ msgstr "Günlük temizleme"
+
+#~ msgid "No \"product.code\" column in CSV mapping found"
+#~ msgstr "CSV mapping'de \"product.code\" sütunu bulunamadı"
+
+#~ msgid "Optimizes the catalog index for searching products"
+#~ msgstr "Arama ürünleri için katalog dizinini optimize eder"
+
+#~ msgid "Process order delivery services"
+#~ msgstr "Sipariş dağıtım hizmetlerini işleme tabi tut"
+
+#~ msgid "Product export"
+#~ msgstr "Ürün dışa aktarma"
+
+#~ msgid "Product import CSV"
+#~ msgstr "Ürün içe aktarma CSV"
+
+#~ msgid "Product site map"
+#~ msgstr "Ürün site haritası"
+
+#~ msgid "Products bought together"
+#~ msgstr "Beraber satın alınan ürünler"
+
+#~ msgid "Rebuilds the catalog index for searching products"
+#~ msgstr "Arama ürünleri için katalog dizinini yeniden oluşturur"
+
+#~ msgid "Removes the expired entries from the cache"
+#~ msgstr "Süresi dolan girişleri önbellekten kaldırır"
+
+#~ msgid "Removes the old log entries from the database and archives them (optional)"
+#~ msgstr "Eski günlük girişlerini veri tabanından kaldırır ve arşivler (isteğe bağlı)"
+
+#~ msgid "Removes unfinished orders"
+#~ msgstr "bitmemiş siparişleri kaldırır"
+
+#~ msgid "Removes unpaid orders"
+#~ msgstr "Ödenmemiş siparişleri kaldırır"
+
+#~ msgid "Sends paid orders to the ERP system or logistic partner"
+#~ msgstr "ERP sistemine veya lojistik ortağa ödenen siparişleri gönderir"
+
+#~ msgid "Started product import from \"%1$s\" (%2$s)"
+#~ msgstr "\"%1$s\" (%2$s)'dan ürün içe aktarma başladı"
+
+#~ msgid "aimeos-products-%d.xml"
+#~ msgstr "aimeos-products-%d.xml"
+
+#~ msgid "aimeos-sitemap-%d.xml"
+#~ msgstr "aimeos-sitemap-%d.xml"

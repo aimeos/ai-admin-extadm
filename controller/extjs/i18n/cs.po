@@ -1,138 +1,176 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Martin Vyšohlíd <vysohlidm@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-16 23:34+0200\n"
+"POT-Creation-Date: 2016-12-02 10:44+0100\n"
 "PO-Revision-Date: 2016-09-26 21:55+0000\n"
 "Last-Translator: Martin Vyšohlíd <vysohlidm@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/aimeos/aimeos-core/language/cs/)\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-msgid ""
-"Authorized payments of orders will be captured after dispatching or after a "
-"configurable amount of time"
-msgstr "Potvrzené platby objednávek budou získány po odeslání nebo nastavitelném časovém intervalu"
-
-msgid "Batch update of payment/delivery status"
-msgstr "Dávková aktualizace plateb/objednávek"
-
-msgid "Cache cleanup"
-msgstr "Vymazat mezipaměť"
-
-msgid "Capture authorized payments"
-msgstr "Načíst autorizované platby"
-
-msgid "Catalog index optimization"
-msgstr "Optimalizace indexu katalogu"
-
-msgid "Catalog index rebuild"
-msgstr "Znovu sestavit index katalogu"
-
-msgid "Creates a product site map for search engines"
-msgstr ""
-
-msgid "Creates bought together product suggestions"
-msgstr ""
-
-msgid ""
-"Deletes unfinished orders an makes their products and coupon codes available"
-" again"
-msgstr ""
-
-msgid "Deletes unpaid orders to keep the database clean"
-msgstr ""
-
-msgid "Executes payment or delivery service providers that uses batch updates"
-msgstr ""
-
-msgid "Exports all available products"
-msgstr ""
-
-msgid "Imports new and updates existing products from CSV files"
-msgstr ""
+#, php-format
+msgid "- %1$s : %2$s\n"
+msgstr "- %1$s : %2$s\n"
 
 #, php-format
-msgid "Invalid characters in class name \"%1$s\""
+msgid "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
+msgstr "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
+
+#, php-format
+msgid "Class \"%1$s\" does not implement \"%2$s\""
+msgstr "Class \"%1$s\" does not implement \"%2$s\""
+
+#, php-format
+msgid "Class \"%1$s\" not found"
+msgstr "Class \"%1$s\" not found"
+
+#, php-format
+msgid "Controller path is empty"
+msgstr "Controller path is empty"
+
+#, php-format
+msgid "Could not set permissions \"%1$s\" for file \"%2$s\""
+msgstr "Could not set permissions \"%1$s\" for file \"%2$s\""
+
+#, php-format
+msgid "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
+msgstr "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
+
+#, php-format
+msgid "Create export directory for attribute IDs: %1$s"
+msgstr "Create export directory for attribute IDs: %1$s"
+
+#, php-format
+msgid "Create export directory for catalog IDs: %1$s"
+msgstr "Create export directory for catalog IDs: %1$s"
+
+#, php-format
+msgid "Create export directory for product IDs: %1$s"
+msgstr "Create export directory for product IDs: %1$s"
+
+#, php-format
+msgid "Deleting file \"%1$s\" failed"
+msgstr "Deleting file \"%1$s\" failed"
+
+msgid "Download"
+msgstr "Download"
+
+#, php-format
+msgid "Error in %1$s text import: %2$s"
+msgstr "Error in %1$s text import: %2$s"
+
+#, php-format
+msgid "Factory \"%1$s\" not found"
+msgstr "Factory \"%1$s\" not found"
+
+#, php-format
+msgid "File \"%1$s\" was not uploaded"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Invalid class name \"%1$s\""
 msgstr "Zakázané znaky ve jméně třídy \"%1$s\""
 
 #, php-format
-msgid "Invalid product lines in \"%1$s\": %2$d/%3$d"
-msgstr ""
+msgid "Invalid controller \"%1$s\" in \"%2$s\""
+msgstr "Invalid controller \"%1$s\" in \"%2$s\""
 
-msgid "Log cleanup"
-msgstr ""
+#, fuzzy, php-format
+msgid "Invalid controller factory name \"%1$s\""
+msgstr "Zakázané znaky ve jméně třídy \"%1$s\""
 
-#, php-format
-msgid "No \"product.code\" column in CSV mapping found"
-msgstr ""
+#, fuzzy, php-format
+msgid "Invalid domain \"%1$s\""
+msgstr "Zakázané znaky ve jméně třídy \"%1$s\""
 
-msgid "Optimizes the catalog index for searching products"
-msgstr ""
+#, fuzzy, php-format
+msgid "Invalid factory \"%1$s\""
+msgstr "Zakázané znaky ve jméně třídy \"%1$s\""
 
-msgid "Process order delivery services"
-msgstr ""
-
-msgid "Product export"
-msgstr ""
-
-msgid "Product import CSV"
-msgstr ""
-
-msgid "Product site map"
-msgstr ""
-
-msgid "Products bought together"
-msgstr ""
-
-msgid "Rebuilds the catalog index for searching products"
-msgstr ""
-
-msgid "Removes the expired entries from the cache"
-msgstr ""
-
-msgid ""
-"Removes the old log entries from the database and archives them (optional)"
-msgstr ""
-
-msgid "Removes unfinished orders"
-msgstr ""
-
-msgid "Removes unpaid orders"
-msgstr ""
+#, fuzzy, php-format
+msgid "Invalid list type \"%1$s\""
+msgstr "Zakázané znaky ve jméně třídy \"%1$s\""
 
 #, php-format
-msgid "Required mapping key \"%1$s\" is missing or contains no array"
-msgstr ""
-
-msgid "Sends paid orders to the ERP system or logistic partner"
-msgstr ""
+msgid "Invalid method \"%1$s\" in request"
+msgstr "Invalid method \"%1$s\" in request"
 
 #, php-format
-msgid "Started product import from \"%1$s\" (%2$s)"
-msgstr ""
+msgid "Invalid row from %1$s text import: %2$s"
+msgstr "Invalid row from %1$s text import: %2$s"
+
+#, fuzzy, php-format
+msgid "Invalid sort direction \"%1$s\""
+msgstr "Zakázané znaky ve jméně třídy \"%1$s\""
+
+#, fuzzy, php-format
+msgid "Invalid text type \"%1$s\""
+msgstr "Zakázané znaky ve jméně třídy \"%1$s\""
 
 #, php-format
-msgid "Unable to import product with code \"%1$s\": %2$s"
-msgstr ""
+msgid "List item doesn't implement \"%1$s\""
+msgstr "List item doesn't implement \"%1$s\""
 
 #, php-format
-msgid "Unable to move imported file"
-msgstr ""
+msgid "Method \"%1$s\" not found"
+msgstr "Method \"%1$s\" not found"
 
 #, php-format
-msgid "aimeos-products-%d.xml"
-msgstr ""
+msgid "Missing parameter \"%1$s\""
+msgstr "Missing parameter \"%1$s\""
 
 #, php-format
-msgid "aimeos-sitemap-%d.xml"
+msgid "No allowed image types configured for \"%1$s\""
+msgstr "No allowed image types configured for \"%1$s\""
+
+#, php-format
+msgid "Required attribute \"%1$s\" missing in request"
+msgstr "Required attribute \"%1$s\" missing in request"
+
+#, php-format
+msgid "Site item for code \"%1$s\" not found"
+msgstr "Site item for code \"%1$s\" not found"
+
+#, php-format
+msgid "Unable to call method \"%1$s\""
+msgstr "Unable to call method \"%1$s\""
+
+#, php-format
+msgid "Unable to create directory \"%1$s\""
 msgstr ""
+
+#, fuzzy, php-format
+msgid "Unable to create file in \"%1$s\""
+msgstr "Zakázané znaky ve jméně třídy \"%1$s\""
+
+#, php-format
+msgid "Uploaded file could not be moved to upload directory \"%1$s\""
+msgstr "Uploaded file could not be moved to upload directory \"%1$s\""
+
+#~ msgid "Authorized payments of orders will be captured after dispatching or after a configurable amount of time"
+#~ msgstr "Potvrzené platby objednávek budou získány po odeslání nebo nastavitelném časovém intervalu"
+
+#~ msgid "Batch update of payment/delivery status"
+#~ msgstr "Dávková aktualizace plateb/objednávek"
+
+#~ msgid "Cache cleanup"
+#~ msgstr "Vymazat mezipaměť"
+
+#~ msgid "Capture authorized payments"
+#~ msgstr "Načíst autorizované platby"
+
+#~ msgid "Catalog index optimization"
+#~ msgstr "Optimalizace indexu katalogu"
+
+#~ msgid "Catalog index rebuild"
+#~ msgstr "Znovu sestavit index katalogu"

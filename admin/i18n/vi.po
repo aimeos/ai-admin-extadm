@@ -7,20 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-16 23:34+0200\n"
+"POT-Creation-Date: 2016-12-02 10:44+0100\n"
 "PO-Revision-Date: 2016-07-16 21:36+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Vietnamese (http://www.transifex.com/aimeos/aimeos-core/language/vi/)\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#. / price format with value (%1$s) and currency (%2$s)
-#, php-format
-msgid "%1$s %2$s"
-msgstr "%1$s %2$s"
 
 msgid "Actual current price"
 msgstr ""
@@ -262,16 +257,14 @@ msgstr ""
 
 #. : Customer address item panel title with customer name ({0}) and site code
 #. ({1)}
-#. : Customer address item panel title with customer name ({0}) and site code
-#. ({1)}
+#. : Customer address item panel title with customer name ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Customer address: {0} ({1})"
 msgstr ""
 
 #. : Customer group item panel title with customer name ({0}) and site code
 #. ({1)}
-#. : Customer group item panel title with customer name ({0}) and site code
-#. ({1)}
+#. : Customer group item panel title with customer name ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Customer group: {0} ({1})"
 msgstr ""
@@ -303,9 +296,6 @@ msgid "Delivery date"
 msgstr ""
 
 msgid "Delivery status"
-msgstr ""
-
-msgid "Delivery types"
 msgstr ""
 
 msgid "Details"
@@ -472,7 +462,10 @@ msgstr ""
 msgid "Lastname"
 msgstr ""
 
-msgid "Latest orders"
+msgid "Latitude"
+msgstr ""
+
+msgid "Latitude, e.g. 50.000000"
 msgstr ""
 
 msgid "Length"
@@ -519,8 +512,7 @@ msgstr ""
 
 #. : Locale currency item panel title with currency label ({0}) and currency
 #. code ({1)}
-#. : Locale currency item panel title with currency label ({0}) and currency
-#. code ({1)}
+#. : Locale currency item panel title with currency label ({0}) and currency code ({1)}
 #, python-brace-format
 msgid "Locale currency: {0} ({1})"
 msgstr ""
@@ -532,8 +524,7 @@ msgstr ""
 
 #. : Locale language item panel title with language label ({0}) and language
 #. code ({1)}
-#. : Locale language item panel title with language label ({0}) and language
-#. code ({1)}
+#. : Locale language item panel title with language label ({0}) and language code ({1)}
 #, python-brace-format
 msgid "Locale language: {0} ({1})"
 msgstr ""
@@ -547,6 +538,12 @@ msgid "Logs"
 msgstr ""
 
 msgid "Long description"
+msgstr ""
+
+msgid "Longitude"
+msgstr ""
+
+msgid "Longitude, e.g. 10.000000"
 msgstr ""
 
 msgid "Media"
@@ -631,15 +628,6 @@ msgstr ""
 msgid "Order product ID"
 msgstr ""
 
-msgid "Orders by day"
-msgstr ""
-
-msgid "Orders by hour"
-msgstr ""
-
-msgid "Orders by payment status"
-msgstr ""
-
 msgid "Overview"
 msgstr ""
 
@@ -665,9 +653,6 @@ msgstr ""
 msgid "Payment status"
 msgstr "Trạng thái chi trả"
 
-msgid "Payment types"
-msgstr ""
-
 msgid "Physical values"
 msgstr ""
 
@@ -677,9 +662,7 @@ msgstr ""
 msgid "Please save the coupon first before you can add codes"
 msgstr ""
 
-msgid ""
-"Please select an item on the right side and add it via drag and drop to this"
-" list."
+msgid "Please select an item on the right side and add it via drag and drop to this list."
 msgstr ""
 
 msgid "Plugin"
@@ -765,10 +748,8 @@ msgstr ""
 msgid "Product property type"
 msgstr ""
 
-#. : Product property.type item panel title with type label ({0}) and site
-#. code ({1)}
-#. : Product property type item panel title with type label ({0}) and site
-#. code ({1)}
+#. : Product property.type item panel title with type label ({0}) and site code ({1)}
+#. : Product property type item panel title with type label ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Product property type: {0} ({1})"
 msgstr ""
@@ -780,6 +761,14 @@ msgid "Product rebate"
 msgstr ""
 
 msgid "Product stock"
+msgstr ""
+
+msgid "Product stock type"
+msgstr ""
+
+#. : Product stock type item panel title with type label ({0}) and site code ({1)}
+#, python-brace-format
+msgid "Product stock type: {0} ({1})"
 msgstr ""
 
 msgid "Product supplier (optional)"
@@ -961,8 +950,7 @@ msgstr ""
 
 #. : Supplier address item panel title with supplier name ({0}) and site code
 #. ({1)}
-#. : Supplier address item panel title with supplier name ({0}) and site code
-#. ({1)}
+#. : Supplier address item panel title with supplier name ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Supplier address: {0} ({1})"
 msgstr ""
@@ -1023,15 +1011,10 @@ msgstr ""
 msgid "Texts"
 msgstr ""
 
-msgid ""
-"The file with the exported texts will be available within a few minutes. It "
-"can then be downloaded from the \"Job\" panel of the \"Overview\" tab."
+msgid "The file with the exported texts will be available within a few minutes. It can then be downloaded from the \"Job\" panel of the \"Overview\" tab."
 msgstr ""
 
-msgid ""
-"The texts of your uploaded file will be imported within a few minutes. You "
-"can check the status of the import in the \"Job\" panel of the \"Overview\" "
-"tab"
+msgid "The texts of your uploaded file will be imported within a few minutes. You can check the status of the import in the \"Job\" panel of the \"Overview\" tab"
 msgstr ""
 
 msgid "This combination already exists"
@@ -1099,8 +1082,7 @@ msgstr ""
 
 #. : Product stock type item panel title with type label ({0}) and site
 #. code ({1)}
-#. : Product stock type item panel title with type label ({0}) and site
-#. code ({1)}
+#. : Product stock type item panel title with type label ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Warehouse: {0} ({1})"
 msgstr ""
@@ -1126,15 +1108,10 @@ msgstr ""
 msgid "You are going to delete one or more items. Would you like to proceed?"
 msgstr ""
 
-msgid ""
-"You are going to flush the complete cache for the current site. Would you "
-"like to proceed?"
+msgid "You are going to flush the complete cache for the current site. Would you like to proceed?"
 msgstr ""
 
 msgid "Zip code"
-msgstr ""
-
-msgid "dashboard"
 msgstr ""
 
 msgid "new"
@@ -1163,9 +1140,6 @@ msgstr "refused"
 
 msgid "pay:unfinished"
 msgstr "unfinished"
-
-msgid "product"
-msgstr ""
 
 msgid "stat:deleted"
 msgstr "deleted"
@@ -1211,3 +1185,6 @@ msgstr ""
 
 msgid "yy-mm-dd"
 msgstr ""
+
+#~ msgid "%1$s %2$s"
+#~ msgstr "%1$s %2$s"

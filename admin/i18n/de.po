@@ -10,20 +10,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-16 23:34+0200\n"
+"POT-Creation-Date: 2016-12-02 10:44+0100\n"
 "PO-Revision-Date: 2016-07-16 21:36+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: German (http://www.transifex.com/aimeos/aimeos-core/language/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#. / price format with value (%1$s) and currency (%2$s)
-#, php-format
-msgid "%1$s %2$s"
-msgstr "%1$s %2$s"
 
 msgid "Actual current price"
 msgstr "Tatsächlicher Preis"
@@ -265,16 +260,14 @@ msgstr "Kunde"
 
 #. : Customer address item panel title with customer name ({0}) and site code
 #. ({1)}
-#. : Customer address item panel title with customer name ({0}) and site code
-#. ({1)}
+#. : Customer address item panel title with customer name ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Customer address: {0} ({1})"
 msgstr "Kundenadresse: {0} ({1})"
 
 #. : Customer group item panel title with customer name ({0}) and site code
 #. ({1)}
-#. : Customer group item panel title with customer name ({0}) and site code
-#. ({1)}
+#. : Customer group item panel title with customer name ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Customer group: {0} ({1})"
 msgstr "Kundengruppe: {0} ({1})"
@@ -307,9 +300,6 @@ msgstr "Lieferdatum"
 
 msgid "Delivery status"
 msgstr "Lieferstatus"
-
-msgid "Delivery types"
-msgstr "Versandarten"
 
 msgid "Details"
 msgstr "Details"
@@ -475,8 +465,11 @@ msgstr "Nachname (benötigt)"
 msgid "Lastname"
 msgstr "Nachname"
 
-msgid "Latest orders"
-msgstr "Neuste Bestellungen"
+msgid "Latitude"
+msgstr ""
+
+msgid "Latitude, e.g. 50.000000"
+msgstr ""
 
 msgid "Length"
 msgstr "Länge"
@@ -522,8 +515,7 @@ msgstr "Gebietsschema"
 
 #. : Locale currency item panel title with currency label ({0}) and currency
 #. code ({1)}
-#. : Locale currency item panel title with currency label ({0}) and currency
-#. code ({1)}
+#. : Locale currency item panel title with currency label ({0}) and currency code ({1)}
 #, python-brace-format
 msgid "Locale currency: {0} ({1})"
 msgstr "Währung im Gebietsschema: {0} ({1})"
@@ -535,8 +527,7 @@ msgstr "Details des Gebietsschemas ({1})"
 
 #. : Locale language item panel title with language label ({0}) and language
 #. code ({1)}
-#. : Locale language item panel title with language label ({0}) and language
-#. code ({1)}
+#. : Locale language item panel title with language label ({0}) and language code ({1)}
 #, python-brace-format
 msgid "Locale language: {0} ({1})"
 msgstr "Sprache im Gebietsschema: {0} ({1})"
@@ -551,6 +542,12 @@ msgstr "Protokoll"
 
 msgid "Long description"
 msgstr "Langtext"
+
+msgid "Longitude"
+msgstr ""
+
+msgid "Longitude, e.g. 10.000000"
+msgstr ""
 
 msgid "Media"
 msgstr "Medien"
@@ -634,15 +631,6 @@ msgstr "Details der Bestellung"
 msgid "Order product ID"
 msgstr "Bestell-ID des Produkts"
 
-msgid "Orders by day"
-msgstr "Bestellungen nach Tagen"
-
-msgid "Orders by hour"
-msgstr "Bestellungen nach Stunden"
-
-msgid "Orders by payment status"
-msgstr "Bestellungen nach Zahlungsstatus"
-
 msgid "Overview"
 msgstr "Übersicht"
 
@@ -668,9 +656,6 @@ msgstr "Zahlungsdatum"
 msgid "Payment status"
 msgstr "Zahlungsstatus"
 
-msgid "Payment types"
-msgstr "Zahlungsarten"
-
 msgid "Physical values"
 msgstr "Physikalische Grössen"
 
@@ -680,9 +665,7 @@ msgstr "Bitte überprüfen Sie die Daten"
 msgid "Please save the coupon first before you can add codes"
 msgstr "Bitte speichern Sie zuerst den Gutschein bevor Sie Codes hinzufügen können"
 
-msgid ""
-"Please select an item on the right side and add it via drag and drop to this"
-" list."
+msgid "Please select an item on the right side and add it via drag and drop to this list."
 msgstr "Bitte ziehen Sie einen Eintrag aus der rechten Seite in die Liste um ihn hinzu zufügen"
 
 msgid "Plugin"
@@ -768,10 +751,8 @@ msgstr "Productpreis"
 msgid "Product property type"
 msgstr "Produkteigenschaftstyp"
 
-#. : Product property.type item panel title with type label ({0}) and site
-#. code ({1)}
-#. : Product property type item panel title with type label ({0}) and site
-#. code ({1)}
+#. : Product property.type item panel title with type label ({0}) and site code ({1)}
+#. : Product property type item panel title with type label ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Product property type: {0} ({1})"
 msgstr "Produkteigenschaftstyp: {0} ({1})"
@@ -784,6 +765,15 @@ msgstr "Produktrabatt"
 
 msgid "Product stock"
 msgstr "Lagerbestand"
+
+#, fuzzy
+msgid "Product stock type"
+msgstr "Lagerbestand"
+
+#. : Product stock type item panel title with type label ({0}) and site code ({1)}
+#, fuzzy, python-brace-format
+msgid "Product stock type: {0} ({1})"
+msgstr "Produkttyp: {0} ({1})"
 
 msgid "Product supplier (optional)"
 msgstr "Produktlieferant (optional)"
@@ -964,8 +954,7 @@ msgstr "Lieferant"
 
 #. : Supplier address item panel title with supplier name ({0}) and site code
 #. ({1)}
-#. : Supplier address item panel title with supplier name ({0}) and site code
-#. ({1)}
+#. : Supplier address item panel title with supplier name ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Supplier address: {0} ({1})"
 msgstr "Lieferantenadresse: {0} ({1})"
@@ -1026,15 +1015,10 @@ msgstr "Text: {0} ({1})"
 msgid "Texts"
 msgstr "Texte"
 
-msgid ""
-"The file with the exported texts will be available within a few minutes. It "
-"can then be downloaded from the \"Job\" panel of the \"Overview\" tab."
+msgid "The file with the exported texts will be available within a few minutes. It can then be downloaded from the \"Job\" panel of the \"Overview\" tab."
 msgstr "Die Datei mit den exportierten Texten wird in wenigen Minuten verfügbar sein. Sie kann anschliessend im \"Aufgaben\"-Bereich des \"Übersicht\"-Reiter herunter geladen werden."
 
-msgid ""
-"The texts of your uploaded file will be imported within a few minutes. You "
-"can check the status of the import in the \"Job\" panel of the \"Overview\" "
-"tab"
+msgid "The texts of your uploaded file will be imported within a few minutes. You can check the status of the import in the \"Job\" panel of the \"Overview\" tab"
 msgstr "Die Texte Ihrer hochgeladenen Datei werden innerhalb der nächsten Minuten importiert. Sie können den Status des Imports im \"Aufgaben\"-Bereich des \"Übersicht\"-Reiters prüfen."
 
 msgid "This combination already exists"
@@ -1102,8 +1086,7 @@ msgstr "Warenlager"
 
 #. : Product stock type item panel title with type label ({0}) and site
 #. code ({1)}
-#. : Product stock type item panel title with type label ({0}) and site
-#. code ({1)}
+#. : Product stock type item panel title with type label ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Warehouse: {0} ({1})"
 msgstr "Warenlager: {0} ({1})"
@@ -1129,16 +1112,11 @@ msgstr "JJJJ-MM-TT hh:mm:ss (optional)"
 msgid "You are going to delete one or more items. Would you like to proceed?"
 msgstr "Sie werden ein oder mehrere Einträge löschen. Wollen Sie fortfahren?"
 
-msgid ""
-"You are going to flush the complete cache for the current site. Would you "
-"like to proceed?"
+msgid "You are going to flush the complete cache for the current site. Would you like to proceed?"
 msgstr "Der gesamte Cache für den aktuellen Mandanten wird gelöscht. Möchten Sie fortfahren?"
 
 msgid "Zip code"
 msgstr "Postleitzahl"
-
-msgid "dashboard"
-msgstr "Übersicht"
 
 msgid "new"
 msgstr "neu"
@@ -1166,9 +1144,6 @@ msgstr "Abgelehnt"
 
 msgid "pay:unfinished"
 msgstr "Noch offen"
-
-msgid "product"
-msgstr "Produkt"
 
 msgid "stat:deleted"
 msgstr "Gelöscht"
@@ -1214,3 +1189,30 @@ msgstr "Unbekannt"
 
 msgid "yy-mm-dd"
 msgstr "yy-mm-dd"
+
+#~ msgid "%1$s %2$s"
+#~ msgstr "%1$s %2$s"
+
+#~ msgid "Delivery types"
+#~ msgstr "Versandarten"
+
+#~ msgid "Latest orders"
+#~ msgstr "Neuste Bestellungen"
+
+#~ msgid "Orders by day"
+#~ msgstr "Bestellungen nach Tagen"
+
+#~ msgid "Orders by hour"
+#~ msgstr "Bestellungen nach Stunden"
+
+#~ msgid "Orders by payment status"
+#~ msgstr "Bestellungen nach Zahlungsstatus"
+
+#~ msgid "Payment types"
+#~ msgstr "Zahlungsarten"
+
+#~ msgid "dashboard"
+#~ msgstr "Übersicht"
+
+#~ msgid "product"
+#~ msgstr "Produkt"
