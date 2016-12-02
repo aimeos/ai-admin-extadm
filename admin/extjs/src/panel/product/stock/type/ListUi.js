@@ -10,9 +10,9 @@ MShop.panel.product.stock.type.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
     recordName : 'Product_Stock_Type',
     idProperty : 'product.stock.type.id',
     siteidProperty : 'product.stock.type.siteid',
-    itemUiXType : 'MShop.panel.stock.type.itemui',
+    itemUiXType : 'MShop.panel.product.stock.type.itemui',
 
-    autoExpandColumn : 'product-stocktype-list-label',
+    autoExpandColumn : 'product-stock-type-label',
 
     sortInfo : {
         field : 'product.stock.type.label',
