@@ -9,11 +9,11 @@
  */
 
 
-namespace Aimeos\Controller\ExtJS\Product\Stock\Type;
+namespace Aimeos\Controller\ExtJS\Stock\Type;
 
 
 /**
- * Product stock type controller factory.
+ * Stock type controller factory.
  *
  * @package Controller
  * @subpackage ExtJS
@@ -23,7 +23,7 @@ class Factory
 	implements \Aimeos\Controller\ExtJS\Common\Factory\Iface
 {
 	/**
-	 * Creates a new product stock type controller object.
+	 * Creates a new stock type controller object.
 	 *
 	 * @param \Aimeos\MShop\Context\Item\Iface $context Context instance with necessary objects
 	 * @param string|null $name Name of the controller implementaton (default: "Standard")
@@ -31,8 +31,8 @@ class Factory
 	 */
 	public static function createController( \Aimeos\MShop\Context\Item\Iface $context, $name = null )
 	{
-		/** controller/extjs/product/stock/type/name
-		 * Class name of the used ExtJS product stock type controller implementation
+		/** controller/extjs/stock/type/name
+		 * Class name of the used ExtJS stock type controller implementation
 		 *
 		 * Each default ExtJS controller can be replace by an alternative imlementation.
 		 * To use this implementation, you have to set the last part of the class
@@ -41,15 +41,15 @@ class Factory
 		 *
 		 * For example, if the name of the default class is
 		 *
-		 *  \Aimeos\Controller\ExtJS\Product\Stock\Type\Standard
+		 *  \Aimeos\Controller\ExtJS\Stock\Type\Standard
 		 *
 		 * and you want to replace it with your own version named
 		 *
-		 *  \Aimeos\Controller\ExtJS\Product\Stock\Type\Mytype
+		 *  \Aimeos\Controller\ExtJS\Stock\Type\Mytype
 		 *
 		 * then you have to set the this configuration option:
 		 *
-		 *  controller/extjs/product/stock/type/name = Mytype
+		 *  controller/extjs/stock/type/name = Mytype
 		 *
 		 * The value is the last part of your own class name and it's case sensitive,
 		 * so take care that the configuration value is exactly named like the last
@@ -61,26 +61,26 @@ class Factory
 		 * or numbers. Avoid chamel case names like "MyType"!
 		 *
 		 * @param string Last part of the class name
-		 * @since 2014.03
+		 * @since 2017.01
 		 * @category Developer
 		 */
 		if( $name === null ) {
-			$name = $context->getConfig()->get( 'controller/extjs/product/stock/type/name', 'Standard' );
+			$name = $context->getConfig()->get( 'controller/extjs/stock/type/name', 'Standard' );
 		}
 
 		if( ctype_alnum( $name ) === false )
 		{
-			$classname = is_string( $name ) ? '\\Aimeos\\Controller\\ExtJS\\Product\\Stock\\Type\\' . $name : '<not a string>';
+			$classname = is_string( $name ) ? '\\Aimeos\\Controller\\ExtJS\\Stock\\Type\\' . $name : '<not a string>';
 			throw new \Aimeos\Controller\ExtJS\Exception( sprintf( 'Invalid class name "%1$s"', $classname ) );
 		}
 
 		$iface = '\\Aimeos\\Controller\\ExtJS\\Common\\Iface';
-		$classname = '\\Aimeos\\Controller\\ExtJS\\Product\\Stock\\Type\\' . $name;
+		$classname = '\\Aimeos\\Controller\\ExtJS\\Stock\\Type\\' . $name;
 
 		$controller = self::createControllerBase( $context, $classname, $iface );
 
-		/** controller/extjs/product/stock/type/decorators/excludes
-		 * Excludes decorators added by the "common" option from the product stock type ExtJS controllers
+		/** controller/extjs/stock/type/decorators/excludes
+		 * Excludes decorators added by the "common" option from the stock type ExtJS controllers
 		 *
 		 * Decorators extend the functionality of a class by adding new aspects
 		 * (e.g. log what is currently done), executing the methods of the underlying
@@ -91,22 +91,22 @@ class Factory
 		 * "controller/extjs/common/decorators/default" before they are wrapped
 		 * around the ExtJS controller.
 		 *
-		 *  controller/extjs/product/stock/type/decorators/excludes = array( 'decorator1' )
+		 *  controller/extjs/stock/type/decorators/excludes = array( 'decorator1' )
 		 *
 		 * This would remove the decorator named "decorator1" from the list of
 		 * common decorators ("\Aimeos\Controller\ExtJS\Common\Decorator\*") added via
 		 * "controller/extjs/common/decorators/default" for the admin ExtJS controller.
 		 *
 		 * @param array List of decorator names
-		 * @since 2015.09
+		 * @since 2017.01
 		 * @category Developer
 		 * @see controller/extjs/common/decorators/default
-		 * @see controller/extjs/product/stock/type/decorators/global
-		 * @see controller/extjs/product/stock/type/decorators/local
+		 * @see controller/extjs/stock/type/decorators/global
+		 * @see controller/extjs/stock/type/decorators/local
 		 */
 
-		/** controller/extjs/product/stock/type/decorators/global
-		 * Adds a list of globally available decorators only to the product stock type ExtJS controllers
+		/** controller/extjs/stock/type/decorators/global
+		 * Adds a list of globally available decorators only to the stock type ExtJS controllers
 		 *
 		 * Decorators extend the functionality of a class by adding new aspects
 		 * (e.g. log what is currently done), executing the methods of the underlying
@@ -116,21 +116,21 @@ class Factory
 		 * This option allows you to wrap global decorators
 		 * ("\Aimeos\Controller\ExtJS\Common\Decorator\*") around the ExtJS controller.
 		 *
-		 *  controller/extjs/product/stock/type/decorators/global = array( 'decorator1' )
+		 *  controller/extjs/stock/type/decorators/global = array( 'decorator1' )
 		 *
 		 * This would add the decorator named "decorator1" defined by
 		 * "\Aimeos\Controller\ExtJS\Common\Decorator\Decorator1" only to the ExtJS controller.
 		 *
 		 * @param array List of decorator names
-		 * @since 2015.09
+		 * @since 2017.01
 		 * @category Developer
 		 * @see controller/extjs/common/decorators/default
-		 * @see controller/extjs/product/stock/type/decorators/excludes
-		 * @see controller/extjs/product/stock/type/decorators/local
+		 * @see controller/extjs/stock/type/decorators/excludes
+		 * @see controller/extjs/stock/type/decorators/local
 		 */
 
-		/** controller/extjs/product/stock/type/decorators/local
-		 * Adds a list of local decorators only to the product stock type ExtJS controllers
+		/** controller/extjs/stock/type/decorators/local
+		 * Adds a list of local decorators only to the stock type ExtJS controllers
 		 *
 		 * Decorators extend the functionality of a class by adding new aspects
 		 * (e.g. log what is currently done), executing the methods of the underlying
@@ -138,21 +138,21 @@ class Factory
 		 * modify what is returned to the caller.
 		 *
 		 * This option allows you to wrap local decorators
-		 * ("\Aimeos\Controller\ExtJS\Product\Stock\Type\Decorator\*") around the ExtJS controller.
+		 * ("\Aimeos\Controller\ExtJS\Stock\Type\Decorator\*") around the ExtJS controller.
 		 *
-		 *  controller/extjs/product/stock/type/decorators/local = array( 'decorator2' )
+		 *  controller/extjs/stock/type/decorators/local = array( 'decorator2' )
 		 *
 		 * This would add the decorator named "decorator2" defined by
-		 * "\Aimeos\Controller\ExtJS\Product\Stock\Type\Decorator\Decorator2" only to the ExtJS
+		 * "\Aimeos\Controller\ExtJS\Stock\Type\Decorator\Decorator2" only to the ExtJS
 		 * controller.
 		 *
 		 * @param array List of decorator names
-		 * @since 2015.09
+		 * @since 2017.01
 		 * @category Developer
 		 * @see controller/extjs/common/decorators/default
-		 * @see controller/extjs/product/stock/type/decorators/excludes
-		 * @see controller/extjs/product/stock/type/decorators/global
+		 * @see controller/extjs/stock/type/decorators/excludes
+		 * @see controller/extjs/stock/type/decorators/global
 		 */
-		return self::addControllerDecorators( $context, $controller, 'product/stock/type' );
+		return self::addControllerDecorators( $context, $controller, 'stock/type' );
 	}
 }

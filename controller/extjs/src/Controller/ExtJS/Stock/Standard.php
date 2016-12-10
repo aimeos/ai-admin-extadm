@@ -9,11 +9,11 @@
  */
 
 
-namespace Aimeos\Controller\ExtJS\Product\Stock\Type;
+namespace Aimeos\Controller\ExtJS\Stock;
 
 
 /**
- * ExtJS product stock type controller for admin interfaces.
+ * ExtJS stock controller for admin interfaces.
  *
  * @package Controller
  * @subpackage ExtJS
@@ -26,13 +26,13 @@ class Standard
 
 
 	/**
-	 * Initializes the product stock type controller.
+	 * Initializes the stock controller.
 	 *
 	 * @param \Aimeos\MShop\Context\Item\Iface $context MShop context object
 	 */
 	public function __construct( \Aimeos\MShop\Context\Item\Iface $context )
 	{
-		parent::__construct( $context, 'Product_Stock_Type' );
+		parent::__construct( $context, 'Stock' );
 	}
 
 
@@ -44,7 +44,7 @@ class Standard
 	protected function getManager()
 	{
 		if( $this->manager === null ) {
-			$this->manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'product/stock/type' );
+			$this->manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'stock' );
 		}
 
 		return $this->manager;
@@ -58,6 +58,28 @@ class Standard
 	 */
 	protected function getPrefix()
 	{
-		return 'product.stock.type';
+		return 'stock';
+	}
+
+
+	/**
+	 * Transforms ExtJS values to be suitable for storing them
+	 *
+	 * @param \stdClass $entry Entry object from ExtJS
+	 * @return \stdClass Modified object
+	 */
+	protected function transformValues( \stdClass $entry )
+	{
+		if( isset( $entry->{'stock.stocklevel'} ) && $entry->{'stock.stocklevel'} === '' ) {
+			$entry->{'stock.stocklevel'} = null;
+		}
+
+		if( isset( $entry->{'stock.dateback'} ) && $entry->{'stock.dateback'} !== '' ) {
+			$entry->{'stock.dateback'} = str_replace( 'T', ' ', $entry->{'stock.dateback'} );
+		} else {
+			$entry->{'stock.dateback'} = null;
+		}
+
+		return $entry;
 	}
 }

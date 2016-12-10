@@ -12,7 +12,7 @@ Ext.ns('MShop.panel.product.stock');
  */
 MShop.panel.product.stock.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
 
-    siteidProperty : 'product.stock.siteid',
+    siteidProperty : 'stock.siteid',
 
     initComponent : function() {
 
@@ -57,26 +57,26 @@ MShop.panel.product.stock.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
                         },
                         items : [{
                             xtype : 'hidden',
-                            name : 'product.stock.parentid'
+                            name : 'stock.productcode'
                         }, {
                             xtype : 'displayfield',
                             fieldLabel : MShop.I18n.dt('admin', 'ID'),
-                            name : 'product.stock.id'
+                            name : 'stock.id'
                         }, {
                             xtype : 'combo',
                             fieldLabel : MShop.I18n.dt('admin', 'Type'),
-                            name : 'product.stock.typeid',
+                            name : 'stock.typeid',
                             mode : 'local',
-                            store : MShop.GlobalStoreMgr.get('Product_Stock_Type', this.domain),
-                            displayField : 'product.stock.type.label',
-                            valueField : 'product.stock.type.id',
+                            store : MShop.GlobalStoreMgr.get('Stock_Type', this.domain),
+                            displayField : 'stock.type.label',
+                            valueField : 'stock.type.id',
                             forceSelection : true,
                             triggerAction : 'all',
                             typeAhead : true,
                             listeners : {
                                 'render' : {
                                     fn : function() {
-                                        var record, index = this.store.find('product.stock.type.code', 'default');
+                                        var record, index = this.store.find('stock.type.code', 'default');
                                         if((record = this.store.getAt(index))) {
                                             this.setValue(record.id);
                                         }
@@ -86,26 +86,26 @@ MShop.panel.product.stock.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
                         }, {
                             xtype : 'numberfield',
                             fieldLabel : MShop.I18n.dt('admin', 'Stock level'),
-                            name : 'product.stock.stocklevel',
+                            name : 'stock.stocklevel',
                             emptyText : MShop.I18n.dt('admin', 'Quantity or empty if unlimited (optional)')
                         }, {
                             xtype : 'datefield',
                             fieldLabel : MShop.I18n.dt('admin', 'Back in stock'),
-                            name : 'product.stock.dateback',
+                            name : 'stock.dateback',
                             format : 'Y-m-d H:i:s',
                             emptyText : MShop.I18n.dt('admin', 'YYYY-MM-DD hh:mm:ss (optional)')
                         }, {
                             xtype : 'displayfield',
                             fieldLabel : MShop.I18n.dt('admin', 'Created'),
-                            name : 'product.stock.ctime'
+                            name : 'stock.ctime'
                         }, {
                             xtype : 'displayfield',
                             fieldLabel : MShop.I18n.dt('admin', 'Last modified'),
-                            name : 'product.stock.mtime'
+                            name : 'stock.mtime'
                         }, {
                             xtype : 'displayfield',
                             fieldLabel : MShop.I18n.dt('admin', 'Editor'),
-                            name : 'product.stock.editor'
+                            name : 'stock.editor'
                         }]
                     }]
                 }]
@@ -135,7 +135,7 @@ MShop.panel.product.stock.ItemUi = Ext.extend(MShop.panel.AbstractItemUi, {
         }
 
         this.mainForm.getForm().updateRecord(this.record);
-        this.record.data['product.stock.parentid'] = this.listUI.itemUi.record.id;
+        this.record.data['stock.productcode'] = this.listUI.itemUi.record.data['product.code'];
 
         if(this.action == 'add' || this.action == 'copy') {
             this.store.add(this.record);
