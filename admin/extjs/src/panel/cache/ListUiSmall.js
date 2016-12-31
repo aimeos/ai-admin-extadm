@@ -104,7 +104,7 @@ MShop.panel.cache.ListUiSmall = Ext.extend(MShop.panel.AbstractListUi, {
             buttons : Ext.Msg.YESNO,
             fn : function(btn) {
                 if(btn == 'yes') {
-                    MShop.API.Admin_Cache.flush(MShop.config.site["locale.site.code"]);
+                    MShop.API.Admin_Cache.clear(MShop.config.site["locale.site.code"]);
                     that.store.reload();
                 }
             },

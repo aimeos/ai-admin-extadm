@@ -46,7 +46,7 @@ class Standard
 	{
 		$list = parent::getServiceDescription();
 
-		$list['Admin_Cache.flush'] = array(
+		$list['Admin_Cache.clear'] = array(
 			"parameters" => array(
 				array( "type" => "string", "name" => "site", "optional" => false ),
 			),
@@ -63,12 +63,12 @@ class Standard
 	 * @param \stdClass $params Associative list of parameters
 	 * @return array Associative list with success value
 	 */
-	public function flush( \stdClass $params )
+	public function clear( \stdClass $params )
 	{
 		$this->checkParams( $params, array( 'site' ) );
 		$this->setLocale( $params->site );
 
-		$this->getContext()->getCache()->flush();
+		$this->getContext()->getCache()->clear();
 
 		return array(
 			'success' => true,
