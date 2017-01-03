@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-02 10:51+0100\n"
-"PO-Revision-Date: 2016-12-02 09:55+0000\n"
-"Last-Translator: Aimeos <aimeos@aimeos.org>\n"
+"POT-Creation-Date: 2017-01-03 12:08+0100\n"
+"PO-Revision-Date: 2015-09-29 12:29+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Arabic (http://www.transifex.com/aimeos/aimeos-core/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,133 +17,141 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid ""
-"Authorized payments of orders will be captured after dispatching or after a "
-"configurable amount of time"
-msgstr ""
-
-msgid "Batch update of payment/delivery status"
-msgstr ""
-
-msgid "Cache cleanup"
-msgstr ""
-
-msgid "Capture authorized payments"
-msgstr ""
-
-msgid "Catalog index optimization"
-msgstr ""
-
-msgid "Catalog index rebuild"
-msgstr ""
-
-msgid "Creates a product site map for search engines"
-msgstr ""
-
-msgid "Creates bought together product suggestions"
-msgstr ""
-
-msgid ""
-"Deletes unfinished orders an makes their products and coupon codes available"
-" again"
-msgstr ""
-
-msgid "Deletes unpaid orders to keep the database clean"
-msgstr ""
-
-msgid "Executes payment or delivery service providers that uses batch updates"
-msgstr ""
-
-msgid "Exports all available products"
-msgstr ""
-
-msgid "Imports new and updates existing products from CSV files"
-msgstr ""
-
-msgid "Index optimization"
-msgstr ""
-
-msgid "Index rebuild"
+#, php-format
+msgid "- %1$s : %2$s\n"
 msgstr ""
 
 #, php-format
-msgid "Invalid characters in class name \"%1$s\""
+msgid "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
 msgstr ""
 
 #, php-format
-msgid "Invalid product lines in \"%1$s\": %2$d/%3$d"
-msgstr ""
-
-msgid "Log cleanup"
+msgid "Class \"%1$s\" does not implement \"%2$s\""
 msgstr ""
 
 #, php-format
-msgid "No \"product.code\" column in CSV mapping found"
-msgstr ""
-
-msgid "Optimizes the catalog index for searching products"
-msgstr ""
-
-msgid "Optimizes the index for searching products faster"
-msgstr ""
-
-msgid "Process order delivery services"
-msgstr ""
-
-msgid "Product export"
-msgstr ""
-
-msgid "Product import CSV"
-msgstr ""
-
-msgid "Product site map"
-msgstr ""
-
-msgid "Products bought together"
-msgstr ""
-
-msgid "Rebuilds the catalog index for searching products"
-msgstr ""
-
-msgid "Rebuilds the index for searching products"
-msgstr ""
-
-msgid "Removes the expired entries from the cache"
-msgstr ""
-
-msgid ""
-"Removes the old log entries from the database and archives them (optional)"
-msgstr ""
-
-msgid "Removes unfinished orders"
-msgstr ""
-
-msgid "Removes unpaid orders"
+msgid "Class \"%1$s\" not found"
 msgstr ""
 
 #, php-format
-msgid "Required mapping key \"%1$s\" is missing or contains no array"
-msgstr ""
-
-msgid "Sends paid orders to the ERP system or logistic partner"
+msgid "Controller path is empty"
 msgstr ""
 
 #, php-format
-msgid "Started product import from \"%1$s\" (%2$s)"
+msgid "Could not set permissions \"%1$s\" for file \"%2$s\""
 msgstr ""
 
 #, php-format
-msgid "Unable to import product with code \"%1$s\": %2$s"
+msgid "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
 msgstr ""
 
 #, php-format
-msgid "Unable to move imported file"
+msgid "Create export directory for attribute IDs: %1$s"
 msgstr ""
 
 #, php-format
-msgid "aimeos-products-%d.xml"
+msgid "Create export directory for catalog IDs: %1$s"
 msgstr ""
 
 #, php-format
-msgid "aimeos-sitemap-%d.xml"
+msgid "Create export directory for product IDs: %1$s"
+msgstr ""
+
+#, php-format
+msgid "Deleting file \"%1$s\" failed"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+#, php-format
+msgid "Error in %1$s text import: %2$s"
+msgstr ""
+
+#, php-format
+msgid "Factory \"%1$s\" not found"
+msgstr ""
+
+#, php-format
+msgid "File \"%1$s\" was not uploaded"
+msgstr ""
+
+#, php-format
+msgid "Invalid class name \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Invalid controller \"%1$s\" in \"%2$s\""
+msgstr ""
+
+#, php-format
+msgid "Invalid controller factory name \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Invalid domain \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Invalid factory \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Invalid list type \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Invalid method \"%1$s\" in request"
+msgstr ""
+
+#, php-format
+msgid "Invalid row from %1$s text import: %2$s"
+msgstr ""
+
+#, php-format
+msgid "Invalid sort direction \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Invalid text type \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "List item doesn't implement \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Method \"%1$s\" not found"
+msgstr ""
+
+#, php-format
+msgid "Missing parameter \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "No allowed image types configured for \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Required attribute \"%1$s\" missing in request"
+msgstr ""
+
+#, php-format
+msgid "Site item for code \"%1$s\" not found"
+msgstr ""
+
+#, php-format
+msgid "Unable to call method \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Unable to create directory \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Unable to create file in \"%1$s\""
+msgstr ""
+
+#, php-format
+msgid "Uploaded file could not be moved to upload directory \"%1$s\""
 msgstr ""

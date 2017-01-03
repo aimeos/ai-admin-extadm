@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Bruno Rodrigues <brunojti@gmail.com>, 2016
 # Tadeu Pagliarini <tadeu_up@hotmail.com>, 2016
@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-02 10:44+0100\n"
-"PO-Revision-Date: 2016-08-10 18:31+0000\n"
+"POT-Creation-Date: 2017-01-03 12:08+0100\n"
+"PO-Revision-Date: 2016-08-10 19:07+0000\n"
 "Last-Translator: Bruno Rodrigues <brunojti@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/aimeos/aimeos-core/language/pt_BR/)\n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #, php-format
@@ -25,225 +25,135 @@ msgstr "- %1$s : %2$s\n"
 
 #, php-format
 msgid "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
-msgstr "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
+msgstr "A alteração das permissões de arquivo de \"%1$s\" para \"%2$o\" falhou"
 
 #, php-format
 msgid "Class \"%1$s\" does not implement \"%2$s\""
-msgstr "Class \"%1$s\" does not implement \"%2$s\""
+msgstr "A classe \"%1$s\" não implementa \"%2$s\""
 
 #, php-format
 msgid "Class \"%1$s\" not found"
-msgstr "Class \"%1$s\" not found"
+msgstr "Classe \"%1$s\" não encontrada"
 
 #, php-format
 msgid "Controller path is empty"
-msgstr "Controller path is empty"
+msgstr "Caminho do controlador está vazio"
 
 #, php-format
 msgid "Could not set permissions \"%1$s\" for file \"%2$s\""
-msgstr "Could not set permissions \"%1$s\" for file \"%2$s\""
+msgstr "Não foi possível atribuir as permissões \"%1$s\" para o arquivo \"%2$s\""
 
 #, php-format
 msgid "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
-msgstr "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
+msgstr "Não foi possível criar o diretório \"%1$s\" com as permissões \"%2$o\""
 
 #, php-format
 msgid "Create export directory for attribute IDs: %1$s"
-msgstr "Create export directory for attribute IDs: %1$s"
+msgstr "Criar diretórios de exportação para os IDs do atributo: %1$s"
 
 #, php-format
 msgid "Create export directory for catalog IDs: %1$s"
-msgstr "Create export directory for catalog IDs: %1$s"
+msgstr "Criar diretórios de exportação para os IDs do catálogo: %1$s"
 
 #, php-format
 msgid "Create export directory for product IDs: %1$s"
-msgstr "Create export directory for product IDs: %1$s"
+msgstr "Criar diretórios de exportação para os IDs do produto: %1$s"
 
 #, php-format
 msgid "Deleting file \"%1$s\" failed"
-msgstr "Deleting file \"%1$s\" failed"
+msgstr "Falha ao remover o arquivo \"%1$s\""
 
 msgid "Download"
-msgstr "Download"
+msgstr "Baixar"
 
 #, php-format
 msgid "Error in %1$s text import: %2$s"
-msgstr "Error in %1$s text import: %2$s"
+msgstr "Erro na importação do texto %1$s: %2$s"
 
 #, php-format
 msgid "Factory \"%1$s\" not found"
-msgstr "Factory \"%1$s\" not found"
+msgstr "Fábrica \"%1$s\" não encontrada"
 
 #, php-format
 msgid "File \"%1$s\" was not uploaded"
-msgstr ""
+msgstr "Arquivo \"%1$s\" não foi enviado"
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid class name \"%1$s\""
-msgstr "Caracteres inválidos no nome da classe \"%1$s\""
+msgstr "Nome de classe inválido \"%1$s\""
 
 #, php-format
 msgid "Invalid controller \"%1$s\" in \"%2$s\""
-msgstr "Invalid controller \"%1$s\" in \"%2$s\""
+msgstr "Controlador inválido \"%1$s\" em \"%2$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid controller factory name \"%1$s\""
-msgstr "Caracteres inválidos no nome da classe \"%1$s\""
+msgstr "Nome inválido da fábrica do controlador \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid domain \"%1$s\""
-msgstr "Caracteres inválidos no nome da classe \"%1$s\""
+msgstr "Domínio \"%1$s\" inválido"
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid factory \"%1$s\""
-msgstr "Caracteres inválidos no nome da classe \"%1$s\""
+msgstr "Fábrica inválida \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid list type \"%1$s\""
-msgstr "Caracteres inválidos no nome da classe \"%1$s\""
+msgstr "Tipo de lista inválido \"%1$s\""
 
 #, php-format
 msgid "Invalid method \"%1$s\" in request"
-msgstr "Invalid method \"%1$s\" in request"
+msgstr "Método \"%1$s\" inválido na requisição"
 
 #, php-format
 msgid "Invalid row from %1$s text import: %2$s"
-msgstr "Invalid row from %1$s text import: %2$s"
+msgstr "Linha inválida na importação do texto %1$s: %2$s"
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid sort direction \"%1$s\""
-msgstr "Linhas de produtos inválidas em \"%1$s\": %2$d/%3$d"
+msgstr "Direção de ordenamento inválida \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid text type \"%1$s\""
-msgstr "Caracteres inválidos no nome da classe \"%1$s\""
+msgstr "Tipo de texto \"%1$s\"inválido"
 
 #, php-format
 msgid "List item doesn't implement \"%1$s\""
-msgstr "List item doesn't implement \"%1$s\""
+msgstr "Item da lista não implementa \"%1$s\""
 
 #, php-format
 msgid "Method \"%1$s\" not found"
-msgstr "Method \"%1$s\" not found"
+msgstr "Método \"%1$s\" não encontrado"
 
 #, php-format
 msgid "Missing parameter \"%1$s\""
-msgstr "Missing parameter \"%1$s\""
+msgstr "Parâmetro \"%1$s\" faltando"
 
 #, php-format
 msgid "No allowed image types configured for \"%1$s\""
-msgstr "No allowed image types configured for \"%1$s\""
+msgstr "Não existem tipos de imagens permitidos para \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Required attribute \"%1$s\" missing in request"
-msgstr "Chave de mapeamento obrigatória \"%1$s\" não existe ou está vazia"
+msgstr "Atributo obrigatório \"%1$s\" faltando no pedido"
 
 #, php-format
 msgid "Site item for code \"%1$s\" not found"
-msgstr "Site item for code \"%1$s\" not found"
+msgstr "Item do site com o código \"%1$s\" não encontrado"
 
-#, fuzzy, php-format
+#, php-format
 msgid "Unable to call method \"%1$s\""
-msgstr "Incapaz de importar o produto com o código \"%1$s\": %2$s"
+msgstr "Incapaz de chamar o método \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Unable to create directory \"%1$s\""
-msgstr "Incapaz de importar o produto com o código \"%1$s\": %2$s"
+msgstr "Incapaz de criar o diretório \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Unable to create file in \"%1$s\""
-msgstr "Incapaz de mover o arquivo importado"
+msgstr "Incapaz de criar o arquivo em \"%1$s\""
 
 #, php-format
 msgid "Uploaded file could not be moved to upload directory \"%1$s\""
-msgstr "Uploaded file could not be moved to upload directory \"%1$s\""
-
-#~ msgid "Authorized payments of orders will be captured after dispatching or after a configurable amount of time"
-#~ msgstr "Pagamentos autorizados de pedidos serão capturados após o envio ou depois de um período de tempo configurável"
-
-#~ msgid "Batch update of payment/delivery status"
-#~ msgstr "Atualização em lote de status de pagamento/entrega"
-
-#~ msgid "Cache cleanup"
-#~ msgstr "Limpeza de cache"
-
-#~ msgid "Capture authorized payments"
-#~ msgstr "Captura pagamentos autorizados"
-
-#~ msgid "Catalog index optimization"
-#~ msgstr "Otimização do índice do catálogo"
-
-#~ msgid "Catalog index rebuild"
-#~ msgstr "Recriar índice do catálogo"
-
-#~ msgid "Creates a product site map for search engines"
-#~ msgstr "Cria um mapa do site dos produtos para motores de busca"
-
-#~ msgid "Creates bought together product suggestions"
-#~ msgstr "Cria sugestoões para compra de produtos em conjunto"
-
-#~ msgid "Deletes unfinished orders an makes their products and coupon codes available again"
-#~ msgstr "Remove pedidos não-concluídos tornando seus produtos e cupons disponíveis novamente"
-
-#~ msgid "Deletes unpaid orders to keep the database clean"
-#~ msgstr "Deleta os pedidos sem pagamento para manter a base de dados limpa"
-
-#~ msgid "Executes payment or delivery service providers that uses batch updates"
-#~ msgstr "Executa provedores de serviço de pagamento ou entrega que usam atualização em lotes"
-
-#~ msgid "Exports all available products"
-#~ msgstr "Exportar todos os produtos disponíveis"
-
-#~ msgid "Imports new and updates existing products from CSV files"
-#~ msgstr "Importa novos e atualiza produtos existentes a partir de arquivos CSV"
-
-#~ msgid "Log cleanup"
-#~ msgstr "Limpeza de registros"
-
-#~ msgid "No \"product.code\" column in CSV mapping found"
-#~ msgstr "Nenhuma coluna \"product.code\" foi encontrada no mapeamento do CSV"
-
-#~ msgid "Optimizes the catalog index for searching products"
-#~ msgstr "Otimiza o índice do catálogo de produtos pesquisados"
-
-#~ msgid "Process order delivery services"
-#~ msgstr "Processa serviços de entrega de pedidos"
-
-#~ msgid "Product export"
-#~ msgstr "Exportação de produto"
-
-#~ msgid "Product import CSV"
-#~ msgstr "Importação de produto CSV"
-
-#~ msgid "Product site map"
-#~ msgstr "Mapa do site de produtos"
-
-#~ msgid "Products bought together"
-#~ msgstr "Produtos comprados juntos"
-
-#~ msgid "Rebuilds the catalog index for searching products"
-#~ msgstr "Recria o índice de catalogo para busca de produtos"
-
-#~ msgid "Removes the expired entries from the cache"
-#~ msgstr "Remove entradas expiradas do cache"
-
-#~ msgid "Removes the old log entries from the database and archives them (optional)"
-#~ msgstr "Remove registros antigos da base de dados e arquiva-os (opcional)"
-
-#~ msgid "Removes unfinished orders"
-#~ msgstr "Remover pedidos não concluídos"
-
-#~ msgid "Removes unpaid orders"
-#~ msgstr "Remover pedidos sem pagamento"
-
-#~ msgid "Sends paid orders to the ERP system or logistic partner"
-#~ msgstr "Envia os pedidos pagos para o ERP ou empresa de logística"
-
-#~ msgid "Started product import from \"%1$s\" (%2$s)"
-#~ msgstr "Iniciar importação de produto de \"%1$s\" (%2$s)"
-
-#~ msgid "aimeos-products-%d.xml"
-#~ msgstr "aimeos-products-%d.xml"
-
-#~ msgid "aimeos-sitemap-%d.xml"
-#~ msgstr "aimeos-sitemap-%d.xml"
+msgstr "Arquivo enviado não pôde ser movido para o diretório de uploads \"%1$s\""

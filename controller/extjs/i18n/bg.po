@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Bistra Kumanova <b.kumanova@creato.bg>, 2015
 # Plamen Petkov <mcplamen@gmail.com>, 2016
@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-02 10:44+0100\n"
-"PO-Revision-Date: 2016-07-16 21:36+0000\n"
-"Last-Translator: Aimeos <aimeos@aimeos.org>\n"
+"POT-Creation-Date: 2017-01-03 12:08+0100\n"
+"PO-Revision-Date: 2016-06-07 09:37+0000\n"
+"Last-Translator: Plamen Petkov <mcplamen@gmail.com>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/aimeos/aimeos-core/language/bg/)\n"
-"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #, php-format
@@ -25,225 +25,135 @@ msgstr "- %1$s : %2$s\n"
 
 #, php-format
 msgid "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
-msgstr "Changing file permissions for \"%1$s\" to \"%2$o\" failed"
+msgstr "Грешка при промяна на  файловите права от \"%1$s\" на \"%2$o\""
 
 #, php-format
 msgid "Class \"%1$s\" does not implement \"%2$s\""
-msgstr "Class \"%1$s\" does not implement \"%2$s\""
+msgstr "Класът \"%1$s\" не се изпълнява \"%2$s\""
 
 #, php-format
 msgid "Class \"%1$s\" not found"
-msgstr "Class \"%1$s\" not found"
+msgstr "Класът \"%1$s\" не е намерен"
 
 #, php-format
 msgid "Controller path is empty"
-msgstr "Controller path is empty"
+msgstr "Не е указан път към контролера"
 
 #, php-format
 msgid "Could not set permissions \"%1$s\" for file \"%2$s\""
-msgstr "Could not set permissions \"%1$s\" for file \"%2$s\""
+msgstr "Не можете да зададете права \"%1$s\" за файл \"%2$s\""
 
 #, php-format
 msgid "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
-msgstr "Couldn't create directory \"%1$s\" with permissions \"%2$o\""
+msgstr "Не можете да се създадете директория \"%1$s\" с права \"%2$o\""
 
 #, php-format
 msgid "Create export directory for attribute IDs: %1$s"
-msgstr "Create export directory for attribute IDs: %1$s"
+msgstr "Създайте експорт директория за атрибутите: %1$s"
 
 #, php-format
 msgid "Create export directory for catalog IDs: %1$s"
-msgstr "Create export directory for catalog IDs: %1$s"
+msgstr "Създайте експорт директория за каталозите: %1$s"
 
 #, php-format
 msgid "Create export directory for product IDs: %1$s"
-msgstr "Create export directory for product IDs: %1$s"
+msgstr "Създайте експорт директория за продуктите: %1$s"
 
 #, php-format
 msgid "Deleting file \"%1$s\" failed"
-msgstr "Deleting file \"%1$s\" failed"
+msgstr "Неуспешно изтриване на файл  \"%1$s\" "
 
 msgid "Download"
-msgstr "Download"
+msgstr "Изтегляне"
 
 #, php-format
 msgid "Error in %1$s text import: %2$s"
-msgstr "Error in %1$s text import: %2$s"
+msgstr "Грешка в %1$s импорта на текст: %2$s"
 
 #, php-format
 msgid "Factory \"%1$s\" not found"
-msgstr "Factory \"%1$s\" not found"
+msgstr "Фабрика \"%1$s\" не е намерена"
 
 #, php-format
 msgid "File \"%1$s\" was not uploaded"
-msgstr ""
+msgstr "Файлът \"%1$s\" не е качен"
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid class name \"%1$s\""
-msgstr "Недопустими символи в името на класа \"%1$s\""
+msgstr "Невалидно име на клас \"%1$s\""
 
 #, php-format
 msgid "Invalid controller \"%1$s\" in \"%2$s\""
-msgstr "Invalid controller \"%1$s\" in \"%2$s\""
+msgstr "Невалиден контролер \"%1$s\" в \"%2$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid controller factory name \"%1$s\""
-msgstr "Недопустими символи в името на класа \"%1$s\""
+msgstr "Невалидно име на фабрика на контролер \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid domain \"%1$s\""
-msgstr "Недопустими символи в името на класа \"%1$s\""
+msgstr "Невалиден домейн \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid factory \"%1$s\""
-msgstr "Недопустими символи в името на класа \"%1$s\""
+msgstr "Невалидна фабрика \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid list type \"%1$s\""
-msgstr "Недопустими символи в името на класа \"%1$s\""
+msgstr "Невалиден тип на списък \"%1$s\""
 
 #, php-format
 msgid "Invalid method \"%1$s\" in request"
-msgstr "Invalid method \"%1$s\" in request"
+msgstr "Невалиден метод \"%1$s\" в заявката"
 
 #, php-format
 msgid "Invalid row from %1$s text import: %2$s"
-msgstr "Invalid row from %1$s text import: %2$s"
+msgstr "Невалиден ред от %1$s импорта на текста: %2$s"
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid sort direction \"%1$s\""
-msgstr "Невалидни продуктови линии в \"%1$s\": %2$d/%3$d"
+msgstr "Невалидна посока на сортиране \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Invalid text type \"%1$s\""
-msgstr "Недопустими символи в името на класа \"%1$s\""
+msgstr "Невалиден тип на текст  \"%1$s\""
 
 #, php-format
 msgid "List item doesn't implement \"%1$s\""
-msgstr "List item doesn't implement \"%1$s\""
+msgstr "Елемент от списъка не се имплементира \"%1$s\""
 
 #, php-format
 msgid "Method \"%1$s\" not found"
-msgstr "Method \"%1$s\" not found"
+msgstr "Метод \"%1$s\" не е намерен"
 
 #, php-format
 msgid "Missing parameter \"%1$s\""
-msgstr "Missing parameter \"%1$s\""
+msgstr "Липсващ параметър \"%1$s\""
 
 #, php-format
 msgid "No allowed image types configured for \"%1$s\""
-msgstr "No allowed image types configured for \"%1$s\""
+msgstr "Неразрешени типове изображения са конфигурирани за \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Required attribute \"%1$s\" missing in request"
-msgstr "Задължителният ключ за маркиране \"%1$s\" липсва или не съдържа масив"
+msgstr "Задължителният атрибут \"%1$s\" липсва в заявката"
 
 #, php-format
 msgid "Site item for code \"%1$s\" not found"
-msgstr "Site item for code \"%1$s\" not found"
+msgstr "Сайт елемента за код \"%1$s\" не е намерен"
 
-#, fuzzy, php-format
+#, php-format
 msgid "Unable to call method \"%1$s\""
-msgstr "Невъзможен е импорта на продукт с код \"%1$s\": %2$s"
+msgstr "Невъзможно е да се извика метод \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Unable to create directory \"%1$s\""
-msgstr "Невъзможен е импорта на продукт с код \"%1$s\": %2$s"
+msgstr "Невъзможно е създаването на директория \"%1$s\""
 
-#, fuzzy, php-format
+#, php-format
 msgid "Unable to create file in \"%1$s\""
-msgstr "Невъзможно е преместването на импортирания файл"
+msgstr "Невъзможно е създаването на файл \"%1$s\""
 
 #, php-format
 msgid "Uploaded file could not be moved to upload directory \"%1$s\""
-msgstr "Uploaded file could not be moved to upload directory \"%1$s\""
-
-#~ msgid "Authorized payments of orders will be captured after dispatching or after a configurable amount of time"
-#~ msgstr "Оторизираните плащания на нареждания ще бъдат включени след изпращане или след определен период от време"
-
-#~ msgid "Batch update of payment/delivery status"
-#~ msgstr "Актуализация на статуса на плащане / доставка "
-
-#~ msgid "Cache cleanup"
-#~ msgstr "Изчистване на кеша"
-
-#~ msgid "Capture authorized payments"
-#~ msgstr "Вземане на разрешени плащания"
-
-#~ msgid "Catalog index optimization"
-#~ msgstr "Оптимизация на индекса на каталога"
-
-#~ msgid "Catalog index rebuild"
-#~ msgstr "Възстановяване на индекса на каталога"
-
-#~ msgid "Creates a product site map for search engines"
-#~ msgstr "Създава карта на продуктите в сайта за търсачки"
-
-#~ msgid "Creates bought together product suggestions"
-#~ msgstr "Създава предложения за съпътстващи продукти"
-
-#~ msgid "Deletes unfinished orders an makes their products and coupon codes available again"
-#~ msgstr "Изтрива недовършените поръчки и прави техните продукти и кодове на купони отново на разположение"
-
-#~ msgid "Deletes unpaid orders to keep the database clean"
-#~ msgstr "Изтрива неплатените поръчки за да поддържа базата данни чиста"
-
-#~ msgid "Executes payment or delivery service providers that uses batch updates"
-#~ msgstr "Изпълнява плащане или доставка на доставчици на услуги , които използват пакетни обновления"
-
-#~ msgid "Exports all available products"
-#~ msgstr "Експортира всички налични продукти"
-
-#~ msgid "Imports new and updates existing products from CSV files"
-#~ msgstr "Въвежда нови и актуализира съществуващи продукти от CSV файлове"
-
-#~ msgid "Log cleanup"
-#~ msgstr "Изчистване на записи за събития Log"
-
-#~ msgid "No \"product.code\" column in CSV mapping found"
-#~ msgstr "Не е намерена колона \"код на продукт\" в съответния CSV"
-
-#~ msgid "Optimizes the catalog index for searching products"
-#~ msgstr "Оптимизира индекса на стоките за търсене на продукти"
-
-#~ msgid "Process order delivery services"
-#~ msgstr "Обработка на услуги за доставка на поръчка"
-
-#~ msgid "Product export"
-#~ msgstr "Експорт на продукт"
-
-#~ msgid "Product import CSV"
-#~ msgstr "Импорт на продукт CSV"
-
-#~ msgid "Product site map"
-#~ msgstr "Карта на сайта за продукти"
-
-#~ msgid "Products bought together"
-#~ msgstr "Продукти закупени заедно"
-
-#~ msgid "Rebuilds the catalog index for searching products"
-#~ msgstr "Възстановява индекса на стоките за търсене на продукти"
-
-#~ msgid "Removes the expired entries from the cache"
-#~ msgstr "Премахва записи от кеша с изтекъл срок "
-
-#~ msgid "Removes the old log entries from the database and archives them (optional)"
-#~ msgstr "Премахва старите log записи от базата данни и ги архивира (по желание)"
-
-#~ msgid "Removes unfinished orders"
-#~ msgstr "Премахва недовършените поръчки"
-
-#~ msgid "Removes unpaid orders"
-#~ msgstr "Премахва неплатените поръчки"
-
-#~ msgid "Sends paid orders to the ERP system or logistic partner"
-#~ msgstr "Изпраща платените поръчки към ERP система или логистичен партньор"
-
-#~ msgid "Started product import from \"%1$s\" (%2$s)"
-#~ msgstr "Започна импорт на продукт от \"%1$s\" (%2$s)"
-
-#~ msgid "aimeos-products-%d.xml"
-#~ msgstr "aimeos-products-%d.xml"
-
-#~ msgid "aimeos-sitemap-%d.xml"
-#~ msgstr "aimeos-sitemap-%d.xml"
+msgstr "Каченият файл не може да бъде добавен в качената директория \"%1$s\""

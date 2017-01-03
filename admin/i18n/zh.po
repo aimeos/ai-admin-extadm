@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Bruce Liu <zcon.bruce@gmail.com>, 2016
 # manuel.fries <manuel.fries@gdatasoftware.com>, 2014
@@ -9,15 +9,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-02 10:44+0100\n"
-"PO-Revision-Date: 2016-07-16 21:36+0000\n"
+"POT-Creation-Date: 2017-01-03 12:08+0100\n"
+"PO-Revision-Date: 2017-01-03 11:21+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Chinese (http://www.transifex.com/aimeos/aimeos-core/language/zh/)\n"
-"Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. / price format with value (%1$s) and currency (%2$s)
+#, php-format
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
 
 msgid "Actual current price"
 msgstr "實際當前價格"
@@ -184,6 +189,65 @@ msgstr "代碼"
 msgid "Codes"
 msgstr "代碼"
 
+#. /jqadm/partial/filter
+#. * Relative path to the partial template for displaying the product filter
+#. *
+#. * The template file contains the HTML code and processing instructions
+#. * to generate the result shown in the administration interface. The
+#. * configuration string is the path to the template file relative
+#. * to the templates directory (usually in admin/jqadm/templates).
+#. *
+#. * You can overwrite the template file configuration in extensions and
+#. * provide alternative templates. These alternative templates should be
+#. * named like the default one but with the string "default" replaced by
+#. * an unique name. You may use the name of your project for this. If
+#. * you've implemented an alternative client class as well, "default"
+#. * should be replaced by the name of the new class.
+#. *
+#. * @param string Relative path to the partial creating the HTML code
+#. * @since 2016.04
+#. * @category Developer
+#. * @see admin/jqadm/partial/confirm
+#. * @see admin/jqadm/partial/error
+#. /jqadm/partial/pagination
+#. * Relative path to the partial template for displaying the pagination
+#. *
+#. * The template file contains the HTML code and processing instructions
+#. * to generate the result shown in the administration interface. The
+#. * configuration string is the path to the template file relative
+#. * to the templates directory (usually in admin/jqadm/templates).
+#. *
+#. * You can overwrite the template file configuration in extensions and
+#. * provide alternative templates. These alternative templates should be
+#. * named like the default one but with the string "default" replaced by
+#. * an unique name. You may use the name of your project for this. If
+#. * you've implemented an alternative client class as well, "default"
+#. * should be replaced by the name of the new class.
+#. *
+#. * @param string Relative path to the partial creating the HTML code
+#. * @since 2016.04
+#. * @category Developer
+#. * @see admin/jqadm/partial/filter
+#. * @see admin/jqadm/partial/confirm
+#. * @see admin/jqadm/partial/error
+#. /jqadm/template/page
+#. * Relative path to the template for the base page template
+#. *
+#. * The template file contains the HTML code and processing instructions
+#. * to generate the result shown in the administration interface. The
+#. * configuration string is the path to the template file relative
+#. * to the templates directory (usually in admin/jqadm/templates).
+#. *
+#. * You can overwrite the template file configuration in extensions and
+#. * provide alternative templates. These alternative templates should be
+#. * named like the default one but with the string "default" replaced by
+#. * an unique name. You may use the name of your project for this. If
+#. * you've implemented an alternative client class as well, "default"
+#. * should be replaced by the name of the new class.
+#. *
+#. * @param string Relative path to the partial creating the HTML code
+#. * @since 2016.04
+#. * @category Developer
 msgid "Columns"
 msgstr "欄位"
 
@@ -259,14 +323,16 @@ msgstr "顧客"
 
 #. : Customer address item panel title with customer name ({0}) and site code
 #. ({1)}
-#. : Customer address item panel title with customer name ({0}) and site code ({1)}
+#. : Customer address item panel title with customer name ({0}) and site code
+#. ({1)}
 #, python-brace-format
 msgid "Customer address: {0} ({1})"
 msgstr "顧客地址： {0} ({1})"
 
 #. : Customer group item panel title with customer name ({0}) and site code
 #. ({1)}
-#. : Customer group item panel title with customer name ({0}) and site code ({1)}
+#. : Customer group item panel title with customer name ({0}) and site code
+#. ({1)}
 #, python-brace-format
 msgid "Customer group: {0} ({1})"
 msgstr "顧客群組: {0} ({1})"
@@ -299,6 +365,9 @@ msgstr "配送日期"
 
 msgid "Delivery status"
 msgstr "配送狀態"
+
+msgid "Delivery types"
+msgstr ""
 
 msgid "Details"
 msgstr "明細"
@@ -336,6 +405,49 @@ msgstr "結束日期"
 msgid "Error"
 msgstr "錯誤"
 
+#. /jqadm/partial/error
+#. * Relative path to the partial template for displaying errors
+#. *
+#. * The template file contains the HTML code and processing instructions
+#. * to generate the result shown in the administration interface. The
+#. * configuration string is the path to the template file relative
+#. * to the templates directory (usually in admin/jqadm/templates).
+#. *
+#. * You can overwrite the template file configuration in extensions and
+#. * provide alternative templates. These alternative templates should be
+#. * named like the default one but with the string "default" replaced by
+#. * an unique name. You may use the name of your project for this. If
+#. * you've implemented an alternative client class as well, "default"
+#. * should be replaced by the name of the new class.
+#. *
+#. * @param string Relative path to the partial creating the HTML code
+#. * @since 2016.04
+#. * @category Developer
+#. * @see admin/jqadm/partial/confirm
+#. * @see admin/jqadm/partial/filter
+#. * @see admin/jqadm/partial/pagination
+#. /jqadm/partial/confirm
+#. * Relative path to the partial template for displaying the confirmation
+#. dialog
+#. *
+#. * The template file contains the HTML code and processing instructions
+#. * to generate the result shown in the administration interface. The
+#. * configuration string is the path to the template file relative
+#. * to the templates directory (usually in admin/jqadm/templates).
+#. *
+#. * You can overwrite the template file configuration in extensions and
+#. * provide alternative templates. These alternative templates should be
+#. * named like the default one but with the string "default" replaced by
+#. * an unique name. You may use the name of your project for this. If
+#. * you've implemented an alternative client class as well, "default"
+#. * should be replaced by the name of the new class.
+#. *
+#. * @param string Relative path to the partial creating the HTML code
+#. * @since 2016.04
+#. * @category Developer
+#. * @see admin/jqadm/partial/error
+#. * @see admin/jqadm/partial/filter
+#. * @see admin/jqadm/partial/pagination
 msgid "Expert mode"
 msgstr "匯出模式"
 
@@ -464,10 +576,7 @@ msgstr "姓 (必填)"
 msgid "Lastname"
 msgstr "姓"
 
-msgid "Latitude"
-msgstr ""
-
-msgid "Latitude, e.g. 50.000000"
+msgid "Latest orders"
 msgstr ""
 
 msgid "Length"
@@ -514,7 +623,8 @@ msgstr "區域"
 
 #. : Locale currency item panel title with currency label ({0}) and currency
 #. code ({1)}
-#. : Locale currency item panel title with currency label ({0}) and currency code ({1)}
+#. : Locale currency item panel title with currency label ({0}) and currency
+#. code ({1)}
 #, python-brace-format
 msgid "Locale currency: {0} ({1})"
 msgstr "區域貨幣：{0} ({1})"
@@ -526,7 +636,8 @@ msgstr "區域項目明細: ({1})"
 
 #. : Locale language item panel title with language label ({0}) and language
 #. code ({1)}
-#. : Locale language item panel title with language label ({0}) and language code ({1)}
+#. : Locale language item panel title with language label ({0}) and language
+#. code ({1)}
 #, python-brace-format
 msgid "Locale language: {0} ({1})"
 msgstr "區域語言：{0} ({1})"
@@ -541,12 +652,6 @@ msgstr "Logs"
 
 msgid "Long description"
 msgstr "長敘述"
-
-msgid "Longitude"
-msgstr ""
-
-msgid "Longitude, e.g. 10.000000"
-msgstr ""
 
 msgid "Media"
 msgstr "媒體"
@@ -630,6 +735,15 @@ msgstr "訂單項目明細"
 msgid "Order product ID"
 msgstr "訂單商品ID"
 
+msgid "Orders by day"
+msgstr ""
+
+msgid "Orders by hour"
+msgstr ""
+
+msgid "Orders by payment status"
+msgstr ""
+
 msgid "Overview"
 msgstr "總覽"
 
@@ -655,6 +769,9 @@ msgstr "支付日期"
 msgid "Payment status"
 msgstr "支付狀態"
 
+msgid "Payment types"
+msgstr ""
+
 msgid "Physical values"
 msgstr "實體數值"
 
@@ -664,7 +781,9 @@ msgstr "請再次確認您的資料"
 msgid "Please save the coupon first before you can add codes"
 msgstr "在增加新的代碼前請先將您的優惠券代碼儲存"
 
-msgid "Please select an item on the right side and add it via drag and drop to this list."
+msgid ""
+"Please select an item on the right side and add it via drag and drop to this"
+" list."
 msgstr "請從右側選擇一樣項目並拖曳到列表。"
 
 msgid "Plugin"
@@ -750,8 +869,10 @@ msgstr "商品價格"
 msgid "Product property type"
 msgstr "商品屬性類型"
 
-#. : Product property.type item panel title with type label ({0}) and site code ({1)}
-#. : Product property type item panel title with type label ({0}) and site code ({1)}
+#. : Product property.type item panel title with type label ({0}) and site
+#. code ({1)}
+#. : Product property type item panel title with type label ({0}) and site
+#. code ({1)}
 #, python-brace-format
 msgid "Product property type: {0} ({1})"
 msgstr "商品屬性類型：{0} ({1})"
@@ -764,15 +885,6 @@ msgstr "商品折扣"
 
 msgid "Product stock"
 msgstr "商品存貨"
-
-#, fuzzy
-msgid "Product stock type"
-msgstr "商品存貨"
-
-#. : Product stock type item panel title with type label ({0}) and site code ({1)}
-#, fuzzy, python-brace-format
-msgid "Product stock type: {0} ({1})"
-msgstr "商品類型：{0} ({1})"
 
 msgid "Product supplier (optional)"
 msgstr "商品供應商(選填)"
@@ -953,7 +1065,8 @@ msgstr "供應商"
 
 #. : Supplier address item panel title with supplier name ({0}) and site code
 #. ({1)}
-#. : Supplier address item panel title with supplier name ({0}) and site code ({1)}
+#. : Supplier address item panel title with supplier name ({0}) and site code
+#. ({1)}
 #, python-brace-format
 msgid "Supplier address: {0} ({1})"
 msgstr "供應商地址：{0} ({1})"
@@ -1014,10 +1127,15 @@ msgstr "文本：{0} ({1})"
 msgid "Texts"
 msgstr "文本"
 
-msgid "The file with the exported texts will be available within a few minutes. It can then be downloaded from the \"Job\" panel of the \"Overview\" tab."
+msgid ""
+"The file with the exported texts will be available within a few minutes. It "
+"can then be downloaded from the \"Job\" panel of the \"Overview\" tab."
 msgstr "包含文本的匯出檔案將在幾分鐘內c匯出完成, 您可以在總覽中的工作面板找到它。"
 
-msgid "The texts of your uploaded file will be imported within a few minutes. You can check the status of the import in the \"Job\" panel of the \"Overview\" tab"
+msgid ""
+"The texts of your uploaded file will be imported within a few minutes. You "
+"can check the status of the import in the \"Job\" panel of the \"Overview\" "
+"tab"
 msgstr "包含文本的匯入檔案將在幾分鐘內匯入完成, 您可以在總覽中的工作面板找到它。"
 
 msgid "This combination already exists"
@@ -1083,9 +1201,10 @@ msgstr "認證日期"
 msgid "Warehouse"
 msgstr "倉庫"
 
-#. : Product stock type item panel title with type label ({0}) and site
+#. : Product warehouse item panel title with warehouse label ({0}) and site
 #. code ({1)}
-#. : Product stock type item panel title with type label ({0}) and site code ({1)}
+#. : Product warehouse item panel title with warehouse label ({0}) and site
+#. code ({1)}
 #, python-brace-format
 msgid "Warehouse: {0} ({1})"
 msgstr "倉庫：{0} ({1})"
@@ -1111,11 +1230,16 @@ msgstr "YYYY-MM-DD hh:mm:ss (選填)"
 msgid "You are going to delete one or more items. Would you like to proceed?"
 msgstr "你將要刪除一個或多個項目, 確定嗎？"
 
-msgid "You are going to flush the complete cache for the current site. Would you like to proceed?"
+msgid ""
+"You are going to flush the complete cache for the current site. Would you "
+"like to proceed?"
 msgstr "你將要清除整個當前分站的所有快取, 確定嗎？"
 
 msgid "Zip code"
 msgstr "Zip code"
+
+msgid "dashboard"
+msgstr ""
 
 msgid "new"
 msgstr "新"
@@ -1143,6 +1267,9 @@ msgstr "支付：被拒絕"
 
 msgid "pay:unfinished"
 msgstr "支付：未完成"
+
+msgid "product"
+msgstr "商品"
 
 msgid "stat:deleted"
 msgstr "狀態：被刪除"
@@ -1188,9 +1315,3 @@ msgstr "未知"
 
 msgid "yy-mm-dd"
 msgstr "yy-mm-dd"
-
-#~ msgid "%1$s %2$s"
-#~ msgstr "%1$s %2$s"
-
-#~ msgid "product"
-#~ msgstr "商品"
