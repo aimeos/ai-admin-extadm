@@ -41,6 +41,19 @@ abstract class Base
 
 
 	/**
+	 * Catch unknown methods
+	 *
+	 * @param string $name Name of the method
+	 * @param array $param List of method parameter
+	 * @throws \Aimeos\Controller\ExtJS\Exception If method call failed
+	 */
+	public function __call( $name, array $param )
+	{
+		throw new \Aimeos\Controller\ExtJS\Exception( sprintf( 'Unable to call method "%1$s"', $name ) );
+	}
+
+
+	/**
 	 * Executes tasks before processing the items.
 	 *
 	 * @param \stdClass $params Associative list of parameters
