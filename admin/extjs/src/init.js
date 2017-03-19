@@ -41,8 +41,9 @@ Ext.onReady(function() {
 
     var type = (MShop.config.update && MShop.config.update.type ? MShop.config.update.type : 'custom');
     var version = (MShop.config.update && MShop.config.update.version ? MShop.config.update.version : '');
-    var updateurl = 'https://aimeos.org/update/?type=' + type + '&version=' + version;
-    var checkurl = 'https://aimeos.org/check/?type=' + type + '&version=' + version;
+    var extensions = (MShop.config.update && MShop.config.update.extensions ? MShop.config.update.extensions : '');
+    var updateurl = 'https://aimeos.org/update/?type=' + type + '&version=' + version + '&extensions=' + extensions;
+    var checkurl = 'https://aimeos.org/check/?type=' + type + '&version=' + version + '&extensions=' + extensions;
 
     // build interface
     new Ext.Viewport({
