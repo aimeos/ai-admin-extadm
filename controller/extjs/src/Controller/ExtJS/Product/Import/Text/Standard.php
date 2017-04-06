@@ -157,7 +157,7 @@ class Standard
 			 */
 			$container = $this->createContainer( $tmpfile, 'controller/extjs/product/import/text/standard/container' );
 
-			$textTypeMap = array();
+			$textTypeMap = [];
 			foreach( $this->getTextTypes( 'product' ) as $item ) {
 				$textTypeMap[$item->getCode()] = $item->getId();
 			}

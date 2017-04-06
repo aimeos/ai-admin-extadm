@@ -66,7 +66,7 @@ class Standard
 	{
 		$this->checkParams( $params, array( 'items' ) );
 
-		$ids = array();
+		$ids = [];
 		$manager = $this->getManager();
 		$items = ( !is_array( $params->items ) ? array( $params->items ) : $params->items );
 
@@ -97,7 +97,7 @@ class Standard
 		$sort[] = $search->sort( '+', 'locale.currency.label' );
 		$search->setSortations( $sort );
 
-		$items = $this->getManager()->searchItems( $search, array(), $total );
+		$items = $this->getManager()->searchItems( $search, [], $total );
 
 		return array(
 			'items' => $this->toArray( $items ),

@@ -47,7 +47,7 @@ class Standard
 		$context = $this->getContext();
 
 		$items = (array) $params->items;
-		$lang = ( property_exists( $params, 'lang' ) ) ? (array) $params->lang : array();
+		$lang = ( property_exists( $params, 'lang' ) ) ? (array) $params->lang : [];
 
 		$languages = ( !empty( $lang ) ) ? implode( $lang, '-' ) : 'all';
 
@@ -89,7 +89,7 @@ class Standard
 		$context = $this->getContext();
 
 		$items = (array) $params->items;
-		$lang = ( property_exists( $params, 'lang' ) ) ? (array) $params->lang : array();
+		$lang = ( property_exists( $params, 'lang' ) ) ? (array) $params->lang : [];
 
 		$config = $context->getConfig();
 
@@ -297,7 +297,7 @@ class Standard
 	 */
 	protected function addItem( \Aimeos\MW\Container\Content\Iface $contentItem, \Aimeos\MShop\Catalog\Item\Iface $item, $langid )
 	{
-		$listTypes = array();
+		$listTypes = [];
 		foreach( $item->getListItems( 'text' ) as $listItem ) {
 			$listTypes[$listItem->getRefId()] = $listItem->getType();
 		}

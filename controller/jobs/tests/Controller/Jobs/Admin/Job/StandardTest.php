@@ -85,7 +85,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 			->will( $this->returnValue( array( 'number' => 42 ) ) );
 
 		$this->jobManagerStub->expects( $this->atLeastOnce() )->method( 'searchItems' )
-			->will( $this->onConsecutiveCalls( array( $this->jobItemStub ), array() ) );
+			->will( $this->onConsecutiveCalls( array( $this->jobItemStub ), [] ) );
 
 		$this->jobManagerStub->expects( $this->once() )->method( 'saveItem' );
 
@@ -120,7 +120,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 
 		$this->jobManagerStub->expects( $this->atLeastOnce() )->method( 'searchItems' )
-			->will( $this->onConsecutiveCalls( array( $this->jobItemStub ), array() ) );
+			->will( $this->onConsecutiveCalls( array( $this->jobItemStub ), [] ) );
 
 		$this->jobManagerStub->expects( $this->once() )->method( 'saveItem' );
 

@@ -47,7 +47,7 @@ class Standard
 		$this->checkParams( $params, array( 'site', 'items' ) );
 		$this->setLocale( $params->site );
 
-		$refIds = array();
+		$refIds = [];
 		$ids = (array) $params->items;
 		$manager = $this->getManager();
 
@@ -84,7 +84,7 @@ class Standard
 		$this->checkParams( $params, array( 'site', 'items' ) );
 		$this->setLocale( $params->site );
 
-		$ids = $refIds = array();
+		$ids = $refIds = [];
 		$manager = $this->getManager();
 		$items = ( !is_array( $params->items ) ? array( $params->items ) : $params->items );
 
@@ -121,10 +121,10 @@ class Standard
 
 		$totalList = 0;
 		$search = $this->initCriteria( $this->getManager()->createSearch(), $params );
-		$result = $this->getManager()->searchItems( $search, array(), $totalList );
+		$result = $this->getManager()->searchItems( $search, [], $totalList );
 
-		$idLists = array();
-		$listItems = array();
+		$idLists = [];
+		$listItems = [];
 
 		foreach( $result as $item )
 		{

@@ -42,12 +42,12 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	public function testExportCSVFile()
 	{
 		$manager = \Aimeos\MShop\Catalog\Manager\Factory::createManager( $this->context );
-		$node = $manager->getTree( null, array(), \Aimeos\MW\Tree\Manager\Base::LEVEL_ONE );
+		$node = $manager->getTree( null, [], \Aimeos\MW\Tree\Manager\Base::LEVEL_ONE );
 
 		$search = $manager->createSearch();
 		$search->setConditions( $search->compare( '==', 'catalog.label', array( 'Root', 'Tee' ) ) );
 
-		$ids = array();
+		$ids = [];
 		foreach( $manager->searchItems( $search ) as $item ) {
 			$ids[$item->getLabel()] = $item->getId();
 		}
@@ -79,7 +79,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 			throw new \RuntimeException( 'Unable to remove export file' );
 		}
 
-		$lines = $langs = array();
+		$lines = $langs = [];
 		$langs['fr'] = $testdir . DIRECTORY_SEPARATOR . 'fr.csv';
 		$langs['de'] = $testdir . DIRECTORY_SEPARATOR . 'de.csv';
 

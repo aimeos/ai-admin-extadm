@@ -44,7 +44,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$productManager = \Aimeos\MShop\Product\Manager\Factory::createManager( $this->context );
 		$criteria = $productManager->createSearch();
 
-		$expr = array();
+		$expr = [];
 		$expr[] = $criteria->compare( '==', 'product.code', 'CNE' );
 		$criteria->setConditions( $criteria->compare( '==', 'product.code', 'CNE' ) );
 
@@ -83,7 +83,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 		$this->assertTrue( file_exists( $deCSV ) );
 		$fh = fopen( $deCSV, 'r' );
-		$lines = array();
+		$lines = [];
 
 		while( ( $data = fgetcsv( $fh ) ) != false ) {
 			$lines[] = $data;

@@ -222,7 +222,7 @@ class Standard
 
 		$type = $config->get( 'controller/extjs/coupon/code/standard/container/type', 'Zip' );
 		$format = $config->get( 'controller/extjs/coupon/code/standard/container/format', 'CSV' );
-		$options = $config->get( 'controller/extjs/coupon/code/standard/container/options', array() );
+		$options = $config->get( 'controller/extjs/coupon/code/standard/container/options', [] );
 
 		$items = ( !is_array( $params->items ) ? array( $params->items ) : $params->items );
 

@@ -59,7 +59,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	public function testSaveDeleteItem()
 	{
 		$catalogManager = \Aimeos\MShop\Catalog\Manager\Factory::createManager( \TestHelperExtjs::getContext() );
-		$node = $catalogManager->getTree( null, array(), \Aimeos\MW\Tree\Manager\Base::LEVEL_ONE );
+		$node = $catalogManager->getTree( null, [], \Aimeos\MW\Tree\Manager\Base::LEVEL_ONE );
 
 		$params = (object) array(
 			'site' => 'unittest',

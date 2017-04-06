@@ -64,7 +64,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$this->assertGreaterThanOrEqual( 2, $result['items']->{'children'} );
 
 
-		$ids = array();
+		$ids = [];
 		foreach( $result['items']->{'children'} as $child ) {
 			$ids[] = $child->{'locale.site.id'};
 		}
@@ -147,7 +147,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	public function testMoveItemsNoAction()
 	{
 		$moveParams = (object) array(
-			'items' => array(),
+			'items' => [],
 			'oldparentid' => null,
 			'newparentid' => null,
 			'refid' => null,

@@ -296,7 +296,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$params->items = basename( $this->testdir . DIRECTORY_SEPARATOR . 'coupon.zip' );
 		$params->site = 'unittest';
 
-		$_FILES = array();
+		$_FILES = [];
 
 		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );

@@ -47,7 +47,7 @@ class Standard
 		$this->checkParams( $params, array( 'site', 'items' ) );
 		$this->setLocale( $params->site );
 
-		$idList = array();
+		$idList = [];
 		$context = $this->getContext();
 		$manager = \Aimeos\MShop\Factory::createManager( $context, 'media' );
 		$cntl = \Aimeos\Controller\Common\Media\Factory::createController( $context );
@@ -117,7 +117,7 @@ class Standard
 		$typeManager = \Aimeos\MShop\Factory::createManager( $context, 'media/type' );
 
 		$item = $manager->createItem();
-		$item->setTypeId( $typeManager->findItem( 'default', array(), 'product' )->getId() );
+		$item->setTypeId( $typeManager->findItem( 'default', [], 'product' )->getId() );
 		$item->setDomain( 'product' );
 		$item->setStatus( 1 );
 

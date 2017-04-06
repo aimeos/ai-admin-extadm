@@ -19,7 +19,7 @@ class FactoryTest extends \PHPUnit_Framework_TestCase
 	protected function tearDown()
 	{
 		$context = \TestHelperExtjs::getContext();
-		$context->getConfig()->set( 'controller/extjs/common/decorators/default', array() );
+		$context->getConfig()->set( 'controller/extjs/common/decorators/default', [] );
 	}
 
 
@@ -79,7 +79,7 @@ class FactoryTest extends \PHPUnit_Framework_TestCase
 		$config = $context->getConfig();
 
 		$config->set( 'controller/extjs/common/decorators/default', array( 'Example', 'Example' ) );
-		$config->set( 'controller/extjs/plugin/decorators/excludes', array() );
+		$config->set( 'controller/extjs/plugin/decorators/excludes', [] );
 
 		$controller = \Aimeos\Controller\ExtJS\Plugin\Factory::createController( $context, 'Standard' );
 

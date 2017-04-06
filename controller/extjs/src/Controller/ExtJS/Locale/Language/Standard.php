@@ -64,7 +64,7 @@ class Standard
 	{
 		$this->checkParams( $params, array( 'items' ) );
 
-		$ids = array();
+		$ids = [];
 		$manager = $this->getManager();
 		$items = ( !is_array( $params->items ) ? array( $params->items ) : $params->items );
 
@@ -97,7 +97,7 @@ class Standard
 		{
 			$localeManager = \Aimeos\MShop\Locale\Manager\Factory::createManager( $this->getContext() );
 
-			$langids = array();
+			$langids = [];
 			foreach( $localeManager->searchItems( $localeManager->createSearch() ) as $item ) {
 				$langids[] = $item->getLanguageId();
 			}
@@ -113,7 +113,7 @@ class Standard
 		$sort[] = $search->sort( '+', 'locale.language.label' );
 		$search->setSortations( $sort );
 
-		$items = $this->getManager()->searchItems( $search, array(), $total );
+		$items = $this->getManager()->searchItems( $search, [], $total );
 
 		return array(
 			'items' => $this->toArray( $items ),

@@ -116,7 +116,7 @@ abstract class Base
 		$total = 0;
 		$manager = $this->getManager();
 		$search = $this->initCriteria( $manager->createSearch(), $params );
-		$items = $manager->searchItems( $search, array(), $total );
+		$items = $manager->searchItems( $search, [], $total );
 
 		return array(
 			'items' => $this->toArray( $items ),
@@ -220,7 +220,7 @@ abstract class Base
 		$this->checkParams( $params, array( 'site', 'items' ) );
 		$this->setLocale( $params->site );
 
-		$ids = array();
+		$ids = [];
 		$manager = $this->getManager();
 		$entries = ( !is_array( $params->items ) ? array( $params->items ) : $params->items );
 
@@ -337,7 +337,7 @@ abstract class Base
 	 */
 	protected function getAttributeSchema( array $attributes, $all = true )
 	{
-		$properties = array();
+		$properties = [];
 		$iface = '\\Aimeos\\MW\\Criteria\\Attribute\\Iface';
 
 		foreach( $attributes as $attribute )
@@ -447,7 +447,7 @@ abstract class Base
 	{
 		if( isset( $params->sort ) && isset( $params->dir ) )
 		{
-			$sortation = array();
+			$sortation = [];
 
 			switch( $params->dir )
 			{
@@ -511,7 +511,7 @@ abstract class Base
 	 */
 	protected function toArray( array $list )
 	{
-		$result = array();
+		$result = [];
 
 		foreach( $list as $item ) {
 			$result[] = (object) $item->toArray();
@@ -545,7 +545,7 @@ abstract class Base
 	 */
 	protected function getDomainItems( array $lists )
 	{
-		$result = array();
+		$result = [];
 
 		foreach( $lists as $domain => $ids )
 		{
@@ -556,7 +556,7 @@ abstract class Base
 			$criteria->setConditions( $criteria->compare( '==', str_replace( '/', '.', $domain ) . '.id', $ids ) );
 			$criteria->setSlice( 0, 0x7fffffff );
 
-			$items = $manager->searchItems( $criteria, array(), $total );
+			$items = $manager->searchItems( $criteria, [], $total );
 
 			$parts = explode( '/', $domain );
 			foreach( $parts as $key => $part ) {

@@ -64,7 +64,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 	public function testImportFromCSVFile()
 	{
-		$data = array();
+		$data = [];
 		$data[] = '"Language ID","Type","Code","List type","Text type","Text ID","Text"' . "\n";
 		$data[] = '"en","color","white","default","name","","unittest: white"' . "\n";
 		$data[] = '"en","color","blue","default","name","","unittest: blue"' . "\n";
@@ -100,7 +100,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$textManager = \Aimeos\MShop\Text\Manager\Factory::createManager( $this->context );
 		$criteria = $textManager->createSearch();
 
-		$expr = array();
+		$expr = [];
 		$expr[] = $criteria->compare( '==', 'text.domain', 'attribute' );
 		$expr[] = $criteria->compare( '==', 'text.languageid', 'en' );
 		$expr[] = $criteria->compare( '==', 'text.status', 1 );
@@ -109,7 +109,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 		$textItems = $textManager->searchItems( $criteria );
 
-		$textIds = array();
+		$textIds = [];
 		foreach( $textItems as $item )
 		{
 			$textManager->deleteItem( $item->getId() );
@@ -121,7 +121,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$listManager = $attributeManager->getSubManager( 'lists' );
 		$criteria = $listManager->createSearch();
 
-		$expr = array();
+		$expr = [];
 		$expr[] = $criteria->compare( '==', 'attribute.lists.domain', 'text' );
 		$expr[] = $criteria->compare( '==', 'attribute.lists.refid', $textIds );
 		$criteria->setConditions( $criteria->combine( '&&', $expr ) );
@@ -197,7 +197,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 			->setMethods( array( 'getUploadedFiles' ) )
 			->disableOriginalConstructor()
 			->getMock();
-		$helper->expects( $this->once() )->method( 'getUploadedFiles' )->will( $this->returnValue( array() ) );
+		$helper->expects( $this->once() )->method( 'getUploadedFiles' )->will( $this->returnValue( [] ) );
 
 		$view = new \Aimeos\MW\View\Standard();
 		$view->addHelper( 'request', $helper );
@@ -219,7 +219,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$actual = $this->object->getItemSchema();
 		$expected = array(
 			'name' => 'Attribute_Import_Text',
-			'properties' => array(),
+			'properties' => [],
 		);
 
 		$this->assertEquals( $expected, $actual );
@@ -230,7 +230,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	{
 		$actual = $this->object->getSearchSchema();
 		$expected = array(
-			'criteria' => array()
+			'criteria' => []
 		);
 
 		$this->assertEquals( $expected, $actual );
@@ -241,7 +241,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	{
 		$params = (object) array(
 			'site' => 'badSite',
-			'items' => (object) array(),
+			'items' => (object) [],
 		);
 		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
@@ -250,7 +250,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 	public function testAbstractCheckParamsException()
 	{
-		$params = (object) array();
+		$params = (object) [];
 		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}

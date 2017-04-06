@@ -49,10 +49,10 @@ class Standard
 
 		$totalList = 0;
 		$search = $this->initCriteria( $this->getManager()->createSearch(), $params );
-		$result = $this->getManager()->searchItems( $search, array(), $totalList );
+		$result = $this->getManager()->searchItems( $search, [], $totalList );
 
-		$idLists = array();
-		$listItems = array();
+		$idLists = [];
+		$listItems = [];
 
 		foreach( $result as $item )
 		{

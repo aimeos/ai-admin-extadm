@@ -125,7 +125,7 @@ class ExampleTest extends \PHPUnit_Framework_TestCase
 
 	public function testCall()
 	{
-		$result = $this->object->__call( 'getServiceDescription', array() );
+		$result = $this->object->__call( 'getServiceDescription', [] );
 		$this->assertInternalType( 'array', $result );
 	}
 

@@ -47,7 +47,7 @@ class Standard
 		$this->checkParams( $params, array( 'site', 'items' ) );
 		$this->setLocale( $params->site );
 
-		$idList = array();
+		$idList = [];
 		$ids = (array) $params->items;
 		$context = $this->getContext();
 		$manager = $this->getManager();

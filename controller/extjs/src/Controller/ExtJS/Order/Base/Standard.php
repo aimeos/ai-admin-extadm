@@ -45,7 +45,7 @@ class Standard
 	{
 		$this->checkParams( $params, array( 'site', 'items' ) );
 
-		$ids = array();
+		$ids = [];
 		$manager = $this->getManager();
 		$items = ( !is_array( $params->items ) ? array( $params->items ) : $params->items );
 

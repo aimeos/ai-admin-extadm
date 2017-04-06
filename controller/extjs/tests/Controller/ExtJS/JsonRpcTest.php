@@ -190,7 +190,7 @@ class JsonRpcTest extends \PHPUnit_Framework_TestCase
 	public function testProcessJsonObject()
 	{
 		$content = '{"jsonrpc":"2.0","method":"Product.searchItems","params":{"site":"unittest","condition":{"&&":[{"~=":{"product.label":"Cafe"}}]},"start":0,"limit":10,"sort":"product.label","dir":"DESC"},"id":1}';
-		$result = self::$object->process( array(), $content );
+		$result = self::$object->process( [], $content );
 		$object = json_decode( $result );
 
 		$this->assertObjectHasAttribute( 'jsonrpc', $object );
@@ -212,7 +212,7 @@ class JsonRpcTest extends \PHPUnit_Framework_TestCase
 	public function testProcessJsonArray()
 	{
 		$content = '[{"jsonrpc":"2.0","method":"Product.searchItems","params":{"site":"unittest","condition":{"&&":[{"~=":{"product.label":"Cafe"}}]},"start":0,"limit":10,"sort":"product.label","dir":"DESC"},"id":1}, {"jsonrpc":"2.0","method":"Product_Type.searchItems","params":{"site":"unit","start":0,"limit":2,"sort":"product.type.code","dir":"DESC"},"id":2}]';
-		$result = self::$object->process( array(), $content );
+		$result = self::$object->process( [], $content );
 		$list = json_decode( $result );
 
 		$this->assertEquals( 2, count( $list ) );
@@ -233,7 +233,7 @@ class JsonRpcTest extends \PHPUnit_Framework_TestCase
 
 	public function testProcessJsonWrongInputstream()
 	{
-		$result = self::$object->process( array(), 'invalid' );
+		$result = self::$object->process( [], 'invalid' );
 		$object = json_decode( $result );
 
 		$this->assertObjectHasAttribute( 'error', $object );
@@ -243,7 +243,7 @@ class JsonRpcTest extends \PHPUnit_Framework_TestCase
 
 	public function testProcessJsonWrongFormat()
 	{
-		$result = self::$object->process( array(), '{]}[' );
+		$result = self::$object->process( [], '{]}[' );
 		$object = json_decode( $result );
 
 		$this->assertObjectHasAttribute( 'error', $object );
@@ -253,7 +253,7 @@ class JsonRpcTest extends \PHPUnit_Framework_TestCase
 
 	public function testProcessJsonWrongType()
 	{
-		$result = self::$object->process( array(), '"string"' );
+		$result = self::$object->process( [], '"string"' );
 		$object = json_decode( $result );
 
 		$this->assertObjectHasAttribute( 'error', $object );
@@ -264,7 +264,7 @@ class JsonRpcTest extends \PHPUnit_Framework_TestCase
 	public function testProcessJsonNoMethod()
 	{
 		$content = '{"jsonrpc":"2.0","params":{"site":"unittest","condition":{"&&":[{"~=":{"product.label":"Cafe"}}]},"start":0,"limit":10,"sort":"product.label","dir":"DESC"},"id":1}';
-		$result = self::$object->process( array(), $content );
+		$result = self::$object->process( [], $content );
 		$object = json_decode( $result );
 
 		$this->assertObjectHasAttribute( 'error', $object );
@@ -275,7 +275,7 @@ class JsonRpcTest extends \PHPUnit_Framework_TestCase
 	public function testProcessJsonNoParams()
 	{
 		$content = '{"jsonrpc":"2.0","method":"Product.searchItems","id":1}';
-		$result = self::$object->process( array(), $content );
+		$result = self::$object->process( [], $content );
 		$object = json_decode( $result );
 
 		$this->assertObjectHasAttribute( 'error', $object );
@@ -286,7 +286,7 @@ class JsonRpcTest extends \PHPUnit_Framework_TestCase
 	public function testProcessJsonNoId()
 	{
 		$content = '{"jsonrpc":"2.0","method":"Product.searchItems","params":{"site":"unittest","condition":{"&&":[{"~=":{"product.label":"Cafe"}}]},"start":0,"limit":10,"sort":"product.label","dir":"DESC"}}';
-		$result = self::$object->process( array(), $content );
+		$result = self::$object->process( [], $content );
 		$this->assertEquals( null, $result );
 	}
 

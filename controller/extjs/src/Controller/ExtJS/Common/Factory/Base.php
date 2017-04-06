@@ -20,7 +20,7 @@ namespace Aimeos\Controller\ExtJS\Common\Factory;
  */
 class Base
 {
-	private static $objects = array();
+	private static $objects = [];
 
 
 	/**
@@ -116,8 +116,8 @@ class Base
 		 * @since 2014.03
 		 * @category Developer
 		 */
-		$decorators = $config->get( 'controller/extjs/common/decorators/default', array() );
-		$excludes = $config->get( 'controller/extjs/' . $domain . '/decorators/excludes', array() );
+		$decorators = $config->get( 'controller/extjs/common/decorators/default', [] );
+		$excludes = $config->get( 'controller/extjs/' . $domain . '/decorators/excludes', [] );
 
 		foreach( $decorators as $key => $name )
 		{
@@ -130,11 +130,11 @@ class Base
 		$controller = self::addDecorators( $context, $controller, $decorators, $classprefix );
 
 		$classprefix = '\\Aimeos\\Controller\\ExtJS\\Common\\Decorator\\';
-		$decorators = $config->get( 'controller/extjs/' . $domain . '/decorators/global', array() );
+		$decorators = $config->get( 'controller/extjs/' . $domain . '/decorators/global', [] );
 		$controller = self::addDecorators( $context, $controller, $decorators, $classprefix );
 
 		$classprefix = '\\Aimeos\\Controller\\ExtJS\\' . ucfirst( $localClass ) . '\\Decorator\\';
-		$decorators = $config->get( 'controller/extjs/' . $domain . '/decorators/local', array() );
+		$decorators = $config->get( 'controller/extjs/' . $domain . '/decorators/local', [] );
 		$controller = self::addDecorators( $context, $controller, $decorators, $classprefix );
 
 		return $controller;

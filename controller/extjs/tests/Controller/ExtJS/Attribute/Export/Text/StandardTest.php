@@ -43,7 +43,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	{
 		$manager = \Aimeos\MShop\Attribute\Manager\Factory::createManager( $this->context );
 
-		$ids = array();
+		$ids = [];
 		foreach( $manager->searchItems( $manager->createSearch() ) as $item ) {
 			$ids[] = $item->getId();
 		}
@@ -80,7 +80,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 		$this->assertTrue( file_exists( $deCSV ) );
 		$fh = fopen( $deCSV, 'r' );
-		$lines = array();
+		$lines = [];
 
 		while( ( $data = fgetcsv( $fh ) ) != false ) {
 			$lines[] = $data;

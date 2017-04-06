@@ -29,9 +29,9 @@ class BaseTest extends \PHPUnit_Framework_TestCase
 		$this->context = \TestHelperExtjs::getContext();
 		$config = $this->context->getConfig();
 
-		$config->set( 'controller/extjs/common/decorators/default', array() );
-		$config->set( 'controller/extjs/admin/log/decorators/global', array() );
-		$config->set( 'controller/extjs/admin/log/decorators/local', array() );
+		$config->set( 'controller/extjs/common/decorators/default', [] );
+		$config->set( 'controller/extjs/admin/log/decorators/global', [] );
+		$config->set( 'controller/extjs/admin/log/decorators/local', [] );
 
 	}
 
