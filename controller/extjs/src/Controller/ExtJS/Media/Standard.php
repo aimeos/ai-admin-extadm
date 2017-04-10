@@ -126,7 +126,7 @@ class Standard
 		\Aimeos\Controller\Common\Media\Factory::createController( $context )->add( $item, $file );
 		$manager->saveItem( $item );
 
-		return (object) $item->toArray();
+		return (object) $item->toArray( true );
 	}
 
 

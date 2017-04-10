@@ -514,7 +514,7 @@ abstract class Base
 		$result = [];
 
 		foreach( $list as $item ) {
-			$result[] = (object) $item->toArray();
+			$result[] = (object) $item->toArray( true );
 		}
 
 		return $result;

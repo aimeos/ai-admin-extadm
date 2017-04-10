@@ -131,7 +131,7 @@ class Standard
 			if( ( $domain = $item->getDomain() ) != '' ) {
 				$idLists[$domain][] = $item->getRefId();
 			}
-			$listItems[] = (object) $item->toArray();
+			$listItems[] = (object) $item->toArray( true );
 		}
 
 		return array(

@@ -279,7 +279,7 @@ class Standard
 	 */
 	protected function createNodeArray( \Aimeos\MShop\Locale\Item\Site\Iface $item )
 	{
-		$result = $item->toArray();
+		$result = $item->toArray( true );
 
 		if( method_exists( $item, 'getChildren' ) )
 		{
