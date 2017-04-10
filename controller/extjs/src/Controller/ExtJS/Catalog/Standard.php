@@ -188,7 +188,7 @@ class Standard
 	 */
 	protected function createNodeArray( \Aimeos\MShop\Catalog\Item\Iface $node )
 	{
-		$result = $node->toArray();
+		$result = $node->toArray( true );
 
 		foreach( $node->getChildren() as $child ) {
 			$result['children'][] = $this->createNodeArray( $child );
