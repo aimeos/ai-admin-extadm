@@ -8,7 +8,7 @@ namespace Aimeos\Controller\ExtJS\Product\Import\Text;
  * @copyright Metaways Infosystems GmbH, 2013
  * @copyright Aimeos (aimeos.org), 2015-2016
  */
-class StandardTest extends \PHPUnit_Framework_TestCase
+class StandardTest extends \PHPUnit\Framework\TestCase
 {
 	private $object;
 	private $testdir;
@@ -207,7 +207,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$params->items = 'file.txt';
 		$params->site = $this->context->getLocale()->getSite()->getCode();
 
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 }

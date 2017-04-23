@@ -8,7 +8,7 @@ namespace Aimeos\Controller\ExtJS\Locale\Site;
  * @copyright Metaways Infosystems GmbH, 2011
  * @copyright Aimeos (aimeos.org), 2015-2016
  */
-class StandardTest extends \PHPUnit_Framework_TestCase
+class StandardTest extends \PHPUnit\Framework\TestCase
 {
 	private $object;
 
@@ -168,7 +168,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 			'refid' => null
 		);
 
-		$this->expectException( '\\Aimeos\\MShop\\Locale\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\MShop\\Locale\\Exception' );
 		$this->object->moveItems( $moveParams );
 	}
 

@@ -8,7 +8,7 @@ namespace Aimeos\Controller\ExtJS\Coupon;
  * @copyright Metaways Infosystems GmbH, 2013
  * @copyright Aimeos (aimeos.org), 2015-2016
  */
-class StandardTest extends \PHPUnit_Framework_TestCase
+class StandardTest extends \PHPUnit\Framework\TestCase
 {
 	private $object;
 
@@ -289,7 +289,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 			'limit' => 1,
 		);
 
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->searchItems( $params );
 	}
 }

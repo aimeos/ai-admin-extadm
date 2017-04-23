@@ -7,7 +7,7 @@ namespace Aimeos\Controller\ExtJS\Product\Property\Type;
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Aimeos (aimeos.org), 2014-2015
  */
-class FactoryTest extends \PHPUnit_Framework_TestCase
+class FactoryTest extends \PHPUnit\Framework\TestCase
 {
 	public function testCreateController()
 	{
@@ -18,21 +18,21 @@ class FactoryTest extends \PHPUnit_Framework_TestCase
 
 	public function testFactoryExceptionWrongName()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Product\Property\Type\Factory::createController( \TestHelperExtjs::getContext(), 'Wrong$$$Name' );
 	}
 
 
 	public function testFactoryExceptionWrongClass()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Product\Property\Type\Factory::createController( \TestHelperExtjs::getContext(), 'WrongClass' );
 	}
 
 
 	public function testFactoryExceptionWrongInterface()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Product\Property\Type\Factory::createController( \TestHelperExtjs::getContext(), 'Factory' );
 	}
 

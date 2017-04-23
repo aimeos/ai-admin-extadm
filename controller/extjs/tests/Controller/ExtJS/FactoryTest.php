@@ -13,7 +13,7 @@ namespace Aimeos\Controller\ExtJS;
 /**
  * Test class for \Aimeos\Controller\ExtJS\Factory.
  */
-class FactoryTest extends \PHPUnit_Framework_TestCase
+class FactoryTest extends \PHPUnit\Framework\TestCase
 {
 	public function testCreateController()
 	{
@@ -31,28 +31,28 @@ class FactoryTest extends \PHPUnit_Framework_TestCase
 
 	public function testCreateControllerEmpty()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Factory::createController( \TestHelperExtjs::getContext(), "\t\n" );
 	}
 
 
 	public function testCreateControllerInvalidName()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Factory::createController( \TestHelperExtjs::getContext(), '%^' );
 	}
 
 
 	public function testCreateControllerNotExisting()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Factory::createController( \TestHelperExtjs::getContext(), 'notexist' );
 	}
 
 
 	public function testCreateSubControllerNotExisting()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Factory::createController( \TestHelperExtjs::getContext(), 'attribute/notexist' );
 	}
 

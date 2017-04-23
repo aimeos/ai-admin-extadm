@@ -8,7 +8,7 @@ namespace Aimeos\Controller\ExtJS\Attribute\Lists;
  * @copyright Metaways Infosystems GmbH, 2011
  * @copyright Aimeos (aimeos.org), 2015-2016
  */
-class FactoryTest extends \PHPUnit_Framework_TestCase
+class FactoryTest extends \PHPUnit\Framework\TestCase
 {
 	public function testCreateController()
 	{
@@ -19,21 +19,21 @@ class FactoryTest extends \PHPUnit_Framework_TestCase
 
 	public function testFactoryExceptionWrongName()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Attribute\Lists\Factory::createController( \TestHelperExtjs::getContext(), 'Wrong$$$Name' );
 	}
 
 
 	public function testFactoryExceptionWrongClass()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Attribute\Lists\Factory::createController( \TestHelperExtjs::getContext(), 'WrongClass' );
 	}
 
 
 	public function testFactoryExceptionWrongInterface()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Attribute\Lists\Factory::createController( \TestHelperExtjs::getContext(), 'Factory' );
 	}
 

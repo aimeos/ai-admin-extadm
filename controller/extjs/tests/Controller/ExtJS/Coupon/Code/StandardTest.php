@@ -8,7 +8,7 @@ namespace Aimeos\Controller\ExtJS\Coupon\Code;
  * @copyright Metaways Infosystems GmbH, 2014
  * @copyright Aimeos (aimeos.org), 2015-2016
  */
-class StandardTest extends \PHPUnit_Framework_TestCase
+class StandardTest extends \PHPUnit\Framework\TestCase
 {
 	private $object;
 	private $context;
@@ -298,7 +298,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 		$_FILES = [];
 
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 

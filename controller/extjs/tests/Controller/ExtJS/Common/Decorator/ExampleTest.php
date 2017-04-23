@@ -13,7 +13,7 @@ namespace Aimeos\Controller\ExtJS\Common\Decorator;
 /**
  * Test class for \Aimeos\Controller\ExtJS\Common\Decorator\ExampleTest.
  */
-class ExampleTest extends \PHPUnit_Framework_TestCase
+class ExampleTest extends \PHPUnit\Framework\TestCase
 {
 	private $object;
 
@@ -41,21 +41,21 @@ class ExampleTest extends \PHPUnit_Framework_TestCase
 
 	public function testDeleteItems()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->deleteItems( new \stdClass() );
 	}
 
 
 	public function testSaveItems()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->saveItems( new \stdClass() );
 	}
 
 
 	public function testSearchItems()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->searchItems( new \stdClass() );
 	}
 

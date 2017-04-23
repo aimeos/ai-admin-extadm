@@ -8,7 +8,7 @@ namespace Aimeos\Controller\ExtJS\Attribute\Import\Text;
  * @copyright Metaways Infosystems GmbH, 2011
  * @copyright Aimeos (aimeos.org), 2015-2016
  */
-class StandardTest extends \PHPUnit_Framework_TestCase
+class StandardTest extends \PHPUnit\Framework\TestCase
 {
 	private $object;
 	private $testdir;
@@ -209,7 +209,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 		$params->items = basename( $this->testfile );
 		$params->site = 'unittest';
 
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 
@@ -243,7 +243,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 			'site' => 'badSite',
 			'items' => (object) [],
 		);
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 
@@ -251,7 +251,7 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 	public function testAbstractCheckParamsException()
 	{
 		$params = (object) [];
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 

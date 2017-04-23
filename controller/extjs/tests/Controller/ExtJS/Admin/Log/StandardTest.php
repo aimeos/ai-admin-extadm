@@ -8,7 +8,7 @@ namespace Aimeos\Controller\ExtJS\Admin\Log;
  * @copyright Metaways Infosystems GmbH, 2011
  * @copyright Aimeos (aimeos.org), 2015-2016
  */
-class StandardTest extends \PHPUnit_Framework_TestCase
+class StandardTest extends \PHPUnit\Framework\TestCase
 {
 	private $object;
 
@@ -56,14 +56,14 @@ class StandardTest extends \PHPUnit_Framework_TestCase
 
 	public function testDeleteItems()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->deleteItems( new \stdClass() );
 	}
 
 
 	public function testSaveItems()
 	{
-		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->saveItems( new \stdClass() );
 	}
 
