@@ -31,28 +31,28 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
 
 	public function testCreateControllerEmpty()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Factory::createController( \TestHelperExtjs::getContext(), "\t\n" );
 	}
 
 
 	public function testCreateControllerInvalidName()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Factory::createController( \TestHelperExtjs::getContext(), '%^' );
 	}
 
 
 	public function testCreateControllerNotExisting()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Factory::createController( \TestHelperExtjs::getContext(), 'notexist' );
 	}
 
 
 	public function testCreateSubControllerNotExisting()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Factory::createController( \TestHelperExtjs::getContext(), 'attribute/notexist' );
 	}
 

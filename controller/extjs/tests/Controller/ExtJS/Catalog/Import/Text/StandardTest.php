@@ -217,7 +217,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$params->items = 'test.txt';
 		$params->site = 'unittest';
 
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 }

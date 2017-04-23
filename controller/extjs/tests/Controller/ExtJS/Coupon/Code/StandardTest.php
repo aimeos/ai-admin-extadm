@@ -298,7 +298,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 		$_FILES = [];
 
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 

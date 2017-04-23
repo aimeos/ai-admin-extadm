@@ -209,7 +209,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$params->items = basename( $this->testfile );
 		$params->site = 'unittest';
 
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 
@@ -243,7 +243,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 			'site' => 'badSite',
 			'items' => (object) [],
 		);
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 
@@ -251,7 +251,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 	public function testAbstractCheckParamsException()
 	{
 		$params = (object) [];
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 

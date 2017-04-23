@@ -289,7 +289,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 			'limit' => 1,
 		);
 
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->searchItems( $params );
 	}
 }

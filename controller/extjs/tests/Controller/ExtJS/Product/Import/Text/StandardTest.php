@@ -207,7 +207,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$params->items = 'file.txt';
 		$params->site = $this->context->getLocale()->getSite()->getCode();
 
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->uploadFile( $params );
 	}
 }

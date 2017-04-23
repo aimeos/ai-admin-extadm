@@ -32,21 +32,21 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
 
 	public function testFactoryExceptionWrongName()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Plugin\Factory::createController( \TestHelperExtjs::getContext(), 'Wrong$$$Name' );
 	}
 
 
 	public function testFactoryExceptionWrongClass()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Plugin\Factory::createController( \TestHelperExtjs::getContext(), 'WrongClass' );
 	}
 
 
 	public function testFactoryExceptionWrongInterface()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Plugin\Factory::createController( \TestHelperExtjs::getContext(), 'Factory' );
 	}
 
@@ -68,7 +68,7 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
 	// using Factorylocal class
 	public function testAbstractAddControllerDecoratorsNoDomainException()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Plugin\Factorylocal::createController( \TestHelperExtjs::getContext(), 'Standard', '' );
 	}
 
@@ -93,7 +93,7 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
 		$config = $context->getConfig();
 		$config->set( 'controller/extjs/common/decorators/default', array( '$$' ) );
 
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Plugin\Factorylocal::createController( $context, 'Standard', 'plugin' );
 	}
 
@@ -104,7 +104,7 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
 		$config = $context->getConfig();
 		$config->set( 'controller/extjs/common/decorators/default', array( 'WrongClass' ) );
 
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		\Aimeos\Controller\ExtJS\Plugin\Factorylocal::createController( $context, 'Standard', 'plugin' );
 	}
 

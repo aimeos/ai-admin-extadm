@@ -56,14 +56,14 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 	public function testDeleteItems()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->deleteItems( new \stdClass() );
 	}
 
 
 	public function testSaveItems()
 	{
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->saveItems( new \stdClass() );
 	}
 

@@ -168,7 +168,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 			'refid' => null
 		);
 
-		$this->setExpectedException( '\\Aimeos\\MShop\\Locale\\Exception' );
+		$this->expectException( '\\Aimeos\\MShop\\Locale\\Exception' );
 		$this->object->moveItems( $moveParams );
 	}
 

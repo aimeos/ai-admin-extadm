@@ -115,7 +115,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 	public function testSaveCheckParamsAbstractException()
 	{
 		$saveParam = (object) [];
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->saveItems( $saveParam );
 	}
 
@@ -126,7 +126,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 			'site' => 'badSite',
 			'items' => (object) [],
 		);
-		$this->setExpectedException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
+		$this->expectException( '\\Aimeos\\Controller\\ExtJS\\Exception' );
 		$this->object->saveItems( $saveParam );
 	}
 
