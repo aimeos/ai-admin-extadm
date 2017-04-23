@@ -13,7 +13,7 @@ namespace Aimeos\Controller\ExtJS\Common\Factory;
 /**
  * Test class for \Aimeos\Controller\ExtJS\Common\Factory\BaseTest.
  */
-class BaseTest extends \PHPUnit\Framework\TestCase
+class BaseTest extends \PHPUnit_Framework_TestCase
 {
 	private $context;
 

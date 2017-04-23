@@ -8,7 +8,7 @@ namespace Aimeos\Controller\ExtJS\Plugin\Decorator;
  * @copyright Metaways Infosystems GmbH, 2012
  * @copyright Aimeos (aimeos.org), 2015-2016
  */
-class ExampleTest extends \PHPUnit\Framework\TestCase
+class ExampleTest extends \PHPUnit_Framework_TestCase
 {
 	private $object;
 

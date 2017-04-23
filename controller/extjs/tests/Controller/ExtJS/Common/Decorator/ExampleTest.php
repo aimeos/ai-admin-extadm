@@ -13,7 +13,7 @@ namespace Aimeos\Controller\ExtJS\Common\Decorator;
 /**
  * Test class for \Aimeos\Controller\ExtJS\Common\Decorator\ExampleTest.
  */
-class ExampleTest extends \PHPUnit\Framework\TestCase
+class ExampleTest extends \PHPUnit_Framework_TestCase
 {
 	private $object;
 

@@ -13,7 +13,7 @@ namespace Aimeos\Controller\ExtJS;
 /**
  * Test class for \Aimeos\Controller\ExtJS\Factory.
  */
-class FactoryTest extends \PHPUnit\Framework\TestCase
+class FactoryTest extends \PHPUnit_Framework_TestCase
 {
 	public function testCreateController()
 	{

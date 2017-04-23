@@ -10,7 +10,7 @@
 namespace Aimeos\Controller\ExtJS\Tag;
 
 
-class FactoryTest extends \PHPUnit\Framework\TestCase
+class FactoryTest extends \PHPUnit_Framework_TestCase
 {
 	public function testCreateController()
 	{

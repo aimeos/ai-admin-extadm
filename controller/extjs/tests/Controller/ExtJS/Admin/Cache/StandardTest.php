@@ -10,7 +10,7 @@
 namespace Aimeos\Controller\ExtJS\Admin\Cache;
 
 
-class StandardTest extends \PHPUnit\Framework\TestCase
+class StandardTest extends \PHPUnit_Framework_TestCase
 {
 	private $object;
 
