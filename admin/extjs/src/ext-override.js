@@ -53,7 +53,7 @@ Ext.util.JSON.encodeDate = function(o) {
 
 /*
  * Fix for wrong width calculations
- * 
+ *
  * Thanks to uwolfer:
  * http://www.sencha.com/forum/showthread.php?198124-Grids-are-rendered-differently-in-upcoming-versions-of-Google-Chrome/page6
  */
@@ -76,7 +76,7 @@ if(Ext.isWebKit && Ext.webKitVersion >= 535.2) { // probably not the exact versi
 
 /*
  * Fix for broken drag&drop groups in ExtJS 3.*
- * 
+ *
  * Thanks to berniesaurus:
  * http://www.sencha.com/forum/showthread.php?264400-Ext-JS-3.4.4.1-Drag-amp-Drop-broken
  */
@@ -101,3 +101,17 @@ Ext.dd.DragDropMgr.getZIndex = function(element) {
     }
     return zIndex;
 };
+
+/**
+ * Enable selecting texts in grid views
+ * (in combination with overwriting CSS in ./resources/css/main.css)
+ */
+Ext.override(Ext.grid.GridView, {
+    templates: {
+        cell: new Ext.Template(
+            '<td class="x-grid3-col x-grid3-cell x-grid3-td-{id} {css}" style="{style}" tabIndex="0" {cellAttr}>',
+                '<div class="x-grid3-cell-inner x-grid3-col-{id}" {attr}>{value}</div>',
+            '</td>'
+        )
+    }
+});
