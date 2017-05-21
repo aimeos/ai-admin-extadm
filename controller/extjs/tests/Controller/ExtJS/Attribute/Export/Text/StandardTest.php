@@ -107,10 +107,10 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 		$this->assertEquals( '', $lines[163][0] );
 		$this->assertEquals( 'width', $lines[163][1] );
-		$this->assertEquals( '29', $lines[163][2] );
+		$this->assertEquals( '30', $lines[163][2] );
 		$this->assertEquals( 'default', $lines[163][3] );
 		$this->assertEquals( 'name', $lines[163][4] );
-		$this->assertEquals( '29', $lines[163][6] );
+		$this->assertEquals( '30', $lines[163][6] );
 	}
 
 
