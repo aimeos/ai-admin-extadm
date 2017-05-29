@@ -87,6 +87,14 @@ MShop.panel.product.ListUi = Ext.extend(MShop.panel.AbstractListUi, {
             format : 'Y-m-d H:i:s',
             editable : false
         }, {
+            xtype : 'gridcolumn',
+            dataIndex : 'product.target',
+            header : MShop.I18n.dt('admin', 'URL target'),
+            sortable : false,
+            width : 100,
+            editable : false,
+            hidden : true
+        }, {
             xtype : 'datecolumn',
             dataIndex : 'product.ctime',
             header : MShop.I18n.dt('admin', 'Created'),

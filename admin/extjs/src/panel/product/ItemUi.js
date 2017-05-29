@@ -105,6 +105,13 @@ MShop.panel.product.ItemUi = Ext.extend(MShop.panel.AbstractListItemUi, {
                             format : 'Y-m-d H:i:s',
                             emptyText : MShop.I18n.dt('admin', 'YYYY-MM-DD hh:mm:ss (optional)')
                         }, {
+                            xtype : 'textfield',
+                            fieldLabel : MShop.I18n.dt('admin', 'URL target'),
+                            name : 'product.target',
+                            maxLength : 255,
+                            regex : /^[^ \v\t\r\n\f]+$/,
+                            emptyText : MShop.I18n.dt('admin', 'Route or page ID (optional)')
+                        }, {
                             xtype : 'displayfield',
                             fieldLabel : MShop.I18n.dt('admin', 'Created'),
                             name : 'product.ctime'
