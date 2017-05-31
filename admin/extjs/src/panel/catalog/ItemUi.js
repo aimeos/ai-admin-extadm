@@ -73,6 +73,13 @@ MShop.panel.catalog.ItemUi = Ext.extend(MShop.panel.AbstractTreeItemUi, {
                             allowBlank : false,
                             emptyText : MShop.I18n.dt('admin', 'Internal name (required)')
                         }, {
+                            xtype : 'textfield',
+                            fieldLabel : MShop.I18n.dt('admin', 'URL target'),
+                            name : 'product.target',
+                            maxLength : 255,
+                            regex : /^[^ \v\t\r\n\f]+$/,
+                            emptyText : MShop.I18n.dt('admin', 'Route or page ID (optional)')
+                        }, {
                             xtype : 'displayfield',
                             fieldLabel : MShop.I18n.dt('admin', 'Created'),
                             name : 'catalog.ctime'
