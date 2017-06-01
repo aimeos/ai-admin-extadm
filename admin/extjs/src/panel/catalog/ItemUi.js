@@ -75,7 +75,7 @@ MShop.panel.catalog.ItemUi = Ext.extend(MShop.panel.AbstractTreeItemUi, {
                         }, {
                             xtype : 'textfield',
                             fieldLabel : MShop.I18n.dt('admin', 'URL target'),
-                            name : 'product.target',
+                            name : 'catalog.target',
                             maxLength : 255,
                             regex : /^[^ \v\t\r\n\f]+$/,
                             emptyText : MShop.I18n.dt('admin', 'Route or page ID (optional)')
@@ -146,6 +146,7 @@ MShop.panel.catalog.ItemUi = Ext.extend(MShop.panel.AbstractTreeItemUi, {
         this.record.set('catalog.label', this.mainForm.getForm().findField('label').getValue());
         this.record.set('catalog.status', this.mainForm.getForm().findField('status').getValue());
         this.record.set('catalog.code', this.mainForm.getForm().findField('code').getValue());
+        this.record.set('catalog.target', this.mainForm.getForm().findField('catalog.target').getValue());
         this.record.endEdit();
 
         if(this.action == 'add' || this.action == 'copy') {
