@@ -124,7 +124,7 @@ class Standard
 		$file = $this->getUploadedFile();
 
 		\Aimeos\Controller\Common\Media\Factory::createController( $context )->add( $item, $file );
-		$manager->saveItem( $item );
+		$item = $manager->saveItem( $item );
 
 		return (object) $item->toArray( true );
 	}

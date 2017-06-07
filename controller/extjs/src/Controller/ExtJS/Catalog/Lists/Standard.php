@@ -92,7 +92,7 @@ class Standard
 		{
 			$item = $manager->createItem();
 			$item->fromArray( (array) $this->transformValues( $entry ) );
-			$manager->saveItem( $item );
+			$item = $manager->saveItem( $item );
 
 			$refIds[$item->getDomain()][] = $item->getRefId();
 			$ids[] = $item->getId();

@@ -108,7 +108,7 @@ class Standard
 					$item->setStatus( 0 );
 				}
 
-				$jobManager->saveItem( $item );
+				$jobManager->saveItem( $item, false );
 			}
 
 			$count = count( $items );

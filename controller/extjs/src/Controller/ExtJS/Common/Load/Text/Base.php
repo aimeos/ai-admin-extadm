@@ -175,7 +175,7 @@ abstract class Base
 					$item->setDomain( 'text' );
 					$item->setRefId( $textId );
 
-					$listManager->saveItem( $item );
+					$listManager->saveItem( $item, false );
 				}
 				catch( \Exception $e ) {
 					$this->getContext()->getLogger()->log( 'text reference: ' . $e->getMessage(), \Aimeos\MW\Logger\Base::ERR, 'import' );
@@ -437,7 +437,7 @@ abstract class Base
 			$item->setContent( $value );
 			$item->setStatus( 1 );
 
-			$textManager->saveItem( $item );
+			$item = $textManager->saveItem( $item );
 
 			$codeIdMap[$row[2]][$item->getId()] = $row[3];
 		}

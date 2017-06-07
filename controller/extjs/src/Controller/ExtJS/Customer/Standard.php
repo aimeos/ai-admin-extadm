@@ -60,7 +60,7 @@ class Standard
 
 			$item->fromArray( (array) $this->transformValues( $entry ) );
 
-			$manager->saveItem( $item );
+			$item = $manager->saveItem( $item );
 			$ids[] = $item->getId();
 		}
 

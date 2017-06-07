@@ -91,7 +91,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$baseItem->setComment( 'FoooBar' );
 		$baseItem->setLocale( $localeItem );
 
-		$baseManager->saveItem( $baseItem );
+		$baseItem = $baseManager->saveItem( $baseItem );
 
 
 		$saveParams = (object) array(

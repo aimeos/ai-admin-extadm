@@ -55,7 +55,7 @@ class Standard
 		$search->setSlice( 0, count( $params->items ) );
 
 		foreach( $manager->searchItems( $search ) as $item ) {
-			$indexManager->saveItem( $item );
+			$indexManager->saveItem( $item, false );
 		}
 
 		$this->clearCache( (array) $params->items );

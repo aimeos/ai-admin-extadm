@@ -229,7 +229,7 @@ abstract class Base
 			$item = $manager->createItem();
 			$item->fromArray( (array) $this->transformValues( $entry ) );
 
-			$manager->saveItem( $item );
+			$item = $manager->saveItem( $item );
 			$ids[] = $item->getId();
 		}
 
