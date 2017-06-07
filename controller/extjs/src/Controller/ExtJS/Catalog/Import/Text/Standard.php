@@ -268,7 +268,7 @@ class Standard
 					$item->setDomain( 'text' );
 					$item->setRefId( $textId );
 
-					$listManager->saveItem( $item );
+					$listManager->saveItem( $item, false );
 				}
 				catch( \Exception $e )
 				{
