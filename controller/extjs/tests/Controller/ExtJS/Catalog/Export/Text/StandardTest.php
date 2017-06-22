@@ -104,19 +104,19 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$this->assertEquals( 'Language ID', $lines['de'][0][0] );
 		$this->assertEquals( 'Text', $lines['de'][0][6] );
 
-		$this->assertEquals( 'de', $lines['de'][3][0] );
-		$this->assertEquals( 'Root', $lines['de'][3][1] );
-		$this->assertEquals( $ids['Root'], $lines['de'][3][2] );
-		$this->assertEquals( 'default', $lines['de'][3][3] );
-		$this->assertEquals( 'name', $lines['de'][3][4] );
-		$this->assertEquals( '', $lines['de'][3][6] );
+		$this->assertEquals( 'de', $lines['de'][6][0] );
+		$this->assertEquals( 'Root', $lines['de'][6][1] );
+		$this->assertEquals( $ids['Root'], $lines['de'][6][2] );
+		$this->assertEquals( 'default', $lines['de'][6][3] );
+		$this->assertEquals( 'name', $lines['de'][6][4] );
+		$this->assertEquals( '', $lines['de'][6][6] );
 
-		$this->assertEquals( 'de', $lines['de'][23][0] );
-		$this->assertEquals( 'Tee', $lines['de'][23][1] );
-		$this->assertEquals( $ids['Tee'], $lines['de'][23][2] );
-		$this->assertEquals( 'unittype8', $lines['de'][23][3] );
-		$this->assertEquals( 'long', $lines['de'][23][4] );
-		$this->assertEquals( 'Dies würde die lange Beschreibung der Teekategorie sein. Auch hier machen Bilder einen Sinn.', $lines['de'][23][6] );
+		$this->assertEquals( 'de', $lines['de'][32][0] );
+		$this->assertEquals( 'Tee', $lines['de'][32][1] );
+		$this->assertEquals( $ids['Tee'], $lines['de'][32][2] );
+		$this->assertEquals( 'unittype8', $lines['de'][32][3] );
+		$this->assertEquals( 'long', $lines['de'][32][4] );
+		$this->assertEquals( 'Dies würde die lange Beschreibung der Teekategorie sein. Auch hier machen Bilder einen Sinn.', $lines['de'][32][6] );
 	}
 
 
