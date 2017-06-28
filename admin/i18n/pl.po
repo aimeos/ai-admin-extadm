@@ -9,23 +9,56 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-03 12:08+0100\n"
-"PO-Revision-Date: 2017-01-03 11:21+0000\n"
+"POT-Creation-Date: 2017-06-28 18:42+0200\n"
+"PO-Revision-Date: 2017-06-28 16:58+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Polish (http://www.transifex.com/aimeos/aimeos-core/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#, php-format
+msgid ""
+"%1$s\n"
+"%2$s %3$s\n"
+"%5$s %4$s\n"
+"%7$s, %6$s\n"
+"%8$s, %9$s\n"
+"%10$s\n"
+"%11$s\n"
+"%12$s"
+msgstr ""
 
 #. / price format with value (%1$s) and currency (%2$s)
 #, php-format
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
+#, php-format
+msgid "%1$s (Ctrl+Alt+%2$s)"
+msgstr ""
+
+#, php-format
+msgid "%s/%s/%s.%s"
+msgstr ""
+
+msgid ""
+"(International) facsimilie number without separation characters, can start "
+"with a \"+\""
+msgstr ""
+
+msgid ""
+"(International) telephone number without separation characters, can start "
+"with a \"+\""
+msgstr ""
+
 msgid "Actual current price"
 msgstr "Aktualna cena"
+
+msgid "Actual price customers can buy the article for on the web site"
+msgstr ""
 
 msgid "Add"
 msgstr "Dodaj"
@@ -33,8 +66,19 @@ msgstr "Dodaj"
 msgid "Add filter"
 msgstr ""
 
+msgid "Add new entry (Ctrl+A)"
+msgstr ""
+
 msgid "Additional"
 msgstr "Informacje dodatkowe"
+
+msgid ""
+"Additional delivery costs for each item, e.g. $20 for one heavy item will be"
+" $100 for five items it total"
+msgstr ""
+
+msgid "Additional information where the customer's appartment can be found"
+msgstr ""
 
 msgid "Additional information, e.g. flat number"
 msgstr ""
@@ -54,11 +98,43 @@ msgstr "Adres 3"
 msgid "Address ID"
 msgstr "ID adresu"
 
+msgid "Address identifier of the customer's house for delivery"
+msgstr ""
+
 msgid "Addresses"
 msgstr "Adresy"
 
+#, php-format
+msgid "Admin JQAdm type is empty"
+msgstr ""
+
+#, php-format
+msgid "Aimeos object not available"
+msgstr ""
+
 msgid "All"
 msgstr "Wszystko"
+
+msgid ""
+"All attributes that uniquely define an article, e.g. width, length and color"
+" for jeans"
+msgstr ""
+
+msgid "Allow custom price"
+msgstr ""
+
+msgid "Allow customers to choose themselves how much they want to pay"
+msgstr ""
+
+msgid ""
+"Article description shown by search engines, added to the head section of "
+"the category page"
+msgstr ""
+
+msgid ""
+"Article specific configuration options, will be available as key/value pairs"
+" in the templates"
+msgstr ""
 
 msgid "Associated attributes"
 msgstr "Atrybuty powiązane"
@@ -86,6 +162,12 @@ msgstr "Teksty powiązane"
 
 msgid "Attribute"
 msgstr "Atrybut"
+
+msgid "Attribute name"
+msgstr ""
+
+msgid "Attribute position (optional)"
+msgstr ""
 
 msgid "Attribute type"
 msgstr "Typ atrybutu"
@@ -127,6 +209,9 @@ msgstr "Tagi dostępne"
 msgid "Available texts"
 msgstr "Teksty dostępne"
 
+msgid "Back"
+msgstr "Z powrotem"
+
 msgid "Back in stock"
 msgstr "Wróć do magazynu"
 
@@ -142,6 +227,12 @@ msgstr "Adres płatnika"
 msgid "Birthday"
 msgstr ""
 
+msgid "Birthday of the customer"
+msgstr ""
+
+msgid "Bug or suggestion?"
+msgstr ""
+
 msgid "Bundles"
 msgstr ""
 
@@ -154,6 +245,9 @@ msgstr "Obiekt z pamięci podręcznej"
 msgid "Cancel"
 msgstr "Rezygnuj"
 
+msgid "Cancel and return to list"
+msgstr ""
+
 msgid "Catalog"
 msgstr "Katalog"
 
@@ -165,6 +259,20 @@ msgstr "Katalog: {0} ({1})"
 msgid "Categories"
 msgstr ""
 
+msgid "Categories the product can be found in by the user on the web site"
+msgstr ""
+
+msgid "Categories the product will be shown for in the promotional section"
+msgstr ""
+
+msgid "Category name"
+msgstr ""
+
+msgid ""
+"Category specific configuration options, will be available as key/value "
+"pairs in the templates"
+msgstr ""
+
 msgid "Characteristics"
 msgstr "Parametry"
 
@@ -173,6 +281,25 @@ msgstr "Miejscowość"
 
 msgid "City name (required)"
 msgstr ""
+
+msgid "City or town name (required)"
+msgstr ""
+
+#, php-format
+msgid "Class \"%1$s\" does not implement \"%2$s\""
+msgstr "W klasie \"%1$s\" nie zaimplementowano \"%2$s\""
+
+#, php-format
+msgid "Class \"%1$s\" does not implement interface \"%2$s\""
+msgstr "W klasie \"%1$s\" nie zaimplementowano interfejsu \"%2$s\""
+
+#, php-format
+msgid "Class \"%1$s\" not available"
+msgstr "Klasa \"%1$s\" nie dostępna"
+
+#, php-format
+msgid "Class \"%1$s\" not found"
+msgstr "Nie znaleziono klasy \"%1$s\""
 
 msgid "Clear"
 msgstr ""
@@ -189,75 +316,31 @@ msgstr "Kod"
 msgid "Codes"
 msgstr "Kody"
 
-#. /jqadm/partial/filter
-#. * Relative path to the partial template for displaying the product filter
-#. *
-#. * The template file contains the HTML code and processing instructions
-#. * to generate the result shown in the administration interface. The
-#. * configuration string is the path to the template file relative
-#. * to the templates directory (usually in admin/jqadm/templates).
-#. *
-#. * You can overwrite the template file configuration in extensions and
-#. * provide alternative templates. These alternative templates should be
-#. * named like the default one but with the string "default" replaced by
-#. * an unique name. You may use the name of your project for this. If
-#. * you've implemented an alternative client class as well, "default"
-#. * should be replaced by the name of the new class.
-#. *
-#. * @param string Relative path to the partial creating the HTML code
-#. * @since 2016.04
-#. * @category Developer
-#. * @see admin/jqadm/partial/confirm
-#. * @see admin/jqadm/partial/error
-#. /jqadm/partial/pagination
-#. * Relative path to the partial template for displaying the pagination
-#. *
-#. * The template file contains the HTML code and processing instructions
-#. * to generate the result shown in the administration interface. The
-#. * configuration string is the path to the template file relative
-#. * to the templates directory (usually in admin/jqadm/templates).
-#. *
-#. * You can overwrite the template file configuration in extensions and
-#. * provide alternative templates. These alternative templates should be
-#. * named like the default one but with the string "default" replaced by
-#. * an unique name. You may use the name of your project for this. If
-#. * you've implemented an alternative client class as well, "default"
-#. * should be replaced by the name of the new class.
-#. *
-#. * @param string Relative path to the partial creating the HTML code
-#. * @since 2016.04
-#. * @category Developer
-#. * @see admin/jqadm/partial/filter
-#. * @see admin/jqadm/partial/confirm
-#. * @see admin/jqadm/partial/error
-#. /jqadm/template/page
-#. * Relative path to the template for the base page template
-#. *
-#. * The template file contains the HTML code and processing instructions
-#. * to generate the result shown in the administration interface. The
-#. * configuration string is the path to the template file relative
-#. * to the templates directory (usually in admin/jqadm/templates).
-#. *
-#. * You can overwrite the template file configuration in extensions and
-#. * provide alternative templates. These alternative templates should be
-#. * named like the default one but with the string "default" replaced by
-#. * an unique name. You may use the name of your project for this. If
-#. * you've implemented an alternative client class as well, "default"
-#. * should be replaced by the name of the new class.
-#. *
-#. * @param string Relative path to the partial creating the HTML code
-#. * @since 2016.04
-#. * @category Developer
 msgid "Columns"
 msgstr ""
 
 msgid "Comment"
 msgstr "Komentarz"
 
+msgid "Communication"
+msgstr ""
+
 msgid "Company"
 msgstr "Firma"
 
+msgid "Company details"
+msgstr ""
+
 msgid "Company name"
+msgstr ""
+
+msgid "Company name (optional)"
+msgstr ""
+
+msgid "Config"
+msgstr ""
+
+msgid "Configurable"
 msgstr ""
 
 msgid "Configuration"
@@ -268,6 +351,9 @@ msgstr "Treść"
 
 msgid "Copy"
 msgstr "Kopia"
+
+msgid "Copy this entry"
+msgstr ""
 
 msgid "Costs"
 msgstr "Koszty"
@@ -284,7 +370,21 @@ msgstr "Liczba"
 msgid "Country"
 msgstr "Kraj"
 
+msgid "Country ID"
+msgstr ""
+
 msgid "Country code"
+msgstr ""
+
+msgid "Country code (required)"
+msgstr ""
+
+msgid ""
+"Country specific tax rate to calculate and display the included tax (B2C) or"
+" add the tax if required (B2B)"
+msgstr ""
+
+msgid "Country state code (optional)"
 msgstr ""
 
 msgid "Country state, e.g. \"NY\""
@@ -300,6 +400,9 @@ msgstr "Kod kuponu"
 #, python-brace-format
 msgid "Coupon code: {0} ({1})"
 msgstr "Kod kuponu: {0} ({1})"
+
+msgid "Coupon provider or coupon decorator configuration name"
+msgstr ""
 
 #. : Coupon item panel title with coupon label ({0}) and site code ({1)}
 #, python-brace-format
@@ -318,8 +421,14 @@ msgstr "Waluta"
 msgid "Currency (required)"
 msgstr "Waluta (wymagane)"
 
+msgid "Custom"
+msgstr ""
+
 msgid "Customer"
 msgstr "Klient"
+
+msgid "Customer ID"
+msgstr ""
 
 #. : Customer address item panel title with customer name ({0}) and site code
 #. ({1)}
@@ -327,6 +436,12 @@ msgstr "Klient"
 #. ({1)}
 #, python-brace-format
 msgid "Customer address: {0} ({1})"
+msgstr ""
+
+msgid "Customer comment (optional)"
+msgstr ""
+
+msgid "Customer e-mail address"
 msgstr ""
 
 #. : Customer group item panel title with customer name ({0}) and site code
@@ -337,9 +452,15 @@ msgstr ""
 msgid "Customer group: {0} ({1})"
 msgstr ""
 
+msgid "Customer password"
+msgstr ""
+
 #. : Customer item panel title with customer label ({0}) and site code ({1)}
 #, python-brace-format
 msgid "Customer: {0} ({1})"
+msgstr ""
+
+msgid "Dashboard"
 msgstr ""
 
 msgid "Date"
@@ -347,6 +468,12 @@ msgstr "Data"
 
 msgid "Date back"
 msgstr "Cofnij datę"
+
+msgid "Date of the last delivery status change"
+msgstr ""
+
+msgid "Date of the last payment status change"
+msgstr ""
 
 msgid "Default"
 msgstr ""
@@ -356,6 +483,12 @@ msgstr "Usuń"
 
 msgid "Delete items?"
 msgstr "Usunąć?"
+
+msgid "Delete this entry"
+msgstr ""
+
+msgid "Delivery"
+msgstr "Dostawa"
 
 msgid "Delivery address"
 msgstr "Adres dostawy"
@@ -384,8 +517,14 @@ msgstr "Domena (wymagane)"
 msgid "Download"
 msgstr ""
 
+msgid "Duplicate entry (Ctrl+D)"
+msgstr ""
+
 msgid "E-Mail"
 msgstr "E-mail"
+
+msgid "E-Mail address (required)"
+msgstr ""
 
 msgid "E-Mail, e.g. me@example.com (required)"
 msgstr ""
@@ -399,55 +538,21 @@ msgstr "Edytuj"
 msgid "Editor"
 msgstr "Edytor"
 
+msgid "Email"
+msgstr ""
+
 msgid "End date"
 msgstr "Data końcowa"
 
 msgid "Error"
 msgstr "Błąd"
 
-#. /jqadm/partial/error
-#. * Relative path to the partial template for displaying errors
-#. *
-#. * The template file contains the HTML code and processing instructions
-#. * to generate the result shown in the administration interface. The
-#. * configuration string is the path to the template file relative
-#. * to the templates directory (usually in admin/jqadm/templates).
-#. *
-#. * You can overwrite the template file configuration in extensions and
-#. * provide alternative templates. These alternative templates should be
-#. * named like the default one but with the string "default" replaced by
-#. * an unique name. You may use the name of your project for this. If
-#. * you've implemented an alternative client class as well, "default"
-#. * should be replaced by the name of the new class.
-#. *
-#. * @param string Relative path to the partial creating the HTML code
-#. * @since 2016.04
-#. * @category Developer
-#. * @see admin/jqadm/partial/confirm
-#. * @see admin/jqadm/partial/filter
-#. * @see admin/jqadm/partial/pagination
-#. /jqadm/partial/confirm
-#. * Relative path to the partial template for displaying the confirmation
-#. dialog
-#. *
-#. * The template file contains the HTML code and processing instructions
-#. * to generate the result shown in the administration interface. The
-#. * configuration string is the path to the template file relative
-#. * to the templates directory (usually in admin/jqadm/templates).
-#. *
-#. * You can overwrite the template file configuration in extensions and
-#. * provide alternative templates. These alternative templates should be
-#. * named like the default one but with the string "default" replaced by
-#. * an unique name. You may use the name of your project for this. If
-#. * you've implemented an alternative client class as well, "default"
-#. * should be replaced by the name of the new class.
-#. *
-#. * @param string Relative path to the partial creating the HTML code
-#. * @since 2016.04
-#. * @category Developer
-#. * @see admin/jqadm/partial/error
-#. * @see admin/jqadm/partial/filter
-#. * @see admin/jqadm/partial/pagination
+msgid "Excl. tax"
+msgstr ""
+
+msgid "Expert"
+msgstr ""
+
 msgid "Expert mode"
 msgstr ""
 
@@ -463,6 +568,12 @@ msgstr "Eksport zakończony sukcesem"
 msgid "Facility"
 msgstr "Możliwości"
 
+msgid "Facsimile"
+msgstr ""
+
+msgid "Facsimile number (optional)"
+msgstr ""
+
 msgid "Facsimile number, e.g. +155512345"
 msgstr ""
 
@@ -475,14 +586,32 @@ msgstr "URL pliku"
 msgid "Filter"
 msgstr ""
 
+msgid "Find category"
+msgstr ""
+
 msgid "First"
 msgstr ""
 
 msgid "First name"
 msgstr "Imię"
 
+msgid "First name (optional)"
+msgstr ""
+
+msgid "First name of the person if used in cultures where they are used"
+msgstr ""
+
 msgid "Firstname"
 msgstr "Imię"
+
+msgid "Floor"
+msgstr ""
+
+msgid "Floor / Appartment"
+msgstr ""
+
+msgid "Floor and/or appartment (optional)"
+msgstr ""
 
 msgid "Flush"
 msgstr "Czyść"
@@ -508,20 +637,58 @@ msgstr ""
 msgid "Honorary title"
 msgstr ""
 
+msgid "Honorary title (optional)"
+msgstr ""
+
+msgid "Honorary titles like Dr., Ph.D, etc."
+msgstr ""
+
 msgid "House no"
 msgstr ""
 
 msgid "House number"
 msgstr ""
 
+msgid "House number (optional)"
+msgstr ""
+
+msgid "How the customer is addressed in e-mails"
+msgstr ""
+
 msgid "ID"
 msgstr "ID"
+
+msgid "ID of a related invoice, e.g. of a changed or refunded invoice"
+msgstr ""
 
 msgid "Images"
 msgstr ""
 
+msgid ""
+"Images will only be shown for that language, useful if the image contains "
+"text or is language sepecific"
+msgstr ""
+
 msgid "Import"
 msgstr "Import"
+
+msgid "Incl. tax"
+msgstr ""
+
+msgid ""
+"Internal article name, will be used on the web site if no product name for "
+"the language is available"
+msgstr ""
+
+msgid ""
+"Internal attribute name, will be used on the web site if no name for the "
+"language is available"
+msgstr ""
+
+msgid ""
+"Internal category name, will be used on the web site if no name for the "
+"language is available"
+msgstr ""
 
 msgid "Internal name"
 msgstr "Nazwa wewnętrzna"
@@ -533,8 +700,28 @@ msgstr "Nazwa wewnętrzna (wymagane)"
 msgid "Invalid action \"{0}\""
 msgstr "Niepoprawna operacja \"{0}\""
 
+#, php-format
+msgid "Invalid characters in class name \"%1$s\""
+msgstr "Niepoprawne znaki w nazwie klasy \"%1$s\""
+
+#, php-format
+msgid "Invalid characters in client name \"%1$s\""
+msgstr "Niepoprawny znak w nazwie klienta \"%1$s\""
+
+#, php-format
+msgid "Invalid class name \"%1$s\""
+msgstr "Niepoprawna nazwa klasy \"%1$s\""
+
 msgid "Invalid data"
 msgstr "Niepoprawna data"
+
+#, php-format
+msgid "Invalid domain \"%1$s\""
+msgstr "Niepoprawna domena \"%1$s\""
+
+#, php-format
+msgid "Invalid factory \"%1$s\""
+msgstr "Niepoprawna fabryka \"%1$s\""
 
 #, python-brace-format
 msgid "Invalid value for configuration key \"{0}\""
@@ -552,6 +739,10 @@ msgstr "Szczegóły zadania"
 msgid "Jobs"
 msgstr "Zadania"
 
+msgid ""
+"Keywords for search engines, added to the head section of the category page"
+msgstr ""
+
 msgid "Label"
 msgstr "Etykieta"
 
@@ -561,7 +752,16 @@ msgstr "Język"
 msgid "Language (required)"
 msgstr "Język (wymagane)"
 
+msgid "Language ID"
+msgstr ""
+
 msgid "Last"
+msgstr ""
+
+msgid "Last delivery status of the invoice"
+msgstr ""
+
+msgid "Last delivery status of the order"
 msgstr ""
 
 msgid "Last modified"
@@ -571,6 +771,17 @@ msgid "Last name"
 msgstr "Nazwisko"
 
 msgid "Last name (required)"
+msgstr ""
+
+msgid ""
+"Last name of the person or full name in cultures where no first names are "
+"used"
+msgstr ""
+
+msgid "Last payment status of the invoice"
+msgstr ""
+
+msgid "Last payment status of the order"
 msgstr ""
 
 msgid "Lastname"
@@ -605,6 +816,17 @@ msgstr "Szczegóły pozycji listy"
 
 msgid "List modification time"
 msgstr "Czas modyfikacji listy"
+
+msgid ""
+"List of articles that should be sold as one product, often at a reduced "
+"price"
+msgstr ""
+
+msgid "List of products often bought together"
+msgstr ""
+
+msgid "List of suggested products"
+msgstr ""
 
 msgid "List position"
 msgstr "Pozycja listy"
@@ -690,6 +912,9 @@ msgstr "Minimalna ilość"
 msgid "Miss"
 msgstr "Panna"
 
+msgid "Modified"
+msgstr ""
+
 msgid "Mr"
 msgstr "Pan"
 
@@ -702,20 +927,49 @@ msgstr "Nazwa"
 msgid "Name of the coupon provider class (required)"
 msgstr "Nazwa klasy dostawcy kuponu (wymagane)"
 
+msgid ""
+"Name of the downloaded file when customers saves the file on their computers"
+msgstr ""
+
 msgid "Name of the plugin provider class (required)"
 msgstr "Nazwa klasy dostawcy wtyczki (wymagane)"
 
 msgid "Name of the service provider class (required)"
 msgstr "Nazwa klasy dostawcy usługi (wymagane)"
 
+msgid "New"
+msgstr ""
+
 msgid "Next"
 msgstr "Następny"
+
+msgid "No coupon"
+msgstr ""
 
 msgid "No error information available"
 msgstr "Niedostępna informacja o błędzie"
 
+#, php-format
+msgid "No file uploaded for %1$d. new image"
+msgstr ""
+
 msgid "No items"
 msgstr "Brak pozycji w liście"
+
+msgid "No items found"
+msgstr ""
+
+#, php-format
+msgid "No items found for \"%1$s %2$s %3$s\""
+msgstr ""
+
+#, php-format
+msgid "No view available"
+msgstr "Widok niedostępny"
+
+#, php-format
+msgid "Not allowed to access JQAdm \"%1$s\" client"
+msgstr ""
 
 msgid "Not implemented"
 msgstr "Nie zaimplementowano"
@@ -723,8 +977,24 @@ msgstr "Nie zaimplementowano"
 msgid "Notice"
 msgstr "Uwaga"
 
+msgid ""
+"Number of articles currently in stock, leave empty for an unlimited quantity"
+msgstr ""
+
+msgid "Official VAT ID to determine if the tax needs to be billed in invoices"
+msgstr ""
+
+msgid ""
+"One provider and zero or more decorator class names separated by commas"
+msgstr ""
+
 msgid "Option"
 msgstr "Opcja"
+
+msgid ""
+"Optional product components that can be chosen by the customer together with"
+" the product"
+msgstr ""
 
 msgid "Order"
 msgstr "Zamówienie"
@@ -734,6 +1004,9 @@ msgstr "Szczegóły poszczególnych pozycji zamówienia"
 
 msgid "Order product ID"
 msgstr "ID produktu w zamówieniu"
+
+msgid "Order totals"
+msgstr ""
 
 msgid "Orders by day"
 msgstr ""
@@ -747,9 +1020,19 @@ msgstr ""
 msgid "Overview"
 msgstr "Przegląd"
 
+msgid ""
+"Overwrite the existing file and customers bought it in the past can then "
+"download the new content too"
+msgstr ""
+
 #, php-format
 msgid "Page %1$d of %2$d"
 msgstr "Strona %1$d z %2$d"
+
+msgid ""
+"Page description shown by search engines, added to the head section of the "
+"category page"
+msgstr ""
 
 msgid "Parameter"
 msgstr "Parametr"
@@ -763,13 +1046,40 @@ msgstr ""
 msgid "Path"
 msgstr ""
 
+msgid "Pay costs"
+msgstr ""
+
+msgid "Pay date"
+msgstr ""
+
+msgid "Pay name"
+msgstr ""
+
+msgid "Pay price"
+msgstr ""
+
+msgid "Pay rebate"
+msgstr ""
+
+msgid "Pay status"
+msgstr ""
+
+msgid "Payment"
+msgstr "Płatność"
+
 msgid "Payment date"
 msgstr "Data płatności"
 
 msgid "Payment status"
 msgstr "Status płatności"
 
+msgid "Payment type"
+msgstr ""
+
 msgid "Payment types"
+msgstr ""
+
+msgid "Personal data"
 msgstr ""
 
 msgid "Physical values"
@@ -780,6 +1090,9 @@ msgstr "Proszę ponownie sprawdzić Twoje dane"
 
 msgid "Please save the coupon first before you can add codes"
 msgstr "Zanim będziesz mógł dodać kody, musisz najpierw zapisać kupon"
+
+msgid "Please select"
+msgstr "Proszę wybrać"
 
 msgid ""
 "Please select an item on the right side and add it via drag and drop to this"
@@ -805,8 +1118,14 @@ msgstr "Wtyczka: {0} ({1})"
 msgid "Position"
 msgstr "Pozycja"
 
+msgid "Postal"
+msgstr ""
+
 msgid "Postal code"
 msgstr "Kod pocztowy"
+
+msgid "Postal code for delivery if used in the area the customer is living"
+msgstr ""
 
 msgid "Preview"
 msgstr "Podgląd"
@@ -844,6 +1163,17 @@ msgstr "Produkt"
 
 msgid "Product ID"
 msgstr "ID produktu"
+
+msgid ""
+"Product attributes stored in the basket where customers can enter their own "
+"texts or values"
+msgstr ""
+
+msgid "Product attributes that are used by other products too"
+msgstr ""
+
+msgid "Product characteristics that are not shared with other products"
+msgstr ""
 
 msgid "Product code"
 msgstr "Kod produktu"
@@ -919,6 +1249,9 @@ msgstr "Produkt: {0} ({1})"
 msgid "Products"
 msgstr "Produkty"
 
+msgid "Products bought together"
+msgstr "Produkty kupione razem"
+
 msgid "Promotion"
 msgstr ""
 
@@ -934,8 +1267,14 @@ msgstr ""
 msgid "Provider"
 msgstr "Dostawca"
 
+msgid "Provider/decorator class names (required)"
+msgstr ""
+
 msgid "Purchase date"
 msgstr "Data zakupu"
+
+msgid "Purchased"
+msgstr ""
 
 msgid "Quantity"
 msgstr "Ilość"
@@ -946,8 +1285,19 @@ msgstr "Ilość lub puste jeśli nieograniczone (opcjonalnie)"
 msgid "Rebate"
 msgstr "Rabat"
 
+msgid ""
+"Reduction from the original price, used to calculate the rebate in % and the"
+" cross price"
+msgstr ""
+
 msgid "Ref-ID"
 msgstr "Ref-ID"
+
+msgid "Related ID"
+msgstr ""
+
+msgid "Related order"
+msgstr ""
 
 msgid "Related order ID"
 msgstr "ID powiązanego zamówienia"
@@ -961,14 +1311,54 @@ msgstr ""
 msgid "Request"
 msgstr "Żądanie"
 
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr ""
+
+msgid ""
+"Required quantity of articles for block pricing, e.g. one article for $5.00,"
+" ten articles for $45.00"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
 msgid "Result"
 msgstr "Wynik"
+
+msgid ""
+"Route name or page ID of the category page if this category should shown on "
+"a different page"
+msgstr ""
+
+msgid ""
+"Route name or page ID of the product detail page if this product should "
+"shown on a different page"
+msgstr ""
+
+msgid "Route or page ID (optional)"
+msgstr ""
+
+msgid "SKU"
+msgstr ""
 
 msgid "Salutation"
 msgstr "Pozdrowienie"
 
 msgid "Save"
 msgstr "Zapisz"
+
+msgid "Save & Close"
+msgstr ""
+
+msgid "Save & Copy"
+msgstr ""
+
+msgid "Save & New"
+msgstr ""
+
+msgid "Save entry (Ctrl+S)"
+msgstr ""
 
 msgid "Saving"
 msgstr "Zapisywanie"
@@ -996,6 +1386,9 @@ msgstr "Usługa"
 msgid "Service ID"
 msgstr "ID usługi"
 
+msgid "Service attribute code"
+msgstr ""
+
 msgid "Service fees"
 msgstr "Opłaty za usługę"
 
@@ -1018,7 +1411,35 @@ msgstr "Usługa: {0} ({1})"
 msgid "Services"
 msgstr "Usługi"
 
+msgid "Ship date"
+msgstr ""
+
+msgid "Ship status"
+msgstr ""
+
+msgid "Shipping"
+msgstr "Dostawa"
+
+msgid "Shipping costs per item"
+msgstr ""
+
 msgid "Short description"
+msgstr ""
+
+msgid ""
+"Short state code (e.g. NY) if used in the country the customer is living"
+msgstr ""
+
+msgid "Show"
+msgstr "Pokaż"
+
+msgid "Show entry"
+msgstr ""
+
+msgid "Show/hide this entry"
+msgstr ""
+
+msgid "Shown if the article reached a stock level of zero"
 msgstr ""
 
 msgid "Simple mode"
@@ -1027,14 +1448,23 @@ msgstr ""
 msgid "Site"
 msgstr "Sklep"
 
+msgid "Site the order was placed at"
+msgstr ""
+
 msgid "Size"
 msgstr "Rozmiar"
 
 msgid "Sorry, adding orders manually is currently not implemented"
 msgstr "Przepraszamy! Jeszcze nie zaimplementowano ręcznego dodawania zamówienia!"
 
+msgid "Sorting of the attributes within the same attribute type"
+msgstr ""
+
 msgid "Source"
 msgstr "Źródło"
+
+msgid "Source of the invoice, e.g. by web or phone"
+msgstr ""
 
 msgid "Start date"
 msgstr "Data rozpoczęcia"
@@ -1057,8 +1487,23 @@ msgstr "Ulica"
 msgid "Street (required)"
 msgstr ""
 
+msgid "Street name (optional)"
+msgstr ""
+
+msgid "Sub-total"
+msgstr "Podsuma"
+
+msgid "Subscription"
+msgstr ""
+
 msgid "Substracted rebate amount"
 msgstr "Suma pomniejszona o rabat"
+
+msgid "Suggested products"
+msgstr "Produkty sugerowane"
+
+msgid "Sum"
+msgstr "Suma"
 
 msgid "Supplier"
 msgstr "Dostawca"
@@ -1093,6 +1538,9 @@ msgstr ""
 msgid "Tags"
 msgstr "Tagi"
 
+msgid "Tax"
+msgstr ""
+
 msgid "Tax rate"
 msgstr "Stawka podatkowa"
 
@@ -1104,6 +1552,9 @@ msgstr "Telefax"
 
 msgid "Telephone"
 msgstr "Telefon"
+
+msgid "Telephone number (optional)"
+msgstr ""
 
 msgid "Telephone number, e.g. +155512345"
 msgstr ""
@@ -1128,9 +1579,28 @@ msgid "Texts"
 msgstr ""
 
 msgid ""
+"The article is only shown on the web site after that date and time, useful "
+"or seasonal articles"
+msgstr ""
+
+msgid ""
+"The article is only shown on the web site until that date and time, useful "
+"or seasonal articles"
+msgstr ""
+
+msgid "The article name as used in URLs, e.g. for non-latin languages"
+msgstr ""
+
+msgid "The category name as used in URLs, e.g. for non-latin languages"
+msgstr ""
+
+msgid ""
 "The file with the exported texts will be available within a few minutes. It "
 "can then be downloaded from the \"Job\" panel of the \"Overview\" tab."
 msgstr "Plik z wyeksportowanymi tekstami będzie dostępny w przeciągu kilku minut. Będzie można go pobrać z panelu Zadania w zakładce Przegląd."
+
+msgid "The image title is used for the title tag of the image on the web site"
+msgstr ""
 
 msgid ""
 "The texts of your uploaded file will be imported within a few minutes. You "
@@ -1144,8 +1614,14 @@ msgstr "Takie połączenie już istnieje"
 msgid "Title"
 msgstr "Tytuł"
 
+msgid "Toggle dropdown"
+msgstr ""
+
 msgid "Total"
 msgstr "Razem"
+
+msgid "Two letter ISO country code"
+msgstr ""
 
 msgid "Two letter country code, e.g. \"US\" (required)"
 msgstr ""
@@ -1156,11 +1632,48 @@ msgstr "Typ"
 msgid "Types"
 msgstr "Typy"
 
+msgid "Types for additional prices like per one lb/kg or per month"
+msgstr ""
+
+msgid "URL of the customer web site"
+msgstr ""
+
 msgid "URL segment"
+msgstr ""
+
+msgid "URL target"
+msgstr ""
+
+#, php-format
+msgid "Unable to call method \"%1$s\""
+msgstr "Nie można wywołać metody \"%1$s\""
+
+msgid ""
+"Unique article code related to stock levels, e.g. from the ERP system, an "
+"EAN/GTIN number or self invented"
+msgstr ""
+
+msgid "Unique attribute code (required)"
+msgstr ""
+
+msgid "Unique attribute code, e.g. \"green\" for attributes of type \"color\""
+msgstr ""
+
+msgid "Unique category code (required)"
+msgstr ""
+
+msgid "Unique category code, either from external system or self-invented"
 msgstr ""
 
 msgid "Unique code (required)"
 msgstr "Unikalny kod (wymagane)"
+
+msgid "Unique customer e-mail address"
+msgstr ""
+
+#, php-format
+msgid "Unknown type \"%1$s\""
+msgstr ""
 
 msgid "Upload failed"
 msgstr "Wysłanie pliku nie powiodło się"
@@ -1174,14 +1687,23 @@ msgstr ""
 msgid "Used by"
 msgstr "Używane przez"
 
+msgid "User groups"
+msgstr ""
+
 msgid "User name"
 msgstr ""
 
 msgid "User name, e.g. e-mail address (required)"
 msgstr ""
 
+msgid "VAT ID"
+msgstr ""
+
 msgid "Value"
 msgstr "Wartość"
+
+msgid "Value added tax identifier (optional)"
+msgstr ""
 
 msgid "Variant attributes"
 msgstr ""
@@ -1198,8 +1720,18 @@ msgstr ""
 msgid "Verification date"
 msgstr ""
 
+msgid "View details"
+msgstr ""
+
+msgid "Voucher"
+msgstr ""
+
 msgid "Warehouse"
 msgstr "Magazyn"
+
+msgid ""
+"Warehouse or local store if your articles are available at several locations"
+msgstr ""
 
 #. : Product warehouse item panel title with warehouse label ({0}) and site
 #. code ({1)}
@@ -1208,6 +1740,12 @@ msgstr "Magazyn"
 #, python-brace-format
 msgid "Warehouse: {0} ({1})"
 msgstr "Magazyn: {0} ({1})"
+
+msgid "Web site"
+msgstr "Strona www"
+
+msgid "Web site URL (optional)"
+msgstr ""
 
 msgid "Web site, e.g. www.example.com"
 msgstr ""
@@ -1238,11 +1776,83 @@ msgstr "Zamierzasz wyczyścić całą pamięć podręczną bieżącej strony. Cz
 msgid "Zip code"
 msgstr ""
 
+msgid "Zip code (optional)"
+msgstr ""
+
+#, php-format
+msgid "bundle"
+msgstr ""
+
+msgid "catalog"
+msgstr ""
+
+#, php-format
+msgid "category"
+msgstr ""
+
+#, php-format
+msgid "characteristic"
+msgstr "Parametry"
+
+msgid "company"
+msgstr ""
+
 msgid "dashboard"
+msgstr ""
+
+#, php-format
+msgid "download"
+msgstr "Pobrania"
+
+#, php-format
+msgid "image"
+msgstr ""
+
+msgid "media"
+msgstr ""
+
+msgid "miss"
+msgstr ""
+
+msgid "mr"
+msgstr ""
+
+msgid "mrs"
 msgstr ""
 
 msgid "new"
 msgstr "nowy"
+
+msgid "no"
+msgstr ""
+
+#, php-format
+msgid "option"
+msgstr "Opcje"
+
+msgid "pay:-1"
+msgstr ""
+
+msgid "pay:0"
+msgstr ""
+
+msgid "pay:1"
+msgstr ""
+
+msgid "pay:2"
+msgstr ""
+
+msgid "pay:3"
+msgstr ""
+
+msgid "pay:4"
+msgstr ""
+
+msgid "pay:5"
+msgstr ""
+
+msgid "pay:6"
+msgstr ""
 
 msgid "pay:authorized"
 msgstr "autoryzowana"
@@ -1251,7 +1861,7 @@ msgid "pay:canceled"
 msgstr "rezygnacja"
 
 msgid "pay:deleted"
-msgstr "usunięta"
+msgstr "usuniętę"
 
 msgid "pay:pending"
 msgstr "oczekiwana"
@@ -1266,10 +1876,57 @@ msgid "pay:refused"
 msgstr "odmowa"
 
 msgid "pay:unfinished"
-msgstr "niezakończona"
+msgstr "niedokończona"
+
+#, php-format
+msgid "physical"
+msgstr ""
+
+#, php-format
+msgid "price"
+msgstr ""
 
 msgid "product"
 msgstr "Produkt"
+
+#, php-format
+msgid "related"
+msgstr ""
+
+#, php-format
+msgid "selection"
+msgstr ""
+
+#, php-format
+msgid "special"
+msgstr ""
+
+msgid "stat:-1"
+msgstr ""
+
+msgid "stat:0"
+msgstr ""
+
+msgid "stat:1"
+msgstr ""
+
+msgid "stat:2"
+msgstr ""
+
+msgid "stat:3"
+msgstr ""
+
+msgid "stat:4"
+msgstr ""
+
+msgid "stat:5"
+msgstr ""
+
+msgid "stat:6"
+msgstr ""
+
+msgid "stat:7"
+msgstr ""
 
 msgid "stat:deleted"
 msgstr "usuniętę"
@@ -1310,7 +1967,18 @@ msgstr "włączona"
 msgid "status:review"
 msgstr "przejrzana"
 
+#, php-format
+msgid "stock"
+msgstr ""
+
+#, php-format
+msgid "text"
+msgstr ""
+
 msgid "unknown"
+msgstr ""
+
+msgid "yes"
 msgstr ""
 
 msgid "yy-mm-dd"

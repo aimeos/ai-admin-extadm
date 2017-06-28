@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Aimeos\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-03 12:08+0100\n"
+"POT-Creation-Date: 2017-06-28 11:29+0200\n"
 "PO-Revision-Date: 2014-01-29 12:00+0100\n"
 "Last-Translator: Norbert Sendetzky <n.sendetzky@metaways.de>\n"
 "Language-Team: English (http://www.transifex.com/projects/p/aimeos/language/en/)\n"
@@ -848,6 +848,10 @@ msgstr ""
 msgid "Result"
 msgstr ""
 
+#, fuzzy
+msgid "Route or page ID (optional)"
+msgstr "Product supplier (optional)"
+
 msgid "Salutation"
 msgstr ""
 
@@ -1043,6 +1047,9 @@ msgid "Types"
 msgstr ""
 
 msgid "URL segment"
+msgstr ""
+
+msgid "URL target"
 msgstr ""
 
 msgid "Unique code (required)"
