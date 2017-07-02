@@ -118,57 +118,57 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 			'name' => 'Attribute',
 			'properties' => array(
 				'attribute.id' => array(
-					'description' => 'Attribute ID',
+					'description' => 'ID',
 					'optional' => false,
 					'type' => 'integer',
 				),
 				'attribute.siteid' => array(
-					'description' => 'Attribute site',
+					'description' => 'Site ID',
 					'optional' => false,
 					'type' => 'integer',
 				),
 				'attribute.typeid' => array(
-					'description' => 'Attribute type',
+					'description' => 'Type',
 					'optional' => false,
 					'type' => 'integer',
 				),
 				'attribute.domain' => array(
-					'description' => 'Attribute domain',
+					'description' => 'Domain',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.code' => array(
-					'description' => 'Attribute code',
+					'description' => 'Code',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.position' => array(
-					'description' => 'Attribute position',
+					'description' => 'Position',
 					'optional' => false,
 					'type' => 'integer',
 				),
 				'attribute.label' => array(
-					'description' => 'Attribute label',
+					'description' => 'Label',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.status' => array(
-					'description' => 'Attribute status',
+					'description' => 'Status',
 					'optional' => false,
 					'type' => 'integer',
 				),
 				'attribute.ctime' => array(
-					'description' => 'Attribute create date/time',
+					'description' => 'Create date/time',
 					'optional' => false,
 					'type' => 'datetime',
 				),
 				'attribute.mtime' => array(
-					'description' => 'Attribute modification date/time',
+					'description' => 'Modification date/time',
 					'optional' => false,
 					'type' => 'datetime',
 				),
 				'attribute.editor' => array(
-					'description' => 'Attribute editor',
+					'description' => 'Editor',
 					'optional' => false,
 					'type' => 'string',
 				),
@@ -194,170 +194,95 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$actual = $this->object->getSearchSchema();
 		$expected = array(
 			'criteria' => array(
-				'attribute.id' => array(
-					'description' => 'Attribute ID',
-					'optional' => false,
-					'type' => 'integer',
-				),
 				'attribute.domain' => array(
-					'description' => 'Attribute domain',
+					'description' => 'Domain',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.code' => array(
-					'description' => 'Attribute code',
+					'description' => 'Code',
 					'optional' => false,
 					'type' => 'string',
 				),
-				'attribute.position' => array(
-					'description' => 'Attribute position',
-					'optional' => false,
-					'type' => 'integer',
-				),
 				'attribute.label' => array(
-					'description' => 'Attribute label',
+					'description' => 'Label',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.status' => array(
-					'description' => 'Attribute status',
+					'description' => 'Status',
 					'optional' => false,
 					'type' => 'integer',
 				),
 				'attribute.ctime' => array(
-					'description' => 'Attribute create date/time',
+					'description' => 'Create date/time',
 					'optional' => false,
 					'type' => 'datetime',
 				),
 				'attribute.mtime' => array(
-					'description' => 'Attribute modification date/time',
+					'description' => 'Modification date/time',
 					'optional' => false,
 					'type' => 'datetime',
 				),
 				'attribute.editor' => array(
-					'description' => 'Attribute editor',
+					'description' => 'Editor',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.type.code' => array(
-					'description' => 'Attribute type code',
-					'optional' => false,
-					'type' => 'string',
-				),
-				'attribute.type.domain' => array(
-					'description' => 'Attribute type domain',
+					'description' => 'Type code',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.type.label' => array(
-					'description' => 'Attribute type label',
+					'description' => 'Type label',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.type.status' => array(
-					'description' => 'Attribute type status',
+					'description' => 'Type status',
 					'optional' => false,
 					'type' => 'integer',
 				),
-				'attribute.type.ctime' => array(
-					'description' => 'Attribute type create date/time',
-					'optional' => false,
-					'type' => 'datetime',
-				),
-				'attribute.type.mtime' => array(
-					'description' => 'Attribute type modification date/time',
-					'optional' => false,
-					'type' => 'datetime',
-				),
-				'attribute.type.editor' => array(
-					'description' => 'Attribute type editor',
-					'optional' => false,
-					'type' => 'string',
-				),
 				'attribute.lists.domain' => array(
-					'description' => 'Attribute list domain',
+					'description' => 'List domain',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.lists.refid' => array(
-					'description' => 'Attribute list reference ID',
+					'description' => 'List reference ID',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.lists.datestart' => array(
-					'description' => 'Attribute list start date',
+					'description' => 'List start date',
 					'optional' => false,
 					'type' => 'datetime',
 				),
 				'attribute.lists.dateend' => array(
-					'description' => 'Attribute list end date',
+					'description' => 'List end date',
 					'optional' => false,
 					'type' => 'datetime',
-				),
-				'attribute.lists.config' => array(
-					'description' => 'Attribute list config',
-					'optional' => false,
-					'type' => 'string',
-				),
-				'attribute.lists.position' => array(
-					'description' => 'Attribute list position',
-					'optional' => false,
-					'type' => 'integer',
 				),
 				'attribute.lists.status' => array(
-					'description' => 'Attribute list status',
+					'description' => 'List status',
 					'optional' => false,
 					'type' => 'integer',
 				),
-				'attribute.lists.ctime' => array(
-					'description' => 'Attribute list create date/time',
-					'optional' => false,
-					'type' => 'datetime',
-				),
-				'attribute.lists.mtime' => array(
-					'description' => 'Attribute list modification date/time',
-					'optional' => false,
-					'type' => 'datetime',
-				),
-				'attribute.lists.editor' => array(
-					'description' => 'Attribute list editor',
-					'optional' => false,
-					'type' => 'string',
-				),
 				'attribute.lists.type.code' => array(
-					'description' => 'Attribute list type code',
-					'optional' => false,
-					'type' => 'string',
-				),
-				'attribute.lists.type.domain' => array(
-					'description' => 'Attribute list type domain',
+					'description' => 'List type code',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.lists.type.label' => array(
-					'description' => 'Attribute list type label',
+					'description' => 'List type label',
 					'optional' => false,
 					'type' => 'string',
 				),
 				'attribute.lists.type.status' => array(
-					'description' => 'Attribute list type status',
+					'description' => 'List type status',
 					'optional' => false,
 					'type' => 'integer',
-				),
-				'attribute.lists.type.ctime' => array(
-					'description' => 'Attribute list type create date/time',
-					'optional' => false,
-					'type' => 'datetime',
-				),
-				'attribute.lists.type.mtime' => array(
-					'description' => 'Attribute list type modification date/time',
-					'optional' => false,
-					'type' => 'datetime',
-				),
-				'attribute.lists.type.editor' => array(
-					'description' => 'Attribute list type editor',
-					'optional' => false,
-					'type' => 'string',
 				),
 			)
 		);
