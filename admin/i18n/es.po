@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-28 18:42+0200\n"
-"PO-Revision-Date: 2017-06-28 16:58+0000\n"
+"POT-Creation-Date: 2017-07-01 18:07+0200\n"
+"PO-Revision-Date: 2017-07-01 16:10+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Spanish (http://www.transifex.com/aimeos/aimeos-core/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -129,7 +129,7 @@ msgstr ""
 
 msgid ""
 "Article description shown by search engines, added to the head section of "
-"the category page"
+"the product detail page"
 msgstr ""
 
 msgid ""
@@ -744,6 +744,11 @@ msgid ""
 "Keywords for search engines, added to the head section of the category page"
 msgstr ""
 
+msgid ""
+"Keywords for search engines, added to the head section of the product detail"
+" page"
+msgstr ""
+
 msgid "Label"
 msgstr "Etiqueta"
 
@@ -944,9 +949,6 @@ msgstr ""
 msgid "Next"
 msgstr "Siguiente"
 
-msgid "No coupon"
-msgstr ""
-
 msgid "No error information available"
 msgstr "No hay información del error disponible"
 
@@ -967,6 +969,9 @@ msgstr ""
 #, php-format
 msgid "No view available"
 msgstr "No hay vistas disponibles"
+
+msgid "No voucher"
+msgstr ""
 
 #, php-format
 msgid "Not allowed to access JQAdm \"%1$s\" client"
@@ -1781,11 +1786,26 @@ msgid "Zip code (optional)"
 msgstr ""
 
 #, php-format
+msgid "address"
+msgstr "Direcciones"
+
+msgid "address:delivery"
+msgstr "Dirección de entrega"
+
+msgid "address:payment"
+msgstr "Dirección de cobro"
+
+#, php-format
+msgid "attribute"
+msgstr "Atributos"
+
+#, php-format
 msgid "bundle"
 msgstr "Paquetes"
 
+#, php-format
 msgid "catalog"
-msgstr ""
+msgstr "Categorías"
 
 #, php-format
 msgid "category"
@@ -1795,31 +1815,64 @@ msgstr "Categorías"
 msgid "characteristic"
 msgstr "Características"
 
+#, php-format
+msgid "code"
+msgstr "Códigos"
+
 msgid "company"
+msgstr "Compañía"
+
+#, php-format
+msgid "coupon"
 msgstr ""
 
+#, php-format
+msgid "customer"
+msgstr ""
+
+#, php-format
 msgid "dashboard"
 msgstr "Panel de Instrumentos"
+
+#, php-format
+msgid "day"
+msgstr ""
+
+#, php-format
+msgid "deliverytype"
+msgstr ""
 
 #, php-format
 msgid "download"
 msgstr "Descargas"
 
 #, php-format
+msgid "hour"
+msgstr ""
+
+#, php-format
 msgid "image"
 msgstr "Imágenes"
 
-msgid "media"
+#, php-format
+msgid "invoice"
 msgstr ""
+
+#, php-format
+msgid "latest"
+msgstr ""
+
+msgid "media"
+msgstr "Medios"
 
 msgid "miss"
-msgstr ""
+msgstr "Srta"
 
 msgid "mr"
-msgstr ""
+msgstr "Sr"
 
 msgid "mrs"
-msgstr ""
+msgstr "Sra"
 
 msgid "new"
 msgstr "nuevo"
@@ -1831,29 +1884,33 @@ msgstr ""
 msgid "option"
 msgstr "Opciones"
 
-msgid "pay:-1"
+#, php-format
+msgid "order"
 msgstr ""
+
+msgid "pay:-1"
+msgstr "inacabado"
 
 msgid "pay:0"
-msgstr ""
+msgstr "eliminado"
 
 msgid "pay:1"
-msgstr ""
+msgstr "cancelado"
 
 msgid "pay:2"
-msgstr ""
+msgstr "rechazado"
 
 msgid "pay:3"
-msgstr ""
+msgstr "reembolsado"
 
 msgid "pay:4"
-msgstr ""
+msgstr "pendiente"
 
 msgid "pay:5"
-msgstr ""
+msgstr "autorizado"
 
 msgid "pay:6"
-msgstr ""
+msgstr "recibido"
 
 msgid "pay:authorized"
 msgstr "autorizado"
@@ -1880,6 +1937,14 @@ msgid "pay:unfinished"
 msgstr "inacabado"
 
 #, php-format
+msgid "paymentstatus"
+msgstr ""
+
+#, php-format
+msgid "paymenttype"
+msgstr ""
+
+#, php-format
 msgid "physical"
 msgstr ""
 
@@ -1887,47 +1952,54 @@ msgstr ""
 msgid "price"
 msgstr "Precios"
 
+#, php-format
 msgid "product"
-msgstr "Producto"
+msgstr "Productos"
 
 #, php-format
 msgid "related"
-msgstr ""
+msgstr "Productos"
 
 #, php-format
 msgid "selection"
 msgstr "Variantes"
+
+msgid "service:delivery"
+msgstr "Entrega"
+
+msgid "service:payment"
+msgstr "Pago"
 
 #, php-format
 msgid "special"
 msgstr ""
 
 msgid "stat:-1"
-msgstr ""
+msgstr "inacabado"
 
 msgid "stat:0"
-msgstr ""
+msgstr "eliminado"
 
 msgid "stat:1"
-msgstr ""
+msgstr "pendiente"
 
 msgid "stat:2"
-msgstr ""
+msgstr "en progreso"
 
 msgid "stat:3"
-msgstr ""
+msgstr "enviado"
 
 msgid "stat:4"
-msgstr ""
+msgstr "entregado"
 
 msgid "stat:5"
-msgstr ""
+msgstr "perdido"
 
 msgid "stat:6"
-msgstr ""
+msgstr "rechazado"
 
 msgid "stat:7"
-msgstr ""
+msgstr "devuelto"
 
 msgid "stat:deleted"
 msgstr "eliminado"
@@ -1977,7 +2049,7 @@ msgid "text"
 msgstr "Textos"
 
 msgid "unknown"
-msgstr "desconocido"
+msgstr ""
 
 msgid "yes"
 msgstr ""

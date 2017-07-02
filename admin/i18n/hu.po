@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-28 18:42+0200\n"
-"PO-Revision-Date: 2017-06-28 16:58+0000\n"
+"POT-Creation-Date: 2017-07-01 18:07+0200\n"
+"PO-Revision-Date: 2017-07-01 16:10+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Hungarian (http://www.transifex.com/aimeos/aimeos-core/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -128,7 +128,7 @@ msgstr ""
 
 msgid ""
 "Article description shown by search engines, added to the head section of "
-"the category page"
+"the product detail page"
 msgstr ""
 
 msgid ""
@@ -743,6 +743,11 @@ msgid ""
 "Keywords for search engines, added to the head section of the category page"
 msgstr ""
 
+msgid ""
+"Keywords for search engines, added to the head section of the product detail"
+" page"
+msgstr ""
+
 msgid "Label"
 msgstr "Címke"
 
@@ -943,9 +948,6 @@ msgstr ""
 msgid "Next"
 msgstr "Következő"
 
-msgid "No coupon"
-msgstr ""
-
 msgid "No error information available"
 msgstr "Nincs hiba információ"
 
@@ -965,6 +967,9 @@ msgstr ""
 
 #, php-format
 msgid "No view available"
+msgstr ""
+
+msgid "No voucher"
 msgstr ""
 
 #, php-format
@@ -1780,11 +1785,26 @@ msgid "Zip code (optional)"
 msgstr ""
 
 #, php-format
+msgid "address"
+msgstr "Címek"
+
+msgid "address:delivery"
+msgstr "Szállítási cím"
+
+msgid "address:payment"
+msgstr "Számlázási cím"
+
+#, php-format
+msgid "attribute"
+msgstr "Jellemzők"
+
+#, php-format
 msgid "bundle"
 msgstr "Csomagok"
 
+#, php-format
 msgid "catalog"
-msgstr ""
+msgstr "Kategóriák"
 
 #, php-format
 msgid "category"
@@ -1794,31 +1814,64 @@ msgstr "Kategóriák"
 msgid "characteristic"
 msgstr "Jellemzők"
 
+#, php-format
+msgid "code"
+msgstr "Kódok"
+
 msgid "company"
+msgstr "Cég"
+
+#, php-format
+msgid "coupon"
 msgstr ""
 
+#, php-format
+msgid "customer"
+msgstr ""
+
+#, php-format
 msgid "dashboard"
 msgstr "Vezérlőpult"
+
+#, php-format
+msgid "day"
+msgstr ""
+
+#, php-format
+msgid "deliverytype"
+msgstr ""
 
 #, php-format
 msgid "download"
 msgstr "Letöltések"
 
 #, php-format
+msgid "hour"
+msgstr ""
+
+#, php-format
 msgid "image"
 msgstr "Képek"
 
-msgid "media"
+#, php-format
+msgid "invoice"
 msgstr ""
+
+#, php-format
+msgid "latest"
+msgstr ""
+
+msgid "media"
+msgstr "Média"
 
 msgid "miss"
-msgstr ""
+msgstr "Kisasszony"
 
 msgid "mr"
-msgstr ""
+msgstr "Úr"
 
 msgid "mrs"
-msgstr ""
+msgstr "Asszony"
 
 msgid "new"
 msgstr "Új"
@@ -1830,29 +1883,33 @@ msgstr ""
 msgid "option"
 msgstr "Opciók"
 
-msgid "pay:-1"
+#, php-format
+msgid "order"
 msgstr ""
+
+msgid "pay:-1"
+msgstr "befejezetlen"
 
 msgid "pay:0"
-msgstr ""
+msgstr "törölve"
 
 msgid "pay:1"
-msgstr ""
+msgstr "visszavonva"
 
 msgid "pay:2"
-msgstr ""
+msgstr "visszautasítva"
 
 msgid "pay:3"
-msgstr ""
+msgstr "visszatérítve"
 
 msgid "pay:4"
-msgstr ""
+msgstr "elintézetlen"
 
 msgid "pay:5"
-msgstr ""
+msgstr "jóváhagyva"
 
 msgid "pay:6"
-msgstr ""
+msgstr "elfogadva"
 
 msgid "pay:authorized"
 msgstr "fizetés:hitelesítve"
@@ -1879,6 +1936,14 @@ msgid "pay:unfinished"
 msgstr "állapot:befejezetlen"
 
 #, php-format
+msgid "paymentstatus"
+msgstr ""
+
+#, php-format
+msgid "paymenttype"
+msgstr ""
+
+#, php-format
 msgid "physical"
 msgstr ""
 
@@ -1886,47 +1951,54 @@ msgstr ""
 msgid "price"
 msgstr "Árak"
 
+#, php-format
 msgid "product"
-msgstr "Termék"
+msgstr "Termékek"
 
 #, php-format
 msgid "related"
-msgstr ""
+msgstr "Termékek"
 
 #, php-format
 msgid "selection"
 msgstr "Változatok"
+
+msgid "service:delivery"
+msgstr "Szállítás"
+
+msgid "service:payment"
+msgstr "Fizetés"
 
 #, php-format
 msgid "special"
 msgstr ""
 
 msgid "stat:-1"
-msgstr ""
+msgstr "befejezetlen"
 
 msgid "stat:0"
-msgstr ""
+msgstr "törölve"
 
 msgid "stat:1"
-msgstr ""
+msgstr "elintézetlen"
 
 msgid "stat:2"
-msgstr ""
+msgstr "folyamatban"
 
 msgid "stat:3"
-msgstr ""
+msgstr "feladott"
 
 msgid "stat:4"
-msgstr ""
+msgstr "kézbesített"
 
 msgid "stat:5"
-msgstr ""
+msgstr "Elvesztett"
 
 msgid "stat:6"
-msgstr ""
+msgstr "visszautasítva"
 
 msgid "stat:7"
-msgstr ""
+msgstr "visszaküldött"
 
 msgid "stat:deleted"
 msgstr "állapot:törölve"
@@ -1976,7 +2048,7 @@ msgid "text"
 msgstr "Szövegek"
 
 msgid "unknown"
-msgstr "Ismeretlen"
+msgstr ""
 
 msgid "yes"
 msgstr ""

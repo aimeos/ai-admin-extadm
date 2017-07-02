@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-28 18:42+0200\n"
-"PO-Revision-Date: 2017-06-28 16:58+0000\n"
+"POT-Creation-Date: 2017-07-01 18:07+0200\n"
+"PO-Revision-Date: 2017-07-01 16:10+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Dutch (http://www.transifex.com/aimeos/aimeos-core/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -132,7 +132,7 @@ msgstr ""
 
 msgid ""
 "Article description shown by search engines, added to the head section of "
-"the category page"
+"the product detail page"
 msgstr ""
 
 msgid ""
@@ -747,6 +747,11 @@ msgid ""
 "Keywords for search engines, added to the head section of the category page"
 msgstr ""
 
+msgid ""
+"Keywords for search engines, added to the head section of the product detail"
+" page"
+msgstr ""
+
 msgid "Label"
 msgstr "Label"
 
@@ -947,9 +952,6 @@ msgstr ""
 msgid "Next"
 msgstr "Volgende"
 
-msgid "No coupon"
-msgstr ""
-
 msgid "No error information available"
 msgstr "Geen fout informatie beschikaar"
 
@@ -970,6 +972,9 @@ msgstr ""
 #, php-format
 msgid "No view available"
 msgstr "Geen weergave beschikbaar"
+
+msgid "No voucher"
+msgstr ""
 
 #, php-format
 msgid "Not allowed to access JQAdm \"%1$s\" client"
@@ -1784,11 +1789,26 @@ msgid "Zip code (optional)"
 msgstr ""
 
 #, php-format
+msgid "address"
+msgstr "Adressen"
+
+msgid "address:delivery"
+msgstr "Bezorg adres"
+
+msgid "address:payment"
+msgstr "Factuur adres"
+
+#, php-format
+msgid "attribute"
+msgstr "Attributen"
+
+#, php-format
 msgid "bundle"
 msgstr "Bundels"
 
+#, php-format
 msgid "catalog"
-msgstr ""
+msgstr "Categorieën"
 
 #, php-format
 msgid "category"
@@ -1798,31 +1818,64 @@ msgstr "Categorieën"
 msgid "characteristic"
 msgstr "Karakteristieken"
 
+#, php-format
+msgid "code"
+msgstr "Codes"
+
 msgid "company"
+msgstr "Organisatie"
+
+#, php-format
+msgid "coupon"
 msgstr ""
 
+#, php-format
+msgid "customer"
+msgstr ""
+
+#, php-format
 msgid "dashboard"
 msgstr "Dashboard"
+
+#, php-format
+msgid "day"
+msgstr ""
+
+#, php-format
+msgid "deliverytype"
+msgstr ""
 
 #, php-format
 msgid "download"
 msgstr "Downloads"
 
 #, php-format
+msgid "hour"
+msgstr ""
+
+#, php-format
 msgid "image"
 msgstr "Afbeeldingen"
 
-msgid "media"
+#, php-format
+msgid "invoice"
 msgstr ""
+
+#, php-format
+msgid "latest"
+msgstr ""
+
+msgid "media"
+msgstr "Media"
 
 msgid "miss"
-msgstr ""
+msgstr "Mevr"
 
 msgid "mr"
-msgstr ""
+msgstr "Dhr"
 
 msgid "mrs"
-msgstr ""
+msgstr "Mevr"
 
 msgid "new"
 msgstr "nieuw"
@@ -1834,29 +1887,33 @@ msgstr ""
 msgid "option"
 msgstr "Opties"
 
-msgid "pay:-1"
+#, php-format
+msgid "order"
 msgstr ""
+
+msgid "pay:-1"
+msgstr "niet gereed"
 
 msgid "pay:0"
-msgstr ""
+msgstr "verwijderd"
 
 msgid "pay:1"
-msgstr ""
+msgstr "geannuleerd"
 
 msgid "pay:2"
-msgstr ""
+msgstr "geweigerd"
 
 msgid "pay:3"
-msgstr ""
+msgstr "Terug gestort"
 
 msgid "pay:4"
-msgstr ""
+msgstr "in behandeling"
 
 msgid "pay:5"
-msgstr ""
+msgstr "bevoegd"
 
 msgid "pay:6"
-msgstr ""
+msgstr "ontvangen"
 
 msgid "pay:authorized"
 msgstr "betaling:geautoriseerd"
@@ -1883,6 +1940,14 @@ msgid "pay:unfinished"
 msgstr "status:onafgerond"
 
 #, php-format
+msgid "paymentstatus"
+msgstr ""
+
+#, php-format
+msgid "paymenttype"
+msgstr ""
+
+#, php-format
 msgid "physical"
 msgstr ""
 
@@ -1890,47 +1955,54 @@ msgstr ""
 msgid "price"
 msgstr "Prijzen"
 
+#, php-format
 msgid "product"
-msgstr "Product"
+msgstr "Producten"
 
 #, php-format
 msgid "related"
-msgstr ""
+msgstr "Producten"
 
 #, php-format
 msgid "selection"
 msgstr "Variaties"
+
+msgid "service:delivery"
+msgstr "Bezorging"
+
+msgid "service:payment"
+msgstr "Betaling"
 
 #, php-format
 msgid "special"
 msgstr ""
 
 msgid "stat:-1"
-msgstr ""
+msgstr "niet gereed"
 
 msgid "stat:0"
-msgstr ""
+msgstr "verwijderd"
 
 msgid "stat:1"
-msgstr ""
+msgstr "in behandeling"
 
 msgid "stat:2"
-msgstr ""
+msgstr "in behandeling"
 
 msgid "stat:3"
-msgstr ""
+msgstr "verzonden"
 
 msgid "stat:4"
-msgstr ""
+msgstr "afgeleverd"
 
 msgid "stat:5"
-msgstr ""
+msgstr "zoek geraakt"
 
 msgid "stat:6"
-msgstr ""
+msgstr "geweigerd"
 
 msgid "stat:7"
-msgstr ""
+msgstr "geretouneerd"
 
 msgid "stat:deleted"
 msgstr "status:verwijderd"
@@ -1980,7 +2052,7 @@ msgid "text"
 msgstr "Teksten"
 
 msgid "unknown"
-msgstr "unknown"
+msgstr ""
 
 msgid "yes"
 msgstr ""

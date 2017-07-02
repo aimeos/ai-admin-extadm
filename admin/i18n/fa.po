@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-28 18:42+0200\n"
-"PO-Revision-Date: 2017-06-28 16:58+0000\n"
+"POT-Creation-Date: 2017-07-01 18:07+0200\n"
+"PO-Revision-Date: 2017-07-01 16:10+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Persian (http://www.transifex.com/aimeos/aimeos-core/language/fa/)\n"
 "MIME-Version: 1.0\n"
@@ -128,7 +128,7 @@ msgstr ""
 
 msgid ""
 "Article description shown by search engines, added to the head section of "
-"the category page"
+"the product detail page"
 msgstr ""
 
 msgid ""
@@ -743,6 +743,11 @@ msgid ""
 "Keywords for search engines, added to the head section of the category page"
 msgstr ""
 
+msgid ""
+"Keywords for search engines, added to the head section of the product detail"
+" page"
+msgstr ""
+
 msgid "Label"
 msgstr ""
 
@@ -943,9 +948,6 @@ msgstr ""
 msgid "Next"
 msgstr "بعدی"
 
-msgid "No coupon"
-msgstr ""
-
 msgid "No error information available"
 msgstr ""
 
@@ -966,6 +968,9 @@ msgstr ""
 #, php-format
 msgid "No view available"
 msgstr "نمایشی موجود نمی‌باشد"
+
+msgid "No voucher"
+msgstr ""
 
 #, php-format
 msgid "Not allowed to access JQAdm \"%1$s\" client"
@@ -1780,11 +1785,26 @@ msgid "Zip code (optional)"
 msgstr ""
 
 #, php-format
+msgid "address"
+msgstr "آدرس ها"
+
+msgid "address:delivery"
+msgstr "آدرس تحویل"
+
+msgid "address:payment"
+msgstr "آدرس صورتحساب"
+
+#, php-format
+msgid "attribute"
+msgstr "خصوصیت"
+
+#, php-format
 msgid "bundle"
 msgstr ""
 
+#, php-format
 msgid "catalog"
-msgstr ""
+msgstr "دسته بندی‌ها"
 
 #, php-format
 msgid "category"
@@ -1794,10 +1814,31 @@ msgstr "دسته بندی‌ها"
 msgid "characteristic"
 msgstr "مشخصات"
 
+#, php-format
+msgid "code"
+msgstr "کدها"
+
 msgid "company"
+msgstr "شرکت"
+
+#, php-format
+msgid "coupon"
 msgstr ""
 
+#, php-format
+msgid "customer"
+msgstr ""
+
+#, php-format
 msgid "dashboard"
+msgstr ""
+
+#, php-format
+msgid "day"
+msgstr ""
+
+#, php-format
+msgid "deliverytype"
 msgstr ""
 
 #, php-format
@@ -1805,7 +1846,19 @@ msgid "download"
 msgstr "دانلود‌ها"
 
 #, php-format
+msgid "hour"
+msgstr ""
+
+#, php-format
 msgid "image"
+msgstr ""
+
+#, php-format
+msgid "invoice"
+msgstr ""
+
+#, php-format
+msgid "latest"
 msgstr ""
 
 msgid "media"
@@ -1829,6 +1882,10 @@ msgstr ""
 #, php-format
 msgid "option"
 msgstr "گزینه‌ها"
+
+#, php-format
+msgid "order"
+msgstr ""
 
 msgid "pay:-1"
 msgstr ""
@@ -1879,6 +1936,14 @@ msgid "pay:unfinished"
 msgstr ""
 
 #, php-format
+msgid "paymentstatus"
+msgstr ""
+
+#, php-format
+msgid "paymenttype"
+msgstr ""
+
+#, php-format
 msgid "physical"
 msgstr ""
 
@@ -1886,8 +1951,9 @@ msgstr ""
 msgid "price"
 msgstr ""
 
+#, php-format
 msgid "product"
-msgstr "محصول"
+msgstr ""
 
 #, php-format
 msgid "related"
@@ -1896,6 +1962,12 @@ msgstr ""
 #, php-format
 msgid "selection"
 msgstr ""
+
+msgid "service:delivery"
+msgstr "تحویل"
+
+msgid "service:payment"
+msgstr "پرداخت"
 
 #, php-format
 msgid "special"

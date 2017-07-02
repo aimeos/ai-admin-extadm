@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-28 18:42+0200\n"
-"PO-Revision-Date: 2017-06-28 16:58+0000\n"
+"POT-Creation-Date: 2017-07-01 18:07+0200\n"
+"PO-Revision-Date: 2017-07-01 16:10+0000\n"
 "Last-Translator: Aimeos <aimeos@aimeos.org>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/aimeos/aimeos-core/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -128,7 +128,7 @@ msgstr ""
 
 msgid ""
 "Article description shown by search engines, added to the head section of "
-"the category page"
+"the product detail page"
 msgstr ""
 
 msgid ""
@@ -743,6 +743,11 @@ msgid ""
 "Keywords for search engines, added to the head section of the category page"
 msgstr ""
 
+msgid ""
+"Keywords for search engines, added to the head section of the product detail"
+" page"
+msgstr ""
+
 msgid "Label"
 msgstr "标签"
 
@@ -943,9 +948,6 @@ msgstr ""
 msgid "Next"
 msgstr "下"
 
-msgid "No coupon"
-msgstr ""
-
 msgid "No error information available"
 msgstr ""
 
@@ -966,6 +968,9 @@ msgstr ""
 #, php-format
 msgid "No view available"
 msgstr "没有可用的视图"
+
+msgid "No voucher"
+msgstr ""
 
 #, php-format
 msgid "Not allowed to access JQAdm \"%1$s\" client"
@@ -1780,11 +1785,26 @@ msgid "Zip code (optional)"
 msgstr ""
 
 #, php-format
+msgid "address"
+msgstr "地址"
+
+msgid "address:delivery"
+msgstr "送货地址"
+
+msgid "address:payment"
+msgstr "账单地址"
+
+#, php-format
+msgid "attribute"
+msgstr "属性"
+
+#, php-format
 msgid "bundle"
 msgstr ""
 
+#, php-format
 msgid "catalog"
-msgstr ""
+msgstr "类目"
 
 #, php-format
 msgid "category"
@@ -1794,10 +1814,31 @@ msgstr "类目"
 msgid "characteristic"
 msgstr "特色"
 
-msgid "company"
+#, php-format
+msgid "code"
 msgstr ""
 
+msgid "company"
+msgstr "公司"
+
+#, php-format
+msgid "coupon"
+msgstr ""
+
+#, php-format
+msgid "customer"
+msgstr ""
+
+#, php-format
 msgid "dashboard"
+msgstr ""
+
+#, php-format
+msgid "day"
+msgstr ""
+
+#, php-format
+msgid "deliverytype"
 msgstr ""
 
 #, php-format
@@ -1805,20 +1846,32 @@ msgid "download"
 msgstr "下载"
 
 #, php-format
+msgid "hour"
+msgstr ""
+
+#, php-format
 msgid "image"
+msgstr ""
+
+#, php-format
+msgid "invoice"
+msgstr ""
+
+#, php-format
+msgid "latest"
 msgstr ""
 
 msgid "media"
 msgstr ""
 
 msgid "miss"
-msgstr ""
+msgstr "女士"
 
 msgid "mr"
-msgstr ""
+msgstr "先生"
 
 msgid "mrs"
-msgstr ""
+msgstr "女士"
 
 msgid "new"
 msgstr ""
@@ -1830,29 +1883,33 @@ msgstr ""
 msgid "option"
 msgstr "选项"
 
-msgid "pay:-1"
+#, php-format
+msgid "order"
 msgstr ""
+
+msgid "pay:-1"
+msgstr "未完成"
 
 msgid "pay:0"
-msgstr ""
+msgstr "已删除"
 
 msgid "pay:1"
-msgstr ""
+msgstr "取消"
 
 msgid "pay:2"
-msgstr ""
+msgstr "被拒收"
 
 msgid "pay:3"
-msgstr ""
+msgstr "已退款"
 
 msgid "pay:4"
-msgstr ""
+msgstr "处理中"
 
 msgid "pay:5"
-msgstr ""
+msgstr "已授权"
 
 msgid "pay:6"
-msgstr ""
+msgstr "已收到"
 
 msgid "pay:authorized"
 msgstr ""
@@ -1879,6 +1936,14 @@ msgid "pay:unfinished"
 msgstr ""
 
 #, php-format
+msgid "paymentstatus"
+msgstr ""
+
+#, php-format
+msgid "paymenttype"
+msgstr ""
+
+#, php-format
 msgid "physical"
 msgstr ""
 
@@ -1886,8 +1951,9 @@ msgstr ""
 msgid "price"
 msgstr "价格"
 
+#, php-format
 msgid "product"
-msgstr "商品"
+msgstr ""
 
 #, php-format
 msgid "related"
@@ -1897,36 +1963,42 @@ msgstr ""
 msgid "selection"
 msgstr ""
 
+msgid "service:delivery"
+msgstr "交货"
+
+msgid "service:payment"
+msgstr "付款"
+
 #, php-format
 msgid "special"
 msgstr ""
 
 msgid "stat:-1"
-msgstr ""
+msgstr "未完成"
 
 msgid "stat:0"
-msgstr ""
+msgstr "已删除"
 
 msgid "stat:1"
-msgstr ""
+msgstr "处理中"
 
 msgid "stat:2"
-msgstr ""
+msgstr "处理中"
 
 msgid "stat:3"
-msgstr ""
+msgstr "配送中"
 
 msgid "stat:4"
-msgstr ""
+msgstr "已交货"
 
 msgid "stat:5"
-msgstr ""
+msgstr "无法确定"
 
 msgid "stat:6"
-msgstr ""
+msgstr "被拒收"
 
 msgid "stat:7"
-msgstr ""
+msgstr "被退货"
 
 msgid "stat:deleted"
 msgstr ""
