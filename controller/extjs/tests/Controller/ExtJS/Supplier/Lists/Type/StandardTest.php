@@ -50,7 +50,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$result = $this->object->searchItems( $params );
 
 		$this->assertEquals( 1, count( $result['items'] ) );
-		$this->assertEquals( 1, $result['total'] );
+		$this->assertEquals( 2, $result['total'] );
 		$this->assertEquals( 'default', $result['items'][0]->{'supplier.lists.type.code'} );
 	}
 

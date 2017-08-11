@@ -28,7 +28,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 	{
 		$params = (object) array(
 			'site' => 'unittest',
-			'condition' => (object) array( '&&' => array( 0 => (object) array( '==' => (object) array( 'supplier.lists.type.code' => 'default' ) ) ) ),
+			'condition' => (object) array( '&&' => array( 0 => (object) array( '==' => (object) array( 'supplier.lists.type.domain' => 'text' ) ) ) ),
 			'sort' => 'supplier.lists.position',
 			'dir' => 'ASC',
 			'start' => 0,
