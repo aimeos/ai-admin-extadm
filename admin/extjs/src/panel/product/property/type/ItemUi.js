@@ -1,6 +1,6 @@
 /*!
  * LGPLv3, http://opensource.org/licenses/LGPL-3.0
- * Copyright Aimeos (aimeos.org), 2016
+ * Copyright Aimeos (aimeos.org), 2016-2017
  */
 
 Ext.ns('MShop.panel.product.property.type');

@@ -5,7 +5,7 @@ namespace Aimeos\Controller\ExtJS\Product\Property;
 
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
- * @copyright Aimeos (aimeos.org), 2014-2015
+ * @copyright Aimeos (aimeos.org), 2014-2017
  */
 class FactoryTest extends \PHPUnit\Framework\TestCase
 {

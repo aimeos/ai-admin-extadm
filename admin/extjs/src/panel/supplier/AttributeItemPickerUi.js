@@ -1,6 +1,6 @@
 /*!
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
- * @copyright Aimeos.org, 2015
+ * @copyright Aimeos.org, 2015-2017
  */
 
 
