@@ -214,21 +214,6 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 					'optional' => false,
 					'type' => 'integer',
 				),
-				'attribute.ctime' => array(
-					'description' => 'Create date/time',
-					'optional' => false,
-					'type' => 'datetime',
-				),
-				'attribute.mtime' => array(
-					'description' => 'Modification date/time',
-					'optional' => false,
-					'type' => 'datetime',
-				),
-				'attribute.editor' => array(
-					'description' => 'Editor',
-					'optional' => false,
-					'type' => 'string',
-				),
 				'attribute.type.code' => array(
 					'description' => 'Type code',
 					'optional' => false,
@@ -236,6 +221,11 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 				),
 				'attribute.type.label' => array(
 					'description' => 'Type label',
+					'optional' => false,
+					'type' => 'string',
+				),
+				'attribute.type.domain' => array(
+					'description' => 'Type domain',
 					'optional' => false,
 					'type' => 'string',
 				),
@@ -264,6 +254,11 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 					'optional' => false,
 					'type' => 'datetime',
 				),
+				'attribute.lists.position' => array(
+					'description' => 'List position',
+					'optional' => false,
+					'type' => 'integer',
+				),
 				'attribute.lists.status' => array(
 					'description' => 'List status',
 					'optional' => false,
@@ -276,6 +271,11 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 				),
 				'attribute.lists.type.label' => array(
 					'description' => 'List type label',
+					'optional' => false,
+					'type' => 'string',
+				),
+				'attribute.lists.type.domain' => array(
+					'description' => 'List type domain',
 					'optional' => false,
 					'type' => 'string',
 				),
