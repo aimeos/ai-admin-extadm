@@ -61,18 +61,6 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$result = $this->object->getTree( $params );
 
 		$this->assertEquals( 'Root', $result['items']->{'locale.site.label'} );
-		$this->assertGreaterThanOrEqual( 2, $result['items']->{'children'} );
-
-
-		$ids = [];
-		foreach( $result['items']->{'children'} as $child ) {
-			$ids[] = $child->{'locale.site.id'};
-		}
-
-		$params = (object) array( 'items' => $ids );
-		$result = $this->object->getTree( $params );
-
-		$this->assertGreaterThanOrEqual( 2, $result['items'] );
 	}
 
 
@@ -156,20 +144,6 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$result = $this->object->moveItems( $moveParams );
 
 		$this->assertTrue( $result['success'] );
-	}
-
-	// call moveItems(), throws "not implemented" yet
-	public function testMoveItemsException()
-	{
-		$moveParams = (object) array(
-			'items' => null,
-			'oldparentid' => null,
-			'newparentid' => null,
-			'refid' => null
-		);
-
-		$this->setExpectedException( '\\Aimeos\\MShop\\Locale\\Exception' );
-		$this->object->moveItems( $moveParams );
 	}
 
 
