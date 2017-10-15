@@ -284,6 +284,36 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 					'optional' => false,
 					'type' => 'integer',
 				),
+				'attribute.property.value' => array(
+					'description' => 'Property value',
+					'optional' => false,
+					'type' => 'string',
+				),
+				'attribute.property.languageid' => array(
+					'description' => 'Property language ID',
+					'optional' => false,
+					'type' => 'string',
+				),
+				'attribute.property.type.label' => array(
+					'description' => 'Property type label',
+					'optional' => false,
+					'type' => 'string',
+				),
+				'attribute.property.type.code' => array(
+					'description' => 'Property type code',
+					'optional' => false,
+					'type' => 'string',
+				),
+				'attribute.property.type.domain' => array(
+					'description' => 'Property type domain',
+					'optional' => false,
+					'type' => 'string',
+				),
+				'attribute.property.type.status' => array(
+					'description' => 'Property type status',
+					'optional' => false,
+					'type' => 'integer',
+				),
 			)
 		);
 
